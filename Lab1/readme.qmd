@@ -1,6 +1,6 @@
 ---
 title: "Получение сведений о системе"
-author: olekzonder@outlook.com
+author: Александр Смирнов
 format: 
     md:
         output-file: README.md
