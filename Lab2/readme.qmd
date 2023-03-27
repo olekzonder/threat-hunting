@@ -26,15 +26,13 @@ engine: knitr
 3.Загрузим и соединим файлы, содержащие списки источников нежелательного трафика:
 ```{bash}
 mkdir hosts
-cd hosts
-wget -q https://github.com/StevenBlack/hosts/raw/master/data/add.2o7Net/hosts
-wget -q https://raw.githubusercontent.com/StevenBlack/hosts/master/data/KADhosts/hosts
-wget -q https://raw.githubusercontent.com/StevenBlack/hosts/master/data/yoyo.org/hosts
-wget -q https://raw.githubusercontent.com/StevenBlack/hosts/master/data/tiuxo/hosts
-wget -q https://raw.githubusercontent.com/StevenBlack/hosts/master/data/URLHaus/hosts
-sort hosts* | grep "^[^#;]" | uniq > final_hosts
-mv final_hosts ../hosts.data
-cd ..
+wget -q https://github.com/StevenBlack/hosts/raw/master/data/add.2o7Net/hosts -O hosts/hosts.1
+wget -q https://raw.githubusercontent.com/StevenBlack/hosts/master/data/KADhosts/hosts -O hosts/hosts.2
+wget -q https://raw.githubusercontent.com/StevenBlack/hosts/master/data/yoyo.org/hosts -O hosts/hosts.3
+wget -q https://raw.githubusercontent.com/StevenBlack/hosts/master/data/tiuxo/hosts -O hosts/hosts.4
+wget -q https://raw.githubusercontent.com/StevenBlack/hosts/master/data/URLHaus/hosts -O hosts/hosts.5
+wget -q https://raw.githubusercontent.com/StevenBlack/hosts/master/data/mvps.org/hosts -O hosts/hosts.6
+sort hosts/hosts* | grep -Eo '^([^\\"'\''#]|\\.|"([^\\"]|\\.)*"|'\''[^'\'']*'\'')*' | uniq > hosts.data
 rm -rf hosts
 ```
     

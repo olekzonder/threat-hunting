@@ -1,5 +1,4 @@
-Сбор и аналитическая обработка информации о сетевом трафике
-================
+# Сбор и аналитическая обработка информации о сетевом трафике
 Александр Смирнов
 
 ## Цель работы
@@ -15,7 +14,8 @@
 
 1.C помощью Wireshark был собран сетевой трафик объёмом 800 Мб:
 
-<img src="screenshots/1.png" data-fig-align="center" />
+<img src="screenshots/1.png" class="quarto-discovered-preview-image"
+data-fig-align="center" />
 
 2.C помощью утилиты Zeek была выделена метаинформация сетевого трафика
 (файлы http.log и dns.log в репозитории)
@@ -25,15 +25,13 @@
 
 ``` bash
 mkdir hosts
-cd hosts
-wget -q https://github.com/StevenBlack/hosts/raw/master/data/add.2o7Net/hosts
-wget -q https://raw.githubusercontent.com/StevenBlack/hosts/master/data/KADhosts/hosts
-wget -q https://raw.githubusercontent.com/StevenBlack/hosts/master/data/yoyo.org/hosts
-wget -q https://raw.githubusercontent.com/StevenBlack/hosts/master/data/tiuxo/hosts
-wget -q https://raw.githubusercontent.com/StevenBlack/hosts/master/data/URLHaus/hosts
-sort hosts* | grep "^[^#;]" | uniq > final_hosts
-mv final_hosts ../hosts.data
-cd ..
+wget -q https://github.com/StevenBlack/hosts/raw/master/data/add.2o7Net/hosts -O hosts/hosts.1
+wget -q https://raw.githubusercontent.com/StevenBlack/hosts/master/data/KADhosts/hosts -O hosts/hosts.2
+wget -q https://raw.githubusercontent.com/StevenBlack/hosts/master/data/yoyo.org/hosts -O hosts/hosts.3
+wget -q https://raw.githubusercontent.com/StevenBlack/hosts/master/data/tiuxo/hosts -O hosts/hosts.4
+wget -q https://raw.githubusercontent.com/StevenBlack/hosts/master/data/URLHaus/hosts -O hosts/hosts.5
+wget -q https://raw.githubusercontent.com/StevenBlack/hosts/master/data/mvps.org/hosts -O hosts/hosts.6
+sort hosts/hosts* | grep -Eo '^([^\\"'\''#]|\\.|"([^\\"]|\\.)*"|'\''[^'\'']*'\'')*' | uniq > hosts.data
 rm -rf hosts
 ```
 
@@ -81,8 +79,8 @@ print("Вхождений DNS имён из списков в собранном
 "Процент нежелательного трафика: {}%.".format(percentile),sep='\n')
 ```
 
-    Вхождений DNS имён из списков в собранном трафике: 186.
-    Процент нежелательного трафика: 4.32%.
+    Вхождений DNS имён из списков в собранном трафике: 951.
+    Процент нежелательного трафика: 22.04%.
 
 ## Оценка результата
 
