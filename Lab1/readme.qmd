@@ -57,7 +57,7 @@ cat /proc/cpuinfo | grep "model name"
 4. Далее получим последние 30 строк логов системы:
 
 ```{bash}
-dmesg | tail -n 30
+journalctl -q -b | tail -n 30
 ```
 
 ## Оценка результата
