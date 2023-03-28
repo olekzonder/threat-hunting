@@ -49,7 +49,7 @@ domains = data$V10
 6.Затем преобразуем и файл со списком источников нежелательного трафика:
 
 ```{r}
-data <- read.csv('hosts.data',header=FALSE,sep=' ',skip=8)
+data <- read.csv('hosts.data',header=FALSE,sep=' ')
 bad_domains = data$V2
 ```
 
