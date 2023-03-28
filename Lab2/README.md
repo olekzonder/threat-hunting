@@ -35,8 +35,6 @@ sort hosts/hosts* | grep -Eo '^([^\\"'\''#]|\\.|"([^\\"]|\\.)*"|'\''[^'\'']*'\''
 rm -rf hosts
 ```
 
-    mkdir: невозможно создать каталог «hosts»: Файл существует
-
 В результате был получен файл hosts.data.
 
 4.Получим список посещённых веб-сайтов, преобразовав файл dns.log в
@@ -58,7 +56,7 @@ bad_domains = data$V2
 нежелательного трафика:
 
 ``` r
-amount <- sum(domains %in% bad_domains, na.rm=TRUE)
+amount <- sum(domains %in% bad_domains)
 sprintf("Вхождений DNS имён из списков в собранном трафике: %i",amount)
 ```
 

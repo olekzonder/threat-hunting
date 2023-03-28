@@ -55,7 +55,7 @@ bad_domains = data$V2
 
 7.Объединив два полученных датафрейма, получим итоговое количество нежелательного трафика:
 ```{r}
-amount <- sum(domains %in% bad_domains, na.rm=TRUE)
+amount <- sum(domains %in% bad_domains)
 sprintf("Вхождений DNS имён из списков в собранном трафике: %i",amount)
 percentile <- amount/length(domains)*100
 sprintf("Процент нежелательного трафика: %.2f%%",percentile)
