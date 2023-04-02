@@ -37,50 +37,37 @@ rm -rf hosts
 
 В результате был получен файл hosts.data.
 
-4.Установим библиотеку Zeek Analysis Toolkit для преобразоваия
-метаинформации сетевого трафика в формате log-файлов в датафрейм Pandas:
+4.Получим список посещённых веб-сайтов, преобразовав файл dns.log в
+датафрейм:
 
-``` bash
-pip -q install zat
+``` r
+data <- read.csv('dns.log',header=FALSE,sep='   ',skip=8)
+domains = data$V10
 ```
 
-5.После установки библиотеки преобразуем файл dns.log в датафрейм
-Pandas:
+5.Затем преобразуем и файл со списком источников нежелательного трафика:
 
-``` python
-import warnings
-warnings.filterwarnings("ignore", category=RuntimeWarning)
-import numpy as np
-import pandas as pd
-from zat.log_to_dataframe import LogToDataFrame
-df = LogToDataFrame()
-zeek_df = df.create_dataframe('dns.log')
-domains = zeek_df['query']
-domains.name='CNAME'
+``` r
+data <- read.csv('hosts.data',header=FALSE,sep=' ')
+bad_domains = data$V2
 ```
 
-6.Затем преобразуем и файл со списком источников нежелательного трафика:
+6.Объединив два полученных датафрейма, получим итоговое количество
+нежелательного трафика:
 
-``` python
-df = pd.read_csv('hosts.data',sep="\s+",names=['redirect_to','CNAME'])
-bad_domains = df['CNAME']
+``` r
+amount <- sum(domains %in% bad_domains)
+sprintf("Вхождений DNS имён из списков в собранном трафике: %i",amount)
 ```
 
-7.Объединив два полученных датафрейма, получим процент нежелательного
-трафика:
+    [1] "Вхождений DNS имён из списков в собранном трафике: 946"
 
-``` python
-merged = pd.merge(domains,bad_domains, on=['CNAME'],how='left',indicator='exists')
-merged['exists'] = np.where(merged.exists == 'both',True,False)
-count = merged['exists'].value_counts()[1]
-percentile = round(merged['exists'].value_counts(normalize=True)[1]*100,2)
-
-print("Вхождений DNS имён из списков в собранном трафике: {}.".format(count),
-"Процент нежелательного трафика: {}%.".format(percentile),sep='\n')
+``` r
+percentile <- amount/length(domains)*100
+sprintf("Процент нежелательного трафика: %.2f%%",percentile)
 ```
 
-    Вхождений DNS имён из списков в собранном трафике: 951.
-    Процент нежелательного трафика: 22.04%.
+    [1] "Процент нежелательного трафика: 21.95%"
 
 ## Оценка результата
 
