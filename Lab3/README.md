@@ -18,12 +18,11 @@
 
 ### Шаг 1 - Предварительная конфигурация
 
-1.Для работы ElasticSearch требуется увеличить размер виртуальной памяти
-системы:
+#### 1.Для работы ElasticSearch требуется увеличить размер виртуальной памяти системы:
 
     sudo sysctl -w vm.max_map_count=262144
 
-1.  Далее следует подготовить параметры окружения (файл .env):
+#### 2.Далее следует подготовить параметры окружения (файл .env):
 
 ELASTIC_PASSWORD – пароль пользователя ‘elastic’
 
@@ -368,15 +367,15 @@ docker-compose up -d
     Creating volume "lab3_kibanadata" with local driver
     Creating lab3_setup_1 ... 
     Creating nginx        ... 
-    Creating nginx        ... done
     Creating lab3_setup_1 ... done
+    Creating nginx        ... done
     Creating lab3_es_1    ... 
     Creating lab3_es_1    ... done
+    Creating filebeat     ... 
     Creating packetbeat   ... 
     Creating lab3_kibana_1 ... 
-    Creating filebeat      ... 
-    Creating filebeat      ... done
     Creating packetbeat    ... done
+    Creating filebeat      ... done
     Creating lab3_kibana_1 ... done
 
 Кластер ElasticSearch успешно запущен.
