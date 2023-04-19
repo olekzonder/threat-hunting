@@ -1,0 +1,2380 @@
+[    0.000000] Linux version 5.19.0-40-generic (buildd@lcy02-amd64-029) (x86_64-linux-gnu-gcc-12 (Ubuntu 12.2.0-3ubuntu1) 12.2.0, GNU ld (GNU Binutils for Ubuntu) 2.39) #41-Ubuntu SMP PREEMPT_DYNAMIC Thu Mar 23 21:39:15 UTC 2023 (Ubuntu 5.19.0-40.41-generic 5.19.17)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.19.0-40-generic root=UUID=326747ed-c61f-40d9-a1c6-d8a802f0b610 ro quiet splash vt.handoff=7
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Hygon HygonGenuine
+[    0.000000]   Centaur CentaurHauls
+[    0.000000]   zhaoxin   Shanghai  
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x008: 'MPX bounds registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x010: 'MPX CSR'
+[    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.000000] x86/fpu: xstate_offset[3]:  832, xstate_sizes[3]:   64
+[    0.000000] x86/fpu: xstate_offset[4]:  896, xstate_sizes[4]:   64
+[    0.000000] x86/fpu: Enabled xstate features 0x1f, context size is 960 bytes, using 'compacted' format.
+[    0.000000] signal: max sigframe size: 2032
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x0000000000057fff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000000058000-0x0000000000058fff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000059000-0x000000000009cfff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009d000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000003fffffff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000040000000-0x00000000403fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000040400000-0x0000000075477fff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000075478000-0x0000000075478fff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x0000000075479000-0x0000000075479fff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000007547a000-0x000000007eddffff] usable
+[    0.000000] BIOS-e820: [mem 0x000000007ede0000-0x000000007ff2cfff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000007ff2d000-0x000000007ff99fff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x000000007ff9a000-0x000000007fffefff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x000000007ffff000-0x000000007fffffff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000080000000-0x0000000087ffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000088600000-0x000000008c7fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000f8000000-0x00000000fbffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fe010000-0x00000000fe010fff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x00000002727fffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] efi: EFI v2.50 by Lenovo
+[    0.000000] efi: TPMFinalLog=0x7ff92000 SMBIOS=0x7f06b000 SMBIOS 3.0=0x7f068000 ACPI=0x7fffe000 ACPI 2.0=0x7fffe014 ESRT=0x7eef5000 MEMATTR=0x79ca1018 MOKvar=0x7eee0000 RNG=0x7ffa2018 TPMEventLog=0x7301e018 
+[    0.000000] efi: seeding entropy pool
+[    0.000000] random: crng init done
+[    0.000000] secureboot: Secure boot disabled
+[    0.000000] SMBIOS 3.0.0 present.
+[    0.000000] DMI: LENOVO 20L7001SRT/20L7001SRT, BIOS N22ET76W (1.53 ) 01/04/2023
+[    0.000000] tsc: Detected 1800.000 MHz processor
+[    0.001017] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.001023] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.001041] last_pfn = 0x272800 max_arch_pfn = 0x400000000
+[    0.001425] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[    0.002832] last_pfn = 0x80000 max_arch_pfn = 0x400000000
+[    0.022745] esrt: Reserving ESRT space from 0x000000007eef5000 to 0x000000007eef50b0.
+[    0.022762] Using GB pages for direct mapping
+[    0.023707] secureboot: Secure boot disabled
+[    0.023708] RAMDISK: [mem 0x6be2f000-0x705e0fff]
+[    0.023719] ACPI: Early table checksum verification disabled
+[    0.023724] ACPI: RSDP 0x000000007FFFE014 000024 (v02 LENOVO)
+[    0.023731] ACPI: XSDT 0x000000007FFAC188 000124 (v01 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023741] ACPI: FACP 0x000000007FFE1000 0000F4 (v05 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023750] ACPI: DSDT 0x000000007FFBA000 022090 (v02 LENOVO SKL      00000000 INTL 20160527)
+[    0.023756] ACPI: FACS 0x000000007FF3E000 000040
+[    0.023761] ACPI: SSDT 0x000000007FFE9000 01320E (v02 LENOVO DptfTabl 00001000 INTL 20160527)
+[    0.023766] ACPI: SSDT 0x000000007FFE8000 0003DB (v02 LENOVO Tpm2Tabl 00001000 INTL 20160527)
+[    0.023772] ACPI: TPM2 0x000000007FFE7000 000034 (v03 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023777] ACPI: UEFI 0x000000007FF53000 000042 (v01 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023782] ACPI: SSDT 0x000000007FFE3000 0030E4 (v02 LENOVO SaSsdt   00003000 INTL 20160527)
+[    0.023788] ACPI: SSDT 0x000000007FFE2000 0005C6 (v02 LENOVO PerfTune 00001000 INTL 20160527)
+[    0.023793] ACPI: HPET 0x000000007FFE0000 000038 (v01 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023798] ACPI: APIC 0x000000007FFDF000 00012C (v03 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023803] ACPI: MCFG 0x000000007FFDE000 00003C (v01 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023808] ACPI: ECDT 0x000000007FFDD000 000053 (v01 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023813] ACPI: SSDT 0x000000007FFB8000 001CA3 (v02 LENOVO RVP7Rtd3 00001000 INTL 20160527)
+[    0.023819] ACPI: SSDT 0x000000007FFB6000 00163C (v02 LENOVO ProjSsdt 00000010 INTL 20160527)
+[    0.023824] ACPI: BOOT 0x000000007FFB5000 000028 (v01 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023830] ACPI: BATB 0x000000007FFB4000 00004A (v02 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023835] ACPI: SLIC 0x000000007FFB3000 000176 (v01 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023840] ACPI: SSDT 0x000000007FFB1000 0017AE (v02 LENOVO CpuSsdt  00003000 INTL 20160527)
+[    0.023845] ACPI: SSDT 0x000000007FFB0000 00056D (v02 LENOVO CtdpB    00001000 INTL 20160527)
+[    0.023851] ACPI: SSDT 0x000000007FFAF000 000678 (v02 LENOVO UsbCTabl 00001000 INTL 20160527)
+[    0.023856] ACPI: LPIT 0x000000007FFAE000 000094 (v01 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023861] ACPI: WSMT 0x000000007FFAD000 000028 (v01 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023866] ACPI: SSDT 0x000000007FFFD000 0001D8 (v02 LENOVO HdaDsp   00000000 INTL 20160527)
+[    0.023872] ACPI: SSDT 0x000000007FFAB000 0004FC (v02 LENOVO TbtTypeC 00000000 INTL 20160527)
+[    0.023877] ACPI: SSDT 0x000000007FFAA000 0002D1 (v02 LENOVO Wwan     00000001 INTL 20160527)
+[    0.023882] ACPI: DBGP 0x000000007FFA9000 000034 (v01 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023887] ACPI: DBG2 0x000000007FFA8000 000054 (v00 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023893] ACPI: MSDM 0x000000007FFA7000 000055 (v03 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023898] ACPI: DMAR 0x000000007FFA6000 0000A8 (v01 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023903] ACPI: ASF! 0x000000007FFA5000 0000A0 (v32 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023908] ACPI: FPDT 0x000000007FFA4000 000044 (v01 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023916] ACPI: BGRT 0x000000007FFA3000 000038 (v01 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023922] ACPI: UEFI 0x000000007FF3B000 00013E (v01 LENOVO TP-N22   00001530 PTEC 00000002)
+[    0.023926] ACPI: Reserving FACP table memory at [mem 0x7ffe1000-0x7ffe10f3]
+[    0.023929] ACPI: Reserving DSDT table memory at [mem 0x7ffba000-0x7ffdc08f]
+[    0.023931] ACPI: Reserving FACS table memory at [mem 0x7ff3e000-0x7ff3e03f]
+[    0.023932] ACPI: Reserving SSDT table memory at [mem 0x7ffe9000-0x7fffc20d]
+[    0.023934] ACPI: Reserving SSDT table memory at [mem 0x7ffe8000-0x7ffe83da]
+[    0.023935] ACPI: Reserving TPM2 table memory at [mem 0x7ffe7000-0x7ffe7033]
+[    0.023937] ACPI: Reserving UEFI table memory at [mem 0x7ff53000-0x7ff53041]
+[    0.023938] ACPI: Reserving SSDT table memory at [mem 0x7ffe3000-0x7ffe60e3]
+[    0.023940] ACPI: Reserving SSDT table memory at [mem 0x7ffe2000-0x7ffe25c5]
+[    0.023941] ACPI: Reserving HPET table memory at [mem 0x7ffe0000-0x7ffe0037]
+[    0.023943] ACPI: Reserving APIC table memory at [mem 0x7ffdf000-0x7ffdf12b]
+[    0.023945] ACPI: Reserving MCFG table memory at [mem 0x7ffde000-0x7ffde03b]
+[    0.023946] ACPI: Reserving ECDT table memory at [mem 0x7ffdd000-0x7ffdd052]
+[    0.023948] ACPI: Reserving SSDT table memory at [mem 0x7ffb8000-0x7ffb9ca2]
+[    0.023949] ACPI: Reserving SSDT table memory at [mem 0x7ffb6000-0x7ffb763b]
+[    0.023951] ACPI: Reserving BOOT table memory at [mem 0x7ffb5000-0x7ffb5027]
+[    0.023952] ACPI: Reserving BATB table memory at [mem 0x7ffb4000-0x7ffb4049]
+[    0.023954] ACPI: Reserving SLIC table memory at [mem 0x7ffb3000-0x7ffb3175]
+[    0.023956] ACPI: Reserving SSDT table memory at [mem 0x7ffb1000-0x7ffb27ad]
+[    0.023957] ACPI: Reserving SSDT table memory at [mem 0x7ffb0000-0x7ffb056c]
+[    0.023959] ACPI: Reserving SSDT table memory at [mem 0x7ffaf000-0x7ffaf677]
+[    0.023960] ACPI: Reserving LPIT table memory at [mem 0x7ffae000-0x7ffae093]
+[    0.023962] ACPI: Reserving WSMT table memory at [mem 0x7ffad000-0x7ffad027]
+[    0.023964] ACPI: Reserving SSDT table memory at [mem 0x7fffd000-0x7fffd1d7]
+[    0.023965] ACPI: Reserving SSDT table memory at [mem 0x7ffab000-0x7ffab4fb]
+[    0.023967] ACPI: Reserving SSDT table memory at [mem 0x7ffaa000-0x7ffaa2d0]
+[    0.023969] ACPI: Reserving DBGP table memory at [mem 0x7ffa9000-0x7ffa9033]
+[    0.023970] ACPI: Reserving DBG2 table memory at [mem 0x7ffa8000-0x7ffa8053]
+[    0.023972] ACPI: Reserving MSDM table memory at [mem 0x7ffa7000-0x7ffa7054]
+[    0.023974] ACPI: Reserving DMAR table memory at [mem 0x7ffa6000-0x7ffa60a7]
+[    0.023975] ACPI: Reserving ASF! table memory at [mem 0x7ffa5000-0x7ffa509f]
+[    0.023977] ACPI: Reserving FPDT table memory at [mem 0x7ffa4000-0x7ffa4043]
+[    0.023979] ACPI: Reserving BGRT table memory at [mem 0x7ffa3000-0x7ffa3037]
+[    0.023980] ACPI: Reserving UEFI table memory at [mem 0x7ff3b000-0x7ff3b13d]
+[    0.024395] No NUMA configuration found
+[    0.024397] Faking a node at [mem 0x0000000000000000-0x00000002727fffff]
+[    0.024413] NODE_DATA(0) allocated [mem 0x2727d5000-0x2727fffff]
+[    0.024943] Zone ranges:
+[    0.024944]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.024948]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.024951]   Normal   [mem 0x0000000100000000-0x00000002727fffff]
+[    0.024953]   Device   empty
+[    0.024955] Movable zone start for each node
+[    0.024959] Early memory node ranges
+[    0.024960]   node   0: [mem 0x0000000000001000-0x0000000000057fff]
+[    0.024962]   node   0: [mem 0x0000000000059000-0x000000000009cfff]
+[    0.024964]   node   0: [mem 0x0000000000100000-0x000000003fffffff]
+[    0.024966]   node   0: [mem 0x0000000040400000-0x0000000075477fff]
+[    0.024967]   node   0: [mem 0x000000007547a000-0x000000007eddffff]
+[    0.024969]   node   0: [mem 0x000000007ffff000-0x000000007fffffff]
+[    0.024970]   node   0: [mem 0x0000000100000000-0x00000002727fffff]
+[    0.024973] Initmem setup node 0 [mem 0x0000000000001000-0x00000002727fffff]
+[    0.024980] On node 0, zone DMA: 1 pages in unavailable ranges
+[    0.024983] On node 0, zone DMA: 1 pages in unavailable ranges
+[    0.025026] On node 0, zone DMA: 99 pages in unavailable ranges
+[    0.032362] On node 0, zone DMA32: 1024 pages in unavailable ranges
+[    0.032955] On node 0, zone DMA32: 2 pages in unavailable ranges
+[    0.033073] On node 0, zone DMA32: 4639 pages in unavailable ranges
+[    0.056700] On node 0, zone Normal: 22528 pages in unavailable ranges
+[    0.056714] Reserving Intel graphics memory at [mem 0x8a800000-0x8c7fffff]
+[    0.057137] ACPI: PM-Timer IO Port: 0x1808
+[    0.057149] ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+[    0.057152] ACPI: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+[    0.057154] ACPI: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+[    0.057155] ACPI: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])
+[    0.057156] ACPI: LAPIC_NMI (acpi_id[0x05] high edge lint[0x1])
+[    0.057157] ACPI: LAPIC_NMI (acpi_id[0x06] high edge lint[0x1])
+[    0.057159] ACPI: LAPIC_NMI (acpi_id[0x07] high edge lint[0x1])
+[    0.057160] ACPI: LAPIC_NMI (acpi_id[0x08] high edge lint[0x1])
+[    0.057161] ACPI: LAPIC_NMI (acpi_id[0x09] high edge lint[0x1])
+[    0.057162] ACPI: LAPIC_NMI (acpi_id[0x0a] high edge lint[0x1])
+[    0.057164] ACPI: LAPIC_NMI (acpi_id[0x0b] high edge lint[0x1])
+[    0.057165] ACPI: LAPIC_NMI (acpi_id[0x0c] high edge lint[0x1])
+[    0.057166] ACPI: LAPIC_NMI (acpi_id[0x0d] high edge lint[0x1])
+[    0.057167] ACPI: LAPIC_NMI (acpi_id[0x0e] high edge lint[0x1])
+[    0.057169] ACPI: LAPIC_NMI (acpi_id[0x0f] high edge lint[0x1])
+[    0.057170] ACPI: LAPIC_NMI (acpi_id[0x10] high edge lint[0x1])
+[    0.057198] IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-119
+[    0.057204] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.057207] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.057215] ACPI: Using ACPI (MADT) for SMP configuration information
+[    0.057217] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.057228] e820: update [mem 0x78bfd000-0x78c8dfff] usable ==> reserved
+[    0.057249] TSC deadline timer available
+[    0.057250] smpboot: Allowing 8 CPUs, 0 hotplug CPUs
+[    0.057286] PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.057290] PM: hibernation: Registered nosave memory: [mem 0x00058000-0x00058fff]
+[    0.057294] PM: hibernation: Registered nosave memory: [mem 0x0009d000-0x000fffff]
+[    0.057297] PM: hibernation: Registered nosave memory: [mem 0x40000000-0x403fffff]
+[    0.057300] PM: hibernation: Registered nosave memory: [mem 0x75478000-0x75478fff]
+[    0.057301] PM: hibernation: Registered nosave memory: [mem 0x75479000-0x75479fff]
+[    0.057304] PM: hibernation: Registered nosave memory: [mem 0x78bfd000-0x78c8dfff]
+[    0.057307] PM: hibernation: Registered nosave memory: [mem 0x7ede0000-0x7ff2cfff]
+[    0.057309] PM: hibernation: Registered nosave memory: [mem 0x7ff2d000-0x7ff99fff]
+[    0.057310] PM: hibernation: Registered nosave memory: [mem 0x7ff9a000-0x7fffefff]
+[    0.057313] PM: hibernation: Registered nosave memory: [mem 0x80000000-0x87ffffff]
+[    0.057315] PM: hibernation: Registered nosave memory: [mem 0x88000000-0x885fffff]
+[    0.057316] PM: hibernation: Registered nosave memory: [mem 0x88600000-0x8c7fffff]
+[    0.057317] PM: hibernation: Registered nosave memory: [mem 0x8c800000-0xf7ffffff]
+[    0.057318] PM: hibernation: Registered nosave memory: [mem 0xf8000000-0xfbffffff]
+[    0.057320] PM: hibernation: Registered nosave memory: [mem 0xfc000000-0xfe00ffff]
+[    0.057321] PM: hibernation: Registered nosave memory: [mem 0xfe010000-0xfe010fff]
+[    0.057322] PM: hibernation: Registered nosave memory: [mem 0xfe011000-0xffffffff]
+[    0.057324] [mem 0x8c800000-0xf7ffffff] available for PCI devices
+[    0.057326] Booting paravirtualized kernel on bare hardware
+[    0.057330] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[    0.057341] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:8 nr_cpu_ids:8 nr_node_ids:1
+[    0.057691] percpu: Embedded 61 pages/cpu s212992 r8192 d28672 u262144
+[    0.057704] pcpu-alloc: s212992 r8192 d28672 u262144 alloc=1*2097152
+[    0.057708] pcpu-alloc: [0] 0 1 2 3 4 5 6 7 
+[    0.057759] Fallback order for Node 0: 0 
+[    0.057764] Built 1 zonelists, mobility grouping on.  Total pages: 2004119
+[    0.057766] Policy zone: Normal
+[    0.057768] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.19.0-40-generic root=UUID=326747ed-c61f-40d9-a1c6-d8a802f0b610 ro quiet splash vt.handoff=7
+[    0.057899] Unknown kernel command line parameters "splash BOOT_IMAGE=/boot/vmlinuz-5.19.0-40-generic", will be passed to user space.
+[    0.058684] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+[    0.059133] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.059280] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.120934] Memory: 7757192K/8144360K available (18440K kernel code, 4057K rwdata, 11264K rodata, 3160K init, 4908K bss, 386908K reserved, 0K cma-reserved)
+[    0.121216] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[    0.121240] Kernel/User page tables isolation: enabled
+[    0.121269] ftrace: allocating 52070 entries in 204 pages
+[    0.137141] ftrace: allocated 204 pages with 4 groups
+[    0.138475] Dynamic Preempt: voluntary
+[    0.138528] rcu: Preemptible hierarchical RCU implementation.
+[    0.138529] rcu: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=8.
+[    0.138532] 	Trampoline variant of Tasks RCU enabled.
+[    0.138533] 	Rude variant of Tasks RCU enabled.
+[    0.138534] 	Tracing variant of Tasks RCU enabled.
+[    0.138535] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.138536] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=8
+[    0.145907] NR_IRQS: 524544, nr_irqs: 2048, preallocated irqs: 16
+[    0.146144] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.146339] Console: colour dummy device 80x25
+[    0.146380] printk: console [tty0] enabled
+[    0.146414] ACPI: Core revision 20220331
+[    0.146911] hpet: HPET dysfunctional in PC10. Force disabled.
+[    0.146913] APIC: Switch to symmetric I/O mode setup
+[    0.146917] DMAR: Host address width 39
+[    0.146919] DMAR: DRHD base: 0x000000fed90000 flags: 0x0
+[    0.146930] DMAR: dmar0: reg_base_addr fed90000 ver 1:0 cap 1c0000c40660462 ecap 19e2ff0505e
+[    0.146935] DMAR: DRHD base: 0x000000fed91000 flags: 0x1
+[    0.146941] DMAR: dmar1: reg_base_addr fed91000 ver 1:0 cap d2008c40660462 ecap f050da
+[    0.146945] DMAR: RMRR base: 0x0000007f47f000 end: 0x0000007f49efff
+[    0.146953] DMAR: RMRR base: 0x0000008a000000 end: 0x0000008c7fffff
+[    0.146961] DMAR-IR: IOAPIC id 2 under DRHD base  0xfed91000 IOMMU 1
+[    0.146963] DMAR-IR: HPET id 0 under DRHD base 0xfed91000
+[    0.146966] DMAR-IR: Queued invalidation will be enabled to support x2apic and Intr-remapping.
+[    0.149170] DMAR-IR: Enabled IRQ remapping in x2apic mode
+[    0.149174] x2apic enabled
+[    0.149190] Switched APIC routing to cluster x2apic.
+[    0.153059] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x19f2297dd97, max_idle_ns: 440795236593 ns
+[    0.153071] Calibrating delay loop (skipped), value calculated using timer frequency.. 3600.00 BogoMIPS (lpj=7200000)
+[    0.153076] pid_max: default: 32768 minimum: 301
+[    0.157065] LSM: Security Framework initializing
+[    0.157065] landlock: Up and running.
+[    0.157065] Yama: becoming mindful.
+[    0.157065] AppArmor: AppArmor initialized
+[    0.157065] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.157065] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.157065] CPU0: Thermal monitoring enabled (TM1)
+[    0.157065] process: using mwait in idle threads
+[    0.157065] Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+[    0.157065] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+[    0.157065] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.157065] Spectre V2 : Mitigation: IBRS
+[    0.157065] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.157065] Spectre V2 : Spectre v2 / SpectreRSB : Filling RSB on VMEXIT
+[    0.157065] RETBleed: Mitigation: IBRS
+[    0.157065] Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+[    0.157065] Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+[    0.157065] MDS: Mitigation: Clear CPU buffers
+[    0.157065] MMIO Stale Data: Mitigation: Clear CPU buffers
+[    0.157065] SRBDS: Mitigation: Microcode
+[    0.157065] Freeing SMP alternatives memory: 44K
+[    0.157065] smpboot: CPU0: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz (family: 0x6, model: 0x8e, stepping: 0xa)
+[    0.157065] cblist_init_generic: Setting adjustable number of callback queues.
+[    0.157065] cblist_init_generic: Setting shift to 3 and lim to 1.
+[    0.157065] cblist_init_generic: Setting shift to 3 and lim to 1.
+[    0.157065] cblist_init_generic: Setting shift to 3 and lim to 1.
+[    0.157065] Performance Events: PEBS fmt3+, Skylake events, 32-deep LBR, full-width counters, Intel PMU driver.
+[    0.157065] ... version:                4
+[    0.157065] ... bit width:              48
+[    0.157065] ... generic registers:      4
+[    0.157065] ... value mask:             0000ffffffffffff
+[    0.157065] ... max period:             00007fffffffffff
+[    0.157065] ... fixed-purpose events:   3
+[    0.157065] ... event mask:             000000070000000f
+[    0.157065] Estimated ratio of average max frequency by base frequency (times 1024): 1934
+[    0.157065] rcu: Hierarchical SRCU implementation.
+[    0.157065] rcu: 	Max phase no-delay instances is 1000.
+[    0.157065] NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+[    0.157065] smp: Bringing up secondary CPUs ...
+[    0.157065] x86: Booting SMP configuration:
+[    0.157065] .... node  #0, CPUs:      #1 #2 #3 #4
+[    0.166446] MDS CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html for more details.
+[    0.166446] MMIO Stale Data CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/processor_mmio_stale_data.html for more details.
+[    0.166446]  #5 #6 #7
+[    0.174237] smp: Brought up 1 node, 8 CPUs
+[    0.174237] smpboot: Max logical packages: 1
+[    0.174237] smpboot: Total of 8 processors activated (28800.00 BogoMIPS)
+[    0.177551] devtmpfs: initialized
+[    0.177551] x86/mm: Memory block size: 128MB
+[    0.178629] ACPI: PM: Registering ACPI NVS region [mem 0x75478000-0x75478fff] (4096 bytes)
+[    0.178629] ACPI: PM: Registering ACPI NVS region [mem 0x7ff2d000-0x7ff99fff] (446464 bytes)
+[    0.178629] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.178629] futex hash table entries: 2048 (order: 5, 131072 bytes, linear)
+[    0.178629] pinctrl core: initialized pinctrl subsystem
+[    0.178629] PM: RTC time: 09:56:09, date: 2023-04-19
+[    0.178629] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.178629] DMA: preallocated 1024 KiB GFP_KERNEL pool for atomic allocations
+[    0.178638] DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.178745] DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.178758] audit: initializing netlink subsys (disabled)
+[    0.181081] audit: type=2000 audit(1681898168.028:1): state=initialized audit_enabled=0 res=1
+[    0.181269] thermal_sys: Registered thermal governor 'fair_share'
+[    0.181272] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.181274] thermal_sys: Registered thermal governor 'step_wise'
+[    0.181276] thermal_sys: Registered thermal governor 'user_space'
+[    0.181278] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.181289] EISA bus registered
+[    0.181304] cpuidle: using governor ladder
+[    0.181311] cpuidle: using governor menu
+[    0.181396] Simple Boot Flag at 0x47 set to 0x1
+[    0.181396] HugeTLB: can optimize 4095 vmemmap pages for hugepages-1048576kB
+[    0.181396] ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+[    0.181396] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.181590] PCI: MMCONFIG for domain 0000 [bus 00-3f] at [mem 0xf8000000-0xfbffffff] (base 0xf8000000)
+[    0.181599] PCI: MMCONFIG at [mem 0xf8000000-0xfbffffff] reserved in E820
+[    0.181622] PCI: Using configuration type 1 for base access
+[    0.182123] ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+[    0.185678] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[    0.185690] HugeTLB: can optimize 7 vmemmap pages for hugepages-2048kB
+[    0.185690] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.185690] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.185690] ACPI: Added _OSI(Module Device)
+[    0.185690] ACPI: Added _OSI(Processor Device)
+[    0.185690] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.185690] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.185690] ACPI: Added _OSI(Linux-Dell-Video)
+[    0.185690] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+[    0.185690] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+[    0.296005] ACPI: 13 ACPI AML tables successfully acquired and loaded
+[    0.299466] ACPI: EC: EC started
+[    0.299468] ACPI: EC: interrupt blocked
+[    0.303764] ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    0.303767] ACPI: EC: Boot ECDT EC used to handle transactions
+[    0.307107] ACPI: [Firmware Bug]: BIOS _OSI(Linux) query ignored
+[    0.386586] ACPI: Dynamic OEM Table Load:
+[    0.386611] ACPI: SSDT 0xFFFF9903C0B00000 00058B (v02 PmRef  Cpu0Ist  00003000 INTL 20160527)
+[    0.390275] ACPI: \_PR_.PR00: _OSC native thermal LVT Acked
+[    0.393508] ACPI: Dynamic OEM Table Load:
+[    0.393526] ACPI: SSDT 0xFFFF9903C1452000 0003FF (v02 PmRef  Cpu0Cst  00003001 INTL 20160527)
+[    0.396977] ACPI: Dynamic OEM Table Load:
+[    0.396992] ACPI: SSDT 0xFFFF9903C140C300 0000BA (v02 PmRef  Cpu0Hwp  00003000 INTL 20160527)
+[    0.400268] ACPI: Dynamic OEM Table Load:
+[    0.400283] ACPI: SSDT 0xFFFF9903C0B04800 000628 (v02 PmRef  HwpLvt   00003000 INTL 20160527)
+[    0.404650] ACPI: Dynamic OEM Table Load:
+[    0.404670] ACPI: SSDT 0xFFFF9903C018F000 000D14 (v02 PmRef  ApIst    00003000 INTL 20160527)
+[    0.410295] ACPI: Dynamic OEM Table Load:
+[    0.410311] ACPI: SSDT 0xFFFF9903C1457C00 000317 (v02 PmRef  ApHwp    00003000 INTL 20160527)
+[    0.413882] ACPI: Dynamic OEM Table Load:
+[    0.413897] ACPI: SSDT 0xFFFF9903C1454800 00030A (v02 PmRef  ApCst    00003000 INTL 20160527)
+[    0.424162] ACPI: Interpreter enabled
+[    0.424257] ACPI: PM: (supports S0 S3 S4 S5)
+[    0.424260] ACPI: Using IOAPIC for interrupt routing
+[    0.424339] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.424341] PCI: Ignoring E820 reservations for host bridge windows
+[    0.425962] ACPI: Enabled 8 GPEs in block 00 to 7F
+[    0.434078] ACPI: PM: Power Resource [PUBS]
+[    0.465889] ACPI: PM: Power Resource [PXP]
+[    0.508124] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-3e])
+[    0.508137] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+[    0.512769] acpi PNP0A08:00: _OSC: platform does not support [AER]
+[    0.515741] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME PCIeCapability LTR DPC]
+[    0.515745] acpi PNP0A08:00: FADT indicates ASPM is unsupported, using BIOS configuration
+[    0.520311] PCI host bridge to bus 0000:00
+[    0.520315] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.520320] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.520323] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000fffff window]
+[    0.520326] pci_bus 0000:00: root bus resource [mem 0x8c800000-0xf7ffffff window]
+[    0.520330] pci_bus 0000:00: root bus resource [mem 0xfd000000-0xfe7fffff window]
+[    0.520332] pci_bus 0000:00: root bus resource [bus 00-3e]
+[    0.520364] pci 0000:00:00.0: [8086:5914] type 00 class 0x060000
+[    0.520497] pci 0000:00:02.0: [8086:5917] type 00 class 0x030000
+[    0.520513] pci 0000:00:02.0: reg 0x10: [mem 0xe7000000-0xe7ffffff 64bit]
+[    0.520524] pci 0000:00:02.0: reg 0x18: [mem 0xc0000000-0xcfffffff 64bit pref]
+[    0.520531] pci 0000:00:02.0: reg 0x20: [io  0xe000-0xe03f]
+[    0.520560] pci 0000:00:02.0: BAR 2: assigned to efifb
+[    0.520566] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    0.520960] pci 0000:00:04.0: [8086:1903] type 00 class 0x118000
+[    0.520976] pci 0000:00:04.0: reg 0x10: [mem 0xe8240000-0xe8247fff 64bit]
+[    0.521979] pci 0000:00:08.0: [8086:1911] type 00 class 0x088000
+[    0.521997] pci 0000:00:08.0: reg 0x10: [mem 0xe8250000-0xe8250fff 64bit]
+[    0.522147] pci 0000:00:14.0: [8086:9d2f] type 00 class 0x0c0330
+[    0.522168] pci 0000:00:14.0: reg 0x10: [mem 0xe8220000-0xe822ffff 64bit]
+[    0.522247] pci 0000:00:14.0: PME# supported from D3hot D3cold
+[    0.524039] pci 0000:00:14.2: [8086:9d31] type 00 class 0x118000
+[    0.524062] pci 0000:00:14.2: reg 0x10: [mem 0xe8251000-0xe8251fff 64bit]
+[    0.524353] pci 0000:00:15.0: [8086:9d60] type 00 class 0x118000
+[    0.524562] pci 0000:00:15.0: reg 0x10: [mem 0xe8252000-0xe8252fff 64bit]
+[    0.526352] pci 0000:00:16.0: [8086:9d3a] type 00 class 0x078000
+[    0.526377] pci 0000:00:16.0: reg 0x10: [mem 0xe8253000-0xe8253fff 64bit]
+[    0.526465] pci 0000:00:16.0: PME# supported from D3hot
+[    0.527428] pci 0000:00:1c.0: [8086:9d10] type 01 class 0x060400
+[    0.527534] pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+[    0.528963] pci 0000:00:1c.4: [8086:9d14] type 01 class 0x060400
+[    0.529061] pci 0000:00:1c.4: PME# supported from D0 D3hot D3cold
+[    0.530525] pci 0000:00:1c.6: [8086:9d16] type 01 class 0x060400
+[    0.530626] pci 0000:00:1c.6: PME# supported from D0 D3hot D3cold
+[    0.532095] pci 0000:00:1d.0: [8086:9d18] type 01 class 0x060400
+[    0.532208] pci 0000:00:1d.0: PME# supported from D0 D3hot D3cold
+[    0.533704] pci 0000:00:1f.0: [8086:9d4e] type 00 class 0x060100
+[    0.534770] pci 0000:00:1f.2: [8086:9d21] type 00 class 0x058000
+[    0.534787] pci 0000:00:1f.2: reg 0x10: [mem 0xe824c000-0xe824ffff]
+[    0.535762] pci 0000:00:1f.3: [8086:9d71] type 00 class 0x040300
+[    0.535791] pci 0000:00:1f.3: reg 0x10: [mem 0xe8248000-0xe824bfff 64bit]
+[    0.535831] pci 0000:00:1f.3: reg 0x20: [mem 0xe8230000-0xe823ffff 64bit]
+[    0.535895] pci 0000:00:1f.3: PME# supported from D3hot D3cold
+[    0.537265] pci 0000:00:1f.4: [8086:9d23] type 00 class 0x0c0500
+[    0.537319] pci 0000:00:1f.4: reg 0x10: [mem 0xe8254000-0xe82540ff 64bit]
+[    0.537372] pci 0000:00:1f.4: reg 0x20: [io  0xefa0-0xefbf]
+[    0.538371] pci 0000:00:1f.6: [8086:15d8] type 00 class 0x020000
+[    0.538394] pci 0000:00:1f.6: reg 0x10: [mem 0xe8200000-0xe821ffff]
+[    0.538513] pci 0000:00:1f.6: PME# supported from D0 D3hot D3cold
+[    0.539509] pci 0000:00:1c.0: PCI bridge to [bus 01]
+[    0.539625] pci 0000:04:00.0: [8086:15c0] type 01 class 0x060400
+[    0.539688] pci 0000:04:00.0: enabling Extended Tags
+[    0.539797] pci 0000:04:00.0: supports D1 D2
+[    0.539800] pci 0000:04:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.540022] pci 0000:00:1c.4: PCI bridge to [bus 04-3c]
+[    0.540030] pci 0000:00:1c.4:   bridge window [mem 0xd0000000-0xe60fffff]
+[    0.540036] pci 0000:00:1c.4:   bridge window [mem 0x90000000-0xb1ffffff 64bit pref]
+[    0.540139] pci 0000:05:00.0: [8086:15c0] type 01 class 0x060400
+[    0.540206] pci 0000:05:00.0: enabling Extended Tags
+[    0.540317] pci 0000:05:00.0: supports D1 D2
+[    0.540319] pci 0000:05:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.540472] pci 0000:05:01.0: [8086:15c0] type 01 class 0x060400
+[    0.540538] pci 0000:05:01.0: enabling Extended Tags
+[    0.540653] pci 0000:05:01.0: supports D1 D2
+[    0.540656] pci 0000:05:01.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.540802] pci 0000:05:02.0: [8086:15c0] type 01 class 0x060400
+[    0.540868] pci 0000:05:02.0: enabling Extended Tags
+[    0.540977] pci 0000:05:02.0: supports D1 D2
+[    0.540979] pci 0000:05:02.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.541192] pci 0000:04:00.0: PCI bridge to [bus 05-3c]
+[    0.541204] pci 0000:04:00.0:   bridge window [mem 0xd0000000-0xe60fffff]
+[    0.541212] pci 0000:04:00.0:   bridge window [mem 0x90000000-0xb1ffffff 64bit pref]
+[    0.541297] pci 0000:06:00.0: [8086:15bf] type 00 class 0x088000
+[    0.541322] pci 0000:06:00.0: reg 0x10: [mem 0xe6000000-0xe603ffff]
+[    0.541337] pci 0000:06:00.0: reg 0x14: [mem 0xe6040000-0xe6040fff]
+[    0.541408] pci 0000:06:00.0: enabling Extended Tags
+[    0.541535] pci 0000:06:00.0: supports D1 D2
+[    0.541537] pci 0000:06:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.541724] pci 0000:05:00.0: PCI bridge to [bus 06]
+[    0.541735] pci 0000:05:00.0:   bridge window [mem 0xe6000000-0xe60fffff]
+[    0.541797] pci 0000:05:01.0: PCI bridge to [bus 07-3b]
+[    0.541808] pci 0000:05:01.0:   bridge window [mem 0xd0000000-0xe5efffff]
+[    0.541817] pci 0000:05:01.0:   bridge window [mem 0x90000000-0xb1ffffff 64bit pref]
+[    0.541927] pci 0000:3c:00.0: [8086:15c1] type 00 class 0x0c0330
+[    0.541953] pci 0000:3c:00.0: reg 0x10: [mem 0xe5f00000-0xe5f0ffff]
+[    0.542042] pci 0000:3c:00.0: enabling Extended Tags
+[    0.542177] pci 0000:3c:00.0: supports D1 D2
+[    0.542179] pci 0000:3c:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.542284] pci 0000:3c:00.0: 8.000 Gb/s available PCIe bandwidth, limited by 2.5 GT/s PCIe x4 link at 0000:05:02.0 (capable of 31.504 Gb/s with 8.0 GT/s PCIe x4 link)
+[    0.542427] pci 0000:05:02.0: PCI bridge to [bus 3c]
+[    0.542439] pci 0000:05:02.0:   bridge window [mem 0xe5f00000-0xe5ffffff]
+[    0.542981] pci 0000:3d:00.0: [8086:24fd] type 00 class 0x028000
+[    0.543074] pci 0000:3d:00.0: reg 0x10: [mem 0xe8100000-0xe8101fff 64bit]
+[    0.543711] pci 0000:3d:00.0: PME# supported from D0 D3hot D3cold
+[    0.544686] pci 0000:00:1c.6: PCI bridge to [bus 3d]
+[    0.544693] pci 0000:00:1c.6:   bridge window [mem 0xe8100000-0xe81fffff]
+[    0.544990] pci 0000:3e:00.0: [17aa:0005] type 00 class 0x010802
+[    0.545015] pci 0000:3e:00.0: reg 0x10: [mem 0xe8000000-0xe8003fff 64bit]
+[    0.545474] pci 0000:00:1d.0: PCI bridge to [bus 3e]
+[    0.545483] pci 0000:00:1d.0:   bridge window [mem 0xe8000000-0xe80fffff]
+[    0.550806] ACPI: PCI: Interrupt link LNKA configured for IRQ 11
+[    0.550957] ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+[    0.551105] ACPI: PCI: Interrupt link LNKC configured for IRQ 11
+[    0.551251] ACPI: PCI: Interrupt link LNKD configured for IRQ 11
+[    0.551397] ACPI: PCI: Interrupt link LNKE configured for IRQ 11
+[    0.551544] ACPI: PCI: Interrupt link LNKF configured for IRQ 11
+[    0.551689] ACPI: PCI: Interrupt link LNKG configured for IRQ 11
+[    0.551835] ACPI: PCI: Interrupt link LNKH configured for IRQ 11
+[    0.553387] ACPI: EC: interrupt unblocked
+[    0.553390] ACPI: EC: event unblocked
+[    0.553403] ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    0.553405] ACPI: EC: GPE=0x16
+[    0.553408] ACPI: \_SB_.PCI0.LPCB.EC__: Boot ECDT EC initialization complete
+[    0.553411] ACPI: \_SB_.PCI0.LPCB.EC__: EC: Used to handle transactions and events
+[    0.553545] iommu: Default domain type: Translated 
+[    0.553545] iommu: DMA domain TLB invalidation policy: lazy mode 
+[    0.553545] SCSI subsystem initialized
+[    0.553545] libata version 3.00 loaded.
+[    0.553545] ACPI: bus type USB registered
+[    0.553545] usbcore: registered new interface driver usbfs
+[    0.553545] usbcore: registered new interface driver hub
+[    0.553545] usbcore: registered new device driver usb
+[    0.553545] pps_core: LinuxPPS API ver. 1 registered
+[    0.553545] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.553545] PTP clock support registered
+[    0.553545] EDAC MC: Ver: 3.0.0
+[    0.553761] Registered efivars operations
+[    0.553761] NetLabel: Initializing
+[    0.553761] NetLabel:  domain hash size = 128
+[    0.553761] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.553761] NetLabel:  unlabeled traffic allowed by default
+[    0.553761] mctp: management component transport protocol core
+[    0.553761] NET: Registered PF_MCTP protocol family
+[    0.553761] PCI: Using ACPI for IRQ routing
+[    0.557940] PCI: pci_cache_line_size set to 64 bytes
+[    0.559095] e820: reserve RAM buffer [mem 0x00058000-0x0005ffff]
+[    0.559098] e820: reserve RAM buffer [mem 0x0009d000-0x0009ffff]
+[    0.559101] e820: reserve RAM buffer [mem 0x75478000-0x77ffffff]
+[    0.559103] e820: reserve RAM buffer [mem 0x78bfd000-0x7bffffff]
+[    0.559105] e820: reserve RAM buffer [mem 0x7ede0000-0x7fffffff]
+[    0.559108] e820: reserve RAM buffer [mem 0x272800000-0x273ffffff]
+[    0.559129] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    0.559129] pci 0000:00:02.0: vgaarb: bridge control possible
+[    0.559129] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=mem,locks=none
+[    0.559129] vgaarb: loaded
+[    0.559129] clocksource: Switched to clocksource tsc-early
+[    0.559129] VFS: Disk quotas dquot_6.6.0
+[    0.559129] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.559129] AppArmor: AppArmor Filesystem Enabled
+[    0.559129] pnp: PnP ACPI init
+[    0.559129] system 00:00: [mem 0x40000000-0x403fffff] has been reserved
+[    0.559129] system 00:01: [mem 0xfd000000-0xfdabffff] has been reserved
+[    0.559129] system 00:01: [mem 0xfdad0000-0xfdadffff] has been reserved
+[    0.559129] system 00:01: [mem 0xfdb00000-0xfdffffff] has been reserved
+[    0.559129] system 00:01: [mem 0xfe000000-0xfe01ffff] could not be reserved
+[    0.559129] system 00:01: [mem 0xfe036000-0xfe03bfff] has been reserved
+[    0.559129] system 00:01: [mem 0xfe03d000-0xfe3fffff] has been reserved
+[    0.559129] system 00:01: [mem 0xfe410000-0xfe7fffff] has been reserved
+[    0.559129] system 00:02: [io  0xff00-0xfffe] has been reserved
+[    0.559408] system 00:03: [io  0x0680-0x069f] has been reserved
+[    0.559413] system 00:03: [io  0xffff] has been reserved
+[    0.559417] system 00:03: [io  0xffff] has been reserved
+[    0.559420] system 00:03: [io  0xffff] has been reserved
+[    0.559422] system 00:03: [io  0x1800-0x18fe] has been reserved
+[    0.559425] system 00:03: [io  0x164e-0x164f] has been reserved
+[    0.559727] system 00:05: [io  0x1854-0x1857] has been reserved
+[    0.560027] system 00:08: [io  0x1800-0x189f] could not be reserved
+[    0.560031] system 00:08: [io  0x0800-0x087f] has been reserved
+[    0.560035] system 00:08: [io  0x0880-0x08ff] has been reserved
+[    0.560038] system 00:08: [io  0x0900-0x097f] has been reserved
+[    0.560041] system 00:08: [io  0x0980-0x09ff] has been reserved
+[    0.560043] system 00:08: [io  0x0a00-0x0a7f] has been reserved
+[    0.560046] system 00:08: [io  0x0a80-0x0aff] has been reserved
+[    0.560049] system 00:08: [io  0x0b00-0x0b7f] has been reserved
+[    0.560052] system 00:08: [io  0x0b80-0x0bff] has been reserved
+[    0.560055] system 00:08: [io  0x15e0-0x15ef] has been reserved
+[    0.560058] system 00:08: [io  0x1600-0x167f] could not be reserved
+[    0.560061] system 00:08: [io  0x1640-0x165f] could not be reserved
+[    0.560065] system 00:08: [mem 0xf8000000-0xfbffffff] has been reserved
+[    0.560068] system 00:08: [mem 0xfed10000-0xfed13fff] has been reserved
+[    0.560071] system 00:08: [mem 0xfed18000-0xfed18fff] has been reserved
+[    0.560074] system 00:08: [mem 0xfed19000-0xfed19fff] has been reserved
+[    0.560077] system 00:08: [mem 0xfeb00000-0xfebfffff] has been reserved
+[    0.560081] system 00:08: [mem 0xfed20000-0xfed3ffff] has been reserved
+[    0.560084] system 00:08: [mem 0xfed90000-0xfed93fff] could not be reserved
+[    0.560087] system 00:08: [mem 0xf7fe0000-0xf7ffffff] has been reserved
+[    0.563486] system 00:09: [mem 0xfdaf0000-0xfdafffff] has been reserved
+[    0.563492] system 00:09: [mem 0xfdae0000-0xfdaeffff] has been reserved
+[    0.563495] system 00:09: [mem 0xfdac0000-0xfdacffff] has been reserved
+[    0.565863] system 00:0a: [mem 0xfed10000-0xfed17fff] could not be reserved
+[    0.565868] system 00:0a: [mem 0xfed18000-0xfed18fff] has been reserved
+[    0.565872] system 00:0a: [mem 0xfed19000-0xfed19fff] has been reserved
+[    0.565875] system 00:0a: [mem 0xf8000000-0xfbffffff] has been reserved
+[    0.565878] system 00:0a: [mem 0xfed20000-0xfed3ffff] has been reserved
+[    0.565882] system 00:0a: [mem 0xfed90000-0xfed93fff] could not be reserved
+[    0.565885] system 00:0a: [mem 0xfed45000-0xfed8ffff] has been reserved
+[    0.565889] system 00:0a: [mem 0xff000000-0xffffffff] has been reserved
+[    0.565892] system 00:0a: [mem 0xfee00000-0xfeefffff] has been reserved
+[    0.565898] system 00:0a: [mem 0xf7fe0000-0xf7ffffff] has been reserved
+[    0.566685] system 00:0b: [mem 0x00000000-0x0009ffff] could not be reserved
+[    0.566690] system 00:0b: [mem 0x000f0000-0x000fffff] could not be reserved
+[    0.566694] system 00:0b: [mem 0x00100000-0x8c7fffff] could not be reserved
+[    0.566697] system 00:0b: [mem 0xfec00000-0xfed3ffff] could not be reserved
+[    0.566701] system 00:0b: [mem 0xfed4c000-0xffffffff] could not be reserved
+[    0.567063] pnp: PnP ACPI: found 12 devices
+[    0.574548] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.574663] NET: Registered PF_INET protocol family
+[    0.574810] IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.577548] tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    0.577592] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.577672] TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.577884] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes, linear)
+[    0.578014] TCP: Hash tables configured (established 65536 bind 65536)
+[    0.578131] MPTCP token hash table entries: 8192 (order: 5, 196608 bytes, linear)
+[    0.578196] UDP hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[    0.578236] UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[    0.578313] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.578324] NET: Registered PF_XDP protocol family
+[    0.578338] pci 0000:00:1c.0: bridge window [io  0x1000-0x0fff] to [bus 01] add_size 1000
+[    0.578346] pci 0000:00:1c.0: bridge window [mem 0x00100000-0x000fffff 64bit pref] to [bus 01] add_size 200000 add_align 100000
+[    0.578351] pci 0000:00:1c.0: bridge window [mem 0x00100000-0x000fffff] to [bus 01] add_size 200000 add_align 100000
+[    0.578357] pci 0000:05:01.0: bridge window [io  0x1000-0x0fff] to [bus 07-3b] add_size 1000
+[    0.578363] pci 0000:04:00.0: bridge window [io  0x1000-0x0fff] to [bus 05-3c] add_size 1000
+[    0.578367] pci 0000:00:1c.4: bridge window [io  0x1000-0x0fff] to [bus 04-3c] add_size 2000
+[    0.578380] pci 0000:00:1c.0: BAR 14: assigned [mem 0x8c800000-0x8c9fffff]
+[    0.578388] pci 0000:00:1c.0: BAR 15: assigned [mem 0x8ca00000-0x8cbfffff 64bit pref]
+[    0.578394] pci 0000:00:1c.0: BAR 13: assigned [io  0x2000-0x2fff]
+[    0.578399] pci 0000:00:1c.4: BAR 13: assigned [io  0x3000-0x4fff]
+[    0.578405] pci 0000:00:1c.0: PCI bridge to [bus 01]
+[    0.578412] pci 0000:00:1c.0:   bridge window [io  0x2000-0x2fff]
+[    0.578419] pci 0000:00:1c.0:   bridge window [mem 0x8c800000-0x8c9fffff]
+[    0.578425] pci 0000:00:1c.0:   bridge window [mem 0x8ca00000-0x8cbfffff 64bit pref]
+[    0.578433] pci 0000:04:00.0: BAR 13: assigned [io  0x3000-0x3fff]
+[    0.578437] pci 0000:05:01.0: BAR 13: assigned [io  0x3000-0x3fff]
+[    0.578441] pci 0000:05:00.0: PCI bridge to [bus 06]
+[    0.578448] pci 0000:05:00.0:   bridge window [mem 0xe6000000-0xe60fffff]
+[    0.578459] pci 0000:05:01.0: PCI bridge to [bus 07-3b]
+[    0.578463] pci 0000:05:01.0:   bridge window [io  0x3000-0x3fff]
+[    0.578470] pci 0000:05:01.0:   bridge window [mem 0xd0000000-0xe5efffff]
+[    0.578476] pci 0000:05:01.0:   bridge window [mem 0x90000000-0xb1ffffff 64bit pref]
+[    0.578485] pci 0000:05:02.0: PCI bridge to [bus 3c]
+[    0.578492] pci 0000:05:02.0:   bridge window [mem 0xe5f00000-0xe5ffffff]
+[    0.578503] pci 0000:04:00.0: PCI bridge to [bus 05-3c]
+[    0.578507] pci 0000:04:00.0:   bridge window [io  0x3000-0x3fff]
+[    0.578514] pci 0000:04:00.0:   bridge window [mem 0xd0000000-0xe60fffff]
+[    0.578520] pci 0000:04:00.0:   bridge window [mem 0x90000000-0xb1ffffff 64bit pref]
+[    0.578528] pci 0000:00:1c.4: PCI bridge to [bus 04-3c]
+[    0.578531] pci 0000:00:1c.4:   bridge window [io  0x3000-0x4fff]
+[    0.578537] pci 0000:00:1c.4:   bridge window [mem 0xd0000000-0xe60fffff]
+[    0.578541] pci 0000:00:1c.4:   bridge window [mem 0x90000000-0xb1ffffff 64bit pref]
+[    0.578548] pci 0000:00:1c.6: PCI bridge to [bus 3d]
+[    0.578554] pci 0000:00:1c.6:   bridge window [mem 0xe8100000-0xe81fffff]
+[    0.578562] pci 0000:00:1d.0: PCI bridge to [bus 3e]
+[    0.578569] pci 0000:00:1d.0:   bridge window [mem 0xe8000000-0xe80fffff]
+[    0.578579] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    0.578583] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    0.578586] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000fffff window]
+[    0.578589] pci_bus 0000:00: resource 7 [mem 0x8c800000-0xf7ffffff window]
+[    0.578592] pci_bus 0000:00: resource 8 [mem 0xfd000000-0xfe7fffff window]
+[    0.578595] pci_bus 0000:01: resource 0 [io  0x2000-0x2fff]
+[    0.578598] pci_bus 0000:01: resource 1 [mem 0x8c800000-0x8c9fffff]
+[    0.578601] pci_bus 0000:01: resource 2 [mem 0x8ca00000-0x8cbfffff 64bit pref]
+[    0.578604] pci_bus 0000:04: resource 0 [io  0x3000-0x4fff]
+[    0.578607] pci_bus 0000:04: resource 1 [mem 0xd0000000-0xe60fffff]
+[    0.578610] pci_bus 0000:04: resource 2 [mem 0x90000000-0xb1ffffff 64bit pref]
+[    0.578615] pci_bus 0000:05: resource 0 [io  0x3000-0x3fff]
+[    0.578618] pci_bus 0000:05: resource 1 [mem 0xd0000000-0xe60fffff]
+[    0.578621] pci_bus 0000:05: resource 2 [mem 0x90000000-0xb1ffffff 64bit pref]
+[    0.578625] pci_bus 0000:06: resource 1 [mem 0xe6000000-0xe60fffff]
+[    0.578631] pci_bus 0000:07: resource 0 [io  0x3000-0x3fff]
+[    0.578633] pci_bus 0000:07: resource 1 [mem 0xd0000000-0xe5efffff]
+[    0.578636] pci_bus 0000:07: resource 2 [mem 0x90000000-0xb1ffffff 64bit pref]
+[    0.578639] pci_bus 0000:3c: resource 1 [mem 0xe5f00000-0xe5ffffff]
+[    0.578643] pci_bus 0000:3d: resource 1 [mem 0xe8100000-0xe81fffff]
+[    0.578646] pci_bus 0000:3e: resource 1 [mem 0xe8000000-0xe80fffff]
+[    0.579927] pci 0000:04:00.0: enabling device (0006 -> 0007)
+[    0.580882] PCI: CLS 128 bytes, default 64
+[    0.580937] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    0.580939] software IO TLB: mapped [mem 0x000000007a470000-0x000000007e470000] (64MB)
+[    0.580979] Trying to unpack rootfs image as initramfs...
+[    0.581106] resource sanity check: requesting [mem 0xfed10000-0xfed15fff], which spans more than pnp 00:08 [mem 0xfed10000-0xfed13fff]
+[    0.581111] caller snb_uncore_imc_init_box+0x7f/0xd0 mapping multiple BARs
+[    0.581317] sgx: EPC section 0x80200000-0x85f7ffff
+[    0.582634] Initialise system trusted keyrings
+[    0.582648] Key type blacklist registered
+[    0.582712] workingset: timestamp_bits=36 max_order=21 bucket_order=0
+[    0.585395] zbud: loaded
+[    0.586130] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.586454] fuse: init (API version 7.36)
+[    0.586811] integrity: Platform Keyring initialized
+[    0.586822] integrity: Machine keyring initialized
+[    0.606570] Key type asymmetric registered
+[    0.606575] Asymmetric key parser 'x509' registered
+[    1.284131] Freeing initrd memory: 73416K
+[    1.290710] alg: self-tests for CTR-KDF (hmac(sha256)) passed
+[    1.290754] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 243)
+[    1.290821] io scheduler mq-deadline registered
+[    1.291783] pcieport 0000:00:1c.0: PME: Signaling with IRQ 122
+[    1.291829] pcieport 0000:00:1c.0: pciehp: Slot #0 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+[    1.292072] pcieport 0000:00:1c.4: PME: Signaling with IRQ 123
+[    1.292108] pcieport 0000:00:1c.4: pciehp: Slot #4 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+[    1.292596] pcieport 0000:00:1c.6: PME: Signaling with IRQ 124
+[    1.293010] pcieport 0000:00:1d.0: PME: Signaling with IRQ 125
+[    1.293510] pcieport 0000:05:01.0: enabling device (0006 -> 0007)
+[    1.293726] pcieport 0000:05:01.0: pciehp: Slot #1 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+[    1.294128] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    1.295614] ACPI: AC: AC Adapter [AC] (off-line)
+[    1.295735] input: Sleep Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input0
+[    1.295904] ACPI: button: Sleep Button [SLPB]
+[    1.295971] input: Lid Switch as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input1
+[    1.296138] ACPI: button: Lid Switch [LID]
+[    1.296204] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input2
+[    1.296368] ACPI: button: Power Button [PWRF]
+[    1.302992] thermal LNXTHERM:00: registered as thermal_zone0
+[    1.302997] ACPI: thermal: Thermal Zone [THM0] (50 C)
+[    1.303630] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    1.318096] hpet_acpi_add: no address or irqs in _CRS
+[    1.318234] Linux agpgart interface v0.103
+[    1.323941] tpm_tis IFX0763:00: 2.0 TPM (device-id 0x1B, rev-id 16)
+[    1.329338] ACPI: battery: Slot [BAT0] (battery present)
+[    1.350323] loop: module loaded
+[    1.350852] tun: Universal TUN/TAP device driver, 1.6
+[    1.350950] PPP generic driver version 2.4.2
+[    1.351150] VFIO - User Level meta-driver version: 0.3
+[    1.351363] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.351376] ehci-pci: EHCI PCI platform driver
+[    1.351393] ehci-platform: EHCI generic platform driver
+[    1.351408] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.351411] ohci-pci: OHCI PCI platform driver
+[    1.351424] ohci-platform: OHCI generic platform driver
+[    1.351435] uhci_hcd: USB Universal Host Controller Interface driver
+[    1.351512] i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+[    1.353580] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    1.353588] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    1.353881] mousedev: PS/2 mouse device common for all mice
+[    1.354188] rtc_cmos 00:04: RTC can wake from S4
+[    1.355021] rtc_cmos 00:04: registered as rtc0
+[    1.355185] rtc_cmos 00:04: setting system clock to 2023-04-19T09:56:10 UTC (1681898170)
+[    1.355228] rtc_cmos 00:04: alarms up to one month, y3k, 242 bytes nvram
+[    1.355242] i2c_dev: i2c /dev entries driver
+[    1.356081] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[    1.356143] device-mapper: uevent: version 1.0.3
+[    1.356170] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input3
+[    1.356325] device-mapper: ioctl: 4.47.0-ioctl (2022-07-28) initialised: dm-devel@redhat.com
+[    1.356369] platform eisa.0: Probing EISA bus 0
+[    1.356377] platform eisa.0: EISA: Cannot allocate resource for mainboard
+[    1.356381] platform eisa.0: Cannot allocate resource for EISA slot 1
+[    1.356384] platform eisa.0: Cannot allocate resource for EISA slot 2
+[    1.356386] platform eisa.0: Cannot allocate resource for EISA slot 3
+[    1.356389] platform eisa.0: Cannot allocate resource for EISA slot 4
+[    1.356391] platform eisa.0: Cannot allocate resource for EISA slot 5
+[    1.356393] platform eisa.0: Cannot allocate resource for EISA slot 6
+[    1.356395] platform eisa.0: Cannot allocate resource for EISA slot 7
+[    1.356398] platform eisa.0: Cannot allocate resource for EISA slot 8
+[    1.356400] platform eisa.0: EISA: Detected 0 cards
+[    1.356406] intel_pstate: Intel P-state driver initializing
+[    1.357775] intel_pstate: HWP enabled
+[    1.357856] ledtrig-cpu: registered to indicate activity on CPUs
+[    1.357890] efifb: probing for efifb
+[    1.357921] efifb: showing boot graphics
+[    1.359859] efifb: framebuffer at 0xc0000000, using 8100k, total 8100k
+[    1.359862] efifb: mode is 1920x1080x32, linelength=7680, pages=1
+[    1.359865] efifb: scrolling: redraw
+[    1.359866] efifb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+[    1.359922] fbcon: Deferring console take-over
+[    1.359924] fb0: EFI VGA frame buffer device
+[    1.359937] EFI Variables Facility v0.08 2004-May-17
+[    1.411310] intel_pmc_core intel_pmc_core.0:  initialized
+[    1.411345] drop_monitor: Initializing network drop monitor service
+[    1.424751] NET: Registered PF_INET6 protocol family
+[    1.428964] Segment Routing with IPv6
+[    1.428975] In-situ OAM (IOAM) with IPv6
+[    1.429000] NET: Registered PF_PACKET protocol family
+[    1.429029] Key type dns_resolver registered
+[    1.429915] microcode: sig=0x806ea, pf=0x80, revision=0xf0
+[    1.430070] microcode: Microcode Update Driver: v2.2.
+[    1.430076] IPI shorthand broadcast: enabled
+[    1.430094] sched_clock: Marking stable (1422967803, 6824653)->(1491166740, -61374284)
+[    1.430412] registered taskstats version 1
+[    1.430708] Loading compiled-in X.509 certificates
+[    1.431483] Loaded X.509 cert 'Build time autogenerated kernel key: 9c1566fffebd0f8b5b8a2110123687d6f2ec8a9d'
+[    1.431909] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+[    1.432331] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+[    1.432332] blacklist: Loading compiled-in revocation X.509 certificates
+[    1.432346] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+[    1.432359] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+[    1.432372] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+[    1.432388] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+[    1.432400] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+[    1.432413] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+[    1.432425] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+[    1.432437] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+[    1.432821] zswap: loaded using pool lzo/zbud
+[    1.433034] Key type .fscrypt registered
+[    1.433035] Key type fscrypt-provisioning registered
+[    1.433198] Key type trusted registered
+[    1.436814] Key type encrypted registered
+[    1.436820] AppArmor: AppArmor sha1 policy hashing enabled
+[    1.437993] integrity: Loading X.509 certificate: UEFI:db
+[    1.438022] integrity: Loaded X.509 cert 'Lenovo Ltd.: ThinkPad Product CA 2012: 838b1f54c1550463f45f98700640f11069265949'
+[    1.438023] integrity: Loading X.509 certificate: UEFI:db
+[    1.438035] integrity: Loaded X.509 cert 'Lenovo UEFI CA 2014: 4b91a68732eaefdd2c8ffffc6b027ec3449e9c8f'
+[    1.438036] integrity: Loading X.509 certificate: UEFI:db
+[    1.438056] integrity: Loaded X.509 cert 'Microsoft Corporation UEFI CA 2011: 13adbf4309bd82709c8cd54f316ed522988a1bd4'
+[    1.438057] integrity: Loading X.509 certificate: UEFI:db
+[    1.438072] integrity: Loaded X.509 cert 'Microsoft Windows Production PCA 2011: a92902398e16c49778cd90f99e4f9ae17c55af53'
+[    1.439394] Loading compiled-in module X.509 certificates
+[    1.439835] Loaded X.509 cert 'Build time autogenerated kernel key: 9c1566fffebd0f8b5b8a2110123687d6f2ec8a9d'
+[    1.439837] ima: Allocated hash algorithm: sha1
+[    1.475350] ima: No architecture policies found
+[    1.475392] evm: Initialising EVM extended attributes:
+[    1.475393] evm: security.selinux
+[    1.475395] evm: security.SMACK64
+[    1.475396] evm: security.SMACK64EXEC
+[    1.475397] evm: security.SMACK64TRANSMUTE
+[    1.475397] evm: security.SMACK64MMAP
+[    1.475398] evm: security.apparmor
+[    1.475399] evm: security.ima
+[    1.475400] evm: security.capability
+[    1.475401] evm: HMAC attrs: 0x1
+[    1.477808] PM:   Magic number: 3:260:930
+[    1.477985] RAS: Correctable Errors collector initialized.
+[    1.479338] Freeing unused decrypted memory: 2036K
+[    1.480000] Freeing unused kernel image (initmem) memory: 3160K
+[    1.493562] Write protecting the kernel read-only data: 32768k
+[    1.494789] Freeing unused kernel image (text/rodata gap) memory: 2036K
+[    1.495237] Freeing unused kernel image (rodata/data gap) memory: 1024K
+[    1.561431] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    1.561433] x86/mm: Checking user space page tables
+[    1.589078] tsc: Refined TSC clocksource calibration: 1799.998 MHz
+[    1.589084] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x19f227af07c, max_idle_ns: 440795246167 ns
+[    1.606835] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    1.606842] clocksource: Switched to clocksource tsc
+[    1.606846] Run /init as init process
+[    1.606848]   with arguments:
+[    1.606850]     /init
+[    1.606851]     splash
+[    1.606852]   with environment:
+[    1.606853]     HOME=/
+[    1.606853]     TERM=linux
+[    1.606854]     BOOT_IMAGE=/boot/vmlinuz-5.19.0-40-generic
+[    1.735391] acpi PNP0C14:02: duplicate WMI GUID 05901221-D566-11D1-B2F0-00A0C9062910 (first instance was on PNP0C14:01)
+[    1.735547] acpi PNP0C14:03: duplicate WMI GUID 05901221-D566-11D1-B2F0-00A0C9062910 (first instance was on PNP0C14:01)
+[    1.740356] xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    1.740363] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 1
+[    1.741433] xhci_hcd 0000:00:14.0: hcc params 0x200077c1 hci version 0x100 quirks 0x0000000081109810
+[    1.745388] intel-lpss 0000:00:15.0: enabling device (0000 -> 0002)
+[    1.745843] idma64 idma64.0: Found Intel integrated DMA 64-bit
+[    1.748387] i801_smbus 0000:00:1f.4: enabling device (0000 -> 0003)
+[    1.748709] i801_smbus 0000:00:1f.4: SPD Write Disable is set
+[    1.748738] i801_smbus 0000:00:1f.4: SMBus using PCI interrupt
+[    1.750825] e1000e: Intel(R) PRO/1000 Network Driver
+[    1.750827] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    1.750862] xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    1.750868] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 2
+[    1.750873] xhci_hcd 0000:00:14.0: Host supports USB 3.0 SuperSpeed
+[    1.750991] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.19
+[    1.750996] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.750998] usb usb1: Product: xHCI Host Controller
+[    1.751000] usb usb1: Manufacturer: Linux 5.19.0-40-generic xhci-hcd
+[    1.751002] usb usb1: SerialNumber: 0000:00:14.0
+[    1.751139] e1000e 0000:00:1f.6: Interrupt Throttling Rate (ints/sec) set to dynamic conservative mode
+[    1.755131] hub 1-0:1.0: USB hub found
+[    1.755154] hub 1-0:1.0: 12 ports detected
+[    1.756962] i2c i2c-0: 1/2 memory slots populated (from DMI)
+[    1.758080] ACPI: bus type thunderbolt registered
+[    1.765274] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.19
+[    1.765281] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.765284] usb usb2: Product: xHCI Host Controller
+[    1.765286] usb usb2: Manufacturer: Linux 5.19.0-40-generic xhci-hcd
+[    1.765289] usb usb2: SerialNumber: 0000:00:14.0
+[    1.765444] hub 2-0:1.0: USB hub found
+[    1.765459] hub 2-0:1.0: 6 ports detected
+[    1.766445] usb: port power management may be unreliable
+[    1.766890] xhci_hcd 0000:3c:00.0: xHCI Host Controller
+[    1.766897] xhci_hcd 0000:3c:00.0: new USB bus registered, assigned bus number 3
+[    1.768028] xhci_hcd 0000:3c:00.0: hcc params 0x200077c1 hci version 0x110 quirks 0x0000000200009810
+[    1.768463] xhci_hcd 0000:3c:00.0: xHCI Host Controller
+[    1.768469] xhci_hcd 0000:3c:00.0: new USB bus registered, assigned bus number 4
+[    1.768474] xhci_hcd 0000:3c:00.0: Host supports USB 3.1 Enhanced SuperSpeed
+[    1.768521] usb usb3: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.19
+[    1.768528] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.768532] usb usb3: Product: xHCI Host Controller
+[    1.768536] usb usb3: Manufacturer: Linux 5.19.0-40-generic xhci-hcd
+[    1.768538] usb usb3: SerialNumber: 0000:3c:00.0
+[    1.768644] hub 3-0:1.0: USB hub found
+[    1.768652] hub 3-0:1.0: 2 ports detected
+[    1.769425] usb usb4: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.19
+[    1.769428] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.769429] usb usb4: Product: xHCI Host Controller
+[    1.769433] usb usb4: Manufacturer: Linux 5.19.0-40-generic xhci-hcd
+[    1.769434] usb usb4: SerialNumber: 0000:3c:00.0
+[    1.769547] hub 4-0:1.0: USB hub found
+[    1.769554] hub 4-0:1.0: 2 ports detected
+[    1.800789] nvme nvme0: pci function 0000:3e:00.0
+[    1.812625] nvme nvme0: 8/0/0 default/read/poll queues
+[    1.814628]  nvme0n1: p1 p2
+[    1.960721] e1000e 0000:00:1f.6 0000:00:1f.6 (uninitialized): registered PHC clock
+[    2.027875] e1000e 0000:00:1f.6 eth0: (PCI Express:2.5GT/s:Width x1) e8:6a:64:95:5e:34
+[    2.027887] e1000e 0000:00:1f.6 eth0: Intel(R) PRO/1000 Network Connection
+[    2.027987] e1000e 0000:00:1f.6 eth0: MAC: 12, PHY: 12, PBA No: 1000FF-0FF
+[    2.029103] usb 1-3: new full-speed USB device number 2 using xhci_hcd
+[    2.040670] e1000e 0000:00:1f.6 enp0s31f6: renamed from eth0
+[    2.187460] usb 1-3: New USB device found, idVendor=058f, idProduct=9540, bcdDevice= 1.20
+[    2.187471] usb 1-3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    2.187476] usb 1-3: Product: EMV Smartcard Reader
+[    2.187480] usb 1-3: Manufacturer: Generic
+[    2.296177] psmouse serio1: elantech: assuming hardware version 4 (with firmware version 0x7f3001)
+[    2.305531] usb 2-3: new SuperSpeed USB device number 2 using xhci_hcd
+[    2.307216] psmouse serio1: elantech: Synaptics capabilities query result 0x90, 0x18, 0x0f.
+[    2.317632] psmouse serio1: elantech: Elan sample query result 00, 20, c9
+[    2.328352] psmouse serio1: elantech: Elan ic body: 0x10, current fw version: 0x4
+[    2.338095] usb 2-3: New USB device found, idVendor=0bda, idProduct=0316, bcdDevice= 2.04
+[    2.338108] usb 2-3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    2.338115] usb 2-3: Product: USB3.0-CRW
+[    2.338120] usb 2-3: Manufacturer: Generic
+[    2.338124] usb 2-3: SerialNumber: 20120501030900000
+[    2.349010] psmouse serio1: elantech: Trying to set up SMBus access
+[    2.369110] usb-storage 2-3:1.0: USB Mass Storage device detected
+[    2.369578] scsi host0: usb-storage 2-3:1.0
+[    2.369794] usbcore: registered new interface driver usb-storage
+[    2.374112] usbcore: registered new interface driver uas
+[    2.457338] usb 1-6: new high-speed USB device number 3 using xhci_hcd
+[    2.613046] usb 1-6: New USB device found, idVendor=2cb7, idProduct=0210, bcdDevice= 3.33
+[    2.613062] usb 1-6: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    2.613091] usb 1-6: Product: L830-EB
+[    2.613097] usb 1-6: Manufacturer: FIBOCOM
+[    2.613102] usb 1-6: SerialNumber: 004999010640000
+[    2.753346] usb 1-7: new full-speed USB device number 4 using xhci_hcd
+[    2.903372] usb 1-7: New USB device found, idVendor=8087, idProduct=0a2b, bcdDevice= 0.10
+[    2.903387] usb 1-7: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    3.037377] usb 1-8: new high-speed USB device number 5 using xhci_hcd
+[    3.197497] usb 1-8: New USB device found, idVendor=5986, idProduct=2113, bcdDevice=54.22
+[    3.197513] usb 1-8: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    3.197520] usb 1-8: Product: Integrated Camera
+[    3.197526] usb 1-8: Manufacturer: SunplusIT Inc
+[    3.329347] usb 1-9: new full-speed USB device number 6 using xhci_hcd
+[    3.386898] scsi 0:0:0:0: Direct-Access     Generic- SD/MMC           1.00 PQ: 0 ANSI: 6
+[    3.387657] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    3.389344] sd 0:0:0:0: [sda] Media removed, stopped polling
+[    3.390356] sd 0:0:0:0: [sda] Attached SCSI removable disk
+[    3.484173] usb 1-9: New USB device found, idVendor=06cb, idProduct=009a, bcdDevice= 1.64
+[    3.484188] usb 1-9: New USB device strings: Mfr=0, Product=0, SerialNumber=1
+[    3.484194] usb 1-9: SerialNumber: ba45b48667ac
+[    3.589539] fbcon: Taking over console
+[    3.589752] Console: switching to colour frame buffer device 240x67
+[    3.628833] EXT4-fs (nvme0n1p2): mounted filesystem with ordered data mode. Quota mode: none.
+[    3.767170] systemd[1]: Inserted module 'autofs4'
+[    3.879044] systemd[1]: systemd 251.4-1ubuntu7.3 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[    3.879050] systemd[1]: Detected architecture x86-64.
+[    3.879698] systemd[1]: Hostname set to <ThinkPad-T480s>.
+[    4.019733] systemd[1]: Queued start job for default target Graphical Interface.
+[    4.044068] systemd[1]: Created slice Virtual Machine and Container Slice.
+[    4.046576] systemd[1]: Created slice Slice /system/modprobe.
+[    4.048165] systemd[1]: Created slice Slice /system/systemd-fsck.
+[    4.049253] systemd[1]: Created slice User and Session Slice.
+[    4.049482] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    4.050111] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[    4.050254] systemd[1]: Reached target Local Integrity Protected Volumes.
+[    4.050350] systemd[1]: Reached target User and Group Name Lookups.
+[    4.050396] systemd[1]: Reached target Remote File Systems.
+[    4.050429] systemd[1]: Reached target Slice Units.
+[    4.050476] systemd[1]: Reached target Mounting snaps.
+[    4.050564] systemd[1]: Reached target Local Verity Protected Volumes.
+[    4.050605] systemd[1]: Reached target Libvirt guests shutdown.
+[    4.050903] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[    4.051341] systemd[1]: Listening on LVM2 poll daemon socket.
+[    4.052175] systemd[1]: Listening on Syslog Socket.
+[    4.052535] systemd[1]: Listening on fsck to fsckd communication Socket.
+[    4.052721] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[    4.053461] systemd[1]: Listening on Journal Audit Socket.
+[    4.053820] systemd[1]: Listening on Journal Socket (/dev/log).
+[    4.054238] systemd[1]: Listening on Journal Socket.
+[    4.054628] systemd[1]: Listening on Userspace Out-Of-Memory (OOM) Killer Socket.
+[    4.055249] systemd[1]: Listening on udev Control Socket.
+[    4.055607] systemd[1]: Listening on udev Kernel Socket.
+[    4.058491] systemd[1]: Mounting Huge Pages File System...
+[    4.061622] systemd[1]: Mounting POSIX Message Queue File System...
+[    4.065250] systemd[1]: Mounting Kernel Debug File System...
+[    4.068348] systemd[1]: Mounting Kernel Trace File System...
+[    4.074408] systemd[1]: Starting Journal Service...
+[    4.074908] systemd[1]: Finished Availability of block devices.
+[    4.077727] systemd[1]: Starting Set the console keyboard layout...
+[    4.079980] systemd[1]: Starting Create List of Static Device Nodes...
+[    4.081713] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[    4.083440] systemd[1]: Starting Load Kernel Module chromeos_pstore...
+[    4.085231] systemd[1]: Starting Load Kernel Module configfs...
+[    4.087536] systemd[1]: Starting Load Kernel Module drm...
+[    4.089773] systemd[1]: Starting Load Kernel Module efi_pstore...
+[    4.091208] systemd[1]: Starting Load Kernel Module fuse...
+[    4.093626] systemd[1]: Starting Load Kernel Module pstore_blk...
+[    4.095486] systemd[1]: Starting Load Kernel Module pstore_zone...
+[    4.110997] systemd[1]: Starting Load Kernel Module ramoops...
+[    4.111392] systemd[1]: File System Check on Root Device was skipped because of a failed condition check (ConditionPathExists=!/run/initramfs/fsck-root).
+[    4.139227] pstore: Using crash dump compression: deflate
+[    4.139278] pstore: Registered efi as persistent store backend
+[    4.140240] systemd[1]: Starting Load Kernel Modules...
+[    4.141938] systemd[1]: Starting Remount Root and Kernel File Systems...
+[    4.142037] systemd[1]: Repartition Root Disk was skipped because all trigger condition checks failed.
+[    4.143652] systemd[1]: Starting Coldplug All udev Devices...
+[    4.146076] systemd[1]: Mounted Huge Pages File System.
+[    4.146211] systemd[1]: Mounted POSIX Message Queue File System.
+[    4.146306] systemd[1]: Mounted Kernel Debug File System.
+[    4.146425] systemd[1]: Mounted Kernel Trace File System.
+[    4.146747] systemd[1]: Finished Create List of Static Device Nodes.
+[    4.147032] systemd[1]: modprobe@configfs.service: Deactivated successfully.
+[    4.147177] systemd[1]: Finished Load Kernel Module configfs.
+[    4.147443] systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+[    4.147598] systemd[1]: Finished Load Kernel Module efi_pstore.
+[    4.147943] systemd[1]: modprobe@fuse.service: Deactivated successfully.
+[    4.148121] systemd[1]: Finished Load Kernel Module fuse.
+[    4.148479] systemd[1]: modprobe@pstore_blk.service: Deactivated successfully.
+[    4.148540] EXT4-fs (nvme0n1p2): re-mounted. Quota mode: none.
+[    4.148614] systemd[1]: Finished Load Kernel Module pstore_blk.
+[    4.149929] systemd[1]: modprobe@pstore_zone.service: Deactivated successfully.
+[    4.150053] systemd[1]: Finished Load Kernel Module pstore_zone.
+[    4.150325] systemd[1]: Finished Remount Root and Kernel File Systems.
+[    4.151593] systemd[1]: Activating swap /swapfile...
+[    4.152857] systemd[1]: Mounting FUSE Control File System...
+[    4.154105] systemd[1]: Mounting Kernel Configuration File System...
+[    4.155539] systemd[1]: Starting Load/Save Random Seed...
+[    4.156065] Adding 2097148k swap on /swapfile.  Priority:-2 extents:17 across:232914944k SSFS
+[    4.156928] systemd[1]: Starting Create System Users...
+[    4.157915] systemd[1]: Activated swap /swapfile.
+[    4.159404] systemd[1]: Mounted FUSE Control File System.
+[    4.159520] systemd[1]: Mounted Kernel Configuration File System.
+[    4.159705] systemd[1]: Reached target Swaps.
+[    4.163044] systemd[1]: Finished Load/Save Random Seed.
+[    4.163221] systemd[1]: First Boot Complete was skipped because of a failed condition check (ConditionFirstBoot=yes).
+[    4.167055] systemd[1]: Finished Create System Users.
+[    4.168125] systemd[1]: Starting Create Static Device Nodes in /dev...
+[    4.176948] systemd[1]: Finished Set the console keyboard layout.
+[    4.177990] systemd[1]: modprobe@chromeos_pstore.service: Deactivated successfully.
+[    4.178166] systemd[1]: Finished Load Kernel Module chromeos_pstore.
+[    4.178721] systemd[1]: Finished Create Static Device Nodes in /dev.
+[    4.180598] systemd[1]: Starting Rule-based Manager for Device Events and Files...
+[    4.195382] ACPI: bus type drm_connector registered
+[    4.196543] systemd[1]: modprobe@drm.service: Deactivated successfully.
+[    4.196794] systemd[1]: Finished Load Kernel Module drm.
+[    4.197654] systemd[1]: modprobe@ramoops.service: Deactivated successfully.
+[    4.197857] systemd[1]: Finished Load Kernel Module ramoops.
+[    4.198119] systemd[1]: Platform Persistent Storage Archival was skipped because of a failed condition check (ConditionDirectoryNotEmpty=/sys/fs/pstore).
+[    4.199103] lp: driver loaded but no devices found
+[    4.201811] systemd[1]: Started Journal Service.
+[    4.201938] ppdev: user-space parallel port driver
+[    4.207163] systemd-journald[400]: Received client request to flush runtime journal.
+[    4.228702] loop0: detected capacity change from 0 to 8
+[    4.228948] loop1: detected capacity change from 0 to 113896
+[    4.231114] loop2: detected capacity change from 0 to 129480
+[    4.233756] loop3: detected capacity change from 0 to 129672
+[    4.235141] loop4: detected capacity change from 0 to 149488
+[    4.237610] loop5: detected capacity change from 0 to 112704
+[    4.239830] loop6: detected capacity change from 0 to 200256
+[    4.241318] loop7: detected capacity change from 0 to 488424
+[    4.244211] loop8: detected capacity change from 0 to 495456
+[    4.246315] loop9: detected capacity change from 0 to 447264
+[    4.248678] loop10: detected capacity change from 0 to 709280
+[    4.250216] loop11: detected capacity change from 0 to 716160
+[    4.253144] loop12: detected capacity change from 0 to 942872
+[    4.255100] loop13: detected capacity change from 0 to 943256
+[    4.257283] loop14: detected capacity change from 0 to 187776
+[    4.259795] loop15: detected capacity change from 0 to 94056
+[    4.261656] loop16: detected capacity change from 0 to 102072
+[    4.264383] loop17: detected capacity change from 0 to 109032
+[    4.267330] loop18: detected capacity change from 0 to 568
+[    4.272347] loop19: detected capacity change from 0 to 856
+[    4.275475] loop20: detected capacity change from 0 to 797352
+[    4.277061] loop21: detected capacity change from 0 to 22792
+[    4.458691] mei_me 0000:00:16.0: enabling device (0004 -> 0006)
+[    4.470003] Consider using thermal netlink events interface
+[    4.517665] proc_thermal 0000:00:04.0: enabling device (0000 -> 0002)
+[    4.524611] intel_rapl_common: Found RAPL domain package
+[    4.524615] intel_rapl_common: Found RAPL domain dram
+[    4.586769] elan_i2c 0-0015: supply vcc not found, using dummy regulator
+[    4.595015] elan_i2c 0-0015: unexpected iap version 0x00 (ic type: 0x20), firmware update will not work
+[    4.595024] elan_i2c 0-0015: Elan Touchpad: Module ID: 0x0020, Firmware: 0x0001, Sample: 0x0000, IAP: 0x0000
+[    4.616262] input: Elan Touchpad as /devices/pci0000:00/0000:00:1f.4/i2c-0/0-0015/input/input6
+[    4.616417] input: Elan TrackPoint as /devices/pci0000:00/0000:00:1f.4/i2c-0/0-0015/input/input7
+[    4.620866] RAPL PMU: API unit is 2^-32 Joules, 5 fixed counters, 655360 ms ovfl timer
+[    4.620878] RAPL PMU: hw unit of domain pp0-core 2^-14 Joules
+[    4.620879] RAPL PMU: hw unit of domain package 2^-14 Joules
+[    4.620881] RAPL PMU: hw unit of domain dram 2^-14 Joules
+[    4.620882] RAPL PMU: hw unit of domain pp1-gpu 2^-14 Joules
+[    4.620884] RAPL PMU: hw unit of domain psys 2^-14 Joules
+[    4.629714] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    4.630022] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    4.677160] Non-volatile memory driver v1.3
+[    4.711512] cryptd: max_cpu_qlen set to 1000
+[    4.725758] Intel(R) Wireless WiFi driver for Linux
+[    4.726376] AVX2 version of gcm_enc/dec engaged.
+[    4.726462] AES CTR mode by8 optimization enabled
+[    4.737129] thinkpad_acpi: ThinkPad ACPI Extras v0.26
+[    4.737138] thinkpad_acpi: http://ibm-acpi.sf.net/
+[    4.737139] thinkpad_acpi: ThinkPad BIOS N22ET76W (1.53 ), EC N22HT38W
+[    4.737141] thinkpad_acpi: Lenovo ThinkPad T480s, model 20L7001SRT
+[    4.749045] iwlwifi 0000:3d:00.0: loaded firmware version 36.ca7b901d.0 8265-36.ucode op_mode iwlmvm
+[    4.751741] thinkpad_acpi: radio switch found; radios are enabled
+[    4.752119] thinkpad_acpi: This ThinkPad has standard ACPI backlight brightness control, supported by the ACPI video driver
+[    4.752122] thinkpad_acpi: Disabling thinkpad-acpi brightness events by default...
+[    4.761673] intel_rapl_common: Found RAPL domain package
+[    4.761678] intel_rapl_common: Found RAPL domain core
+[    4.761680] intel_rapl_common: Found RAPL domain uncore
+[    4.761682] intel_rapl_common: Found RAPL domain dram
+[    4.761683] intel_rapl_common: Found RAPL domain psys
+[    4.790051] thinkpad_acpi: rfkill switch tpacpi_bluetooth_sw: radio is unblocked
+[    4.791781] thinkpad_acpi: rfkill switch tpacpi_wwan_sw: radio is unblocked
+[    5.036034] thinkpad_acpi: battery 1 registered (start 0, stop 100, behaviours: 0x7)
+[    5.036057] ACPI: battery: new extension: ThinkPad Battery Extension
+[    5.051827] input: ThinkPad Extra Buttons as /devices/platform/thinkpad_acpi/input/input8
+[    5.086674] typec port0: bound usb3-port1 (ops connector_ops)
+[    5.086685] typec port0: bound usb4-port1 (ops connector_ops)
+[    5.400609] i915 0000:00:02.0: enabling device (0006 -> 0007)
+[    5.402989] checking generic (c0000000 7e9000) vs hw (e7000000 1000000)
+[    5.402996] checking generic (c0000000 7e9000) vs hw (c0000000 10000000)
+[    5.402999] fb0: switching to i915 from EFI VGA
+[    5.408911] Console: switching to colour dummy device 80x25
+[    5.408973] i915 0000:00:02.0: vgaarb: deactivate vga console
+[    5.416789] iwlwifi 0000:3d:00.0: Detected Intel(R) Dual Band Wireless AC 8265, REV=0x230
+[    5.416976] thermal thermal_zone5: failed to read out thermal zone (-61)
+[    5.425258] i915 0000:00:02.0: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=io+mem:owns=mem
+[    5.426692] i915 0000:00:02.0: [drm] Finished loading DMC firmware i915/kbl_dmc_ver1_04.bin (v1.4)
+[    5.450363] audit: type=1400 audit(1681898174.591:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="swtpm" pid=920 comm="apparmor_parser"
+[    5.450622] audit: type=1400 audit(1681898174.591:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=915 comm="apparmor_parser"
+[    5.451503] audit: type=1400 audit(1681898174.591:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=916 comm="apparmor_parser"
+[    5.451509] audit: type=1400 audit(1681898174.591:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=916 comm="apparmor_parser"
+[    5.452233] audit: type=1400 audit(1681898174.591:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-oosplash" pid=922 comm="apparmor_parser"
+[    5.452344] audit: type=1400 audit(1681898174.591:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=919 comm="apparmor_parser"
+[    5.452350] audit: type=1400 audit(1681898174.591:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=919 comm="apparmor_parser"
+[    5.452355] audit: type=1400 audit(1681898174.591:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=919 comm="apparmor_parser"
+[    5.454222] audit: type=1400 audit(1681898174.595:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-senddoc" pid=923 comm="apparmor_parser"
+[    5.455212] audit: type=1400 audit(1681898174.595:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="tcpdump" pid=921 comm="apparmor_parser"
+[    5.474176] mei_hdcp 0000:00:16.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_component_ops [i915])
+[    5.502416] iwlwifi 0000:3d:00.0: base HW address: 20:79:18:d3:a5:18, OTP minor version: 0x4
+[    5.541932] intel_tcc_cooling: Programmable TCC Offset detected
+[    5.559846] [drm] Initialized i915 1.6.0 20201103 for 0000:00:02.0 on minor 0
+[    5.579271] ieee80211 phy0: Selected rate control algorithm 'iwl-mvm-rs'
+[    5.589855] iwlwifi 0000:3d:00.0 wlp61s0: renamed from wlan0
+[    5.642260] mc: Linux media interface: v0.10
+[    5.661024] ACPI: video: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+[    5.694109] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input9
+[    5.699418] snd_hda_intel 0000:00:1f.3: bound 0000:00:02.0 (ops i915_audio_component_bind_ops [i915])
+[    5.709395] videodev: Linux video capture interface: v2.00
+[    5.710213] usbcore: registered new interface driver cdc_ether
+[    5.752987] Bluetooth: Core ver 2.22
+[    5.753023] NET: Registered PF_BLUETOOTH protocol family
+[    5.753025] Bluetooth: HCI device and connection manager initialized
+[    5.753366] Bluetooth: HCI socket layer initialized
+[    5.753371] Bluetooth: L2CAP socket layer initialized
+[    5.753380] Bluetooth: SCO socket layer initialized
+[    5.767032] cdc_acm 1-6:1.2: ttyACM0: USB ACM device
+[    5.767080] usbcore: registered new interface driver cdc_acm
+[    5.767082] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    5.815295] fbcon: i915drmfb (fb0) is primary device
+[    6.337929] typec port1: bound usb3-port2 (ops connector_ops)
+[    6.337940] typec port1: bound usb4-port2 (ops connector_ops)
+[    6.934191] Console: switching to colour frame buffer device 240x67
+[    6.952846] i915 0000:00:02.0: [drm] fb0: i915drmfb frame buffer device
+[    6.983821] usbcore: registered new interface driver cdc_ncm
+[    6.988217] snd_hda_codec_realtek hdaudioC0D0: autoconfig for ALC257: line_outs=1 (0x14/0x0/0x0/0x0/0x0) type:speaker
+[    6.988226] snd_hda_codec_realtek hdaudioC0D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[    6.988230] snd_hda_codec_realtek hdaudioC0D0:    hp_outs=1 (0x21/0x0/0x0/0x0/0x0)
+[    6.988234] snd_hda_codec_realtek hdaudioC0D0:    mono: mono_out=0x0
+[    6.988236] snd_hda_codec_realtek hdaudioC0D0:    inputs:
+[    6.988238] snd_hda_codec_realtek hdaudioC0D0:      Mic=0x19
+[    6.988238] usbcore: registered new interface driver cdc_wdm
+[    6.988241] snd_hda_codec_realtek hdaudioC0D0:      Internal Mic=0x12
+[    7.039051] cdc_mbim 1-6:1.0: setting rx_max = 16384
+[    7.039921] cdc_mbim 1-6:1.0: cdc-wdm0: USB WDM device
+[    7.040228] cdc_mbim 1-6:1.0 wwan0: register 'cdc_mbim' at usb-0000:00:14.0-6, CDC MBIM, 72:89:68:dd:d7:bc
+[    7.040296] usbcore: registered new interface driver cdc_mbim
+[    7.078889] input: HDA Intel PCH Mic as /devices/pci0000:00/0000:00:1f.3/sound/card0/input10
+[    7.078964] input: HDA Intel PCH Headphone as /devices/pci0000:00/0000:00:1f.3/sound/card0/input11
+[    7.079038] input: HDA Intel PCH HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input12
+[    7.079102] input: HDA Intel PCH HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input13
+[    7.079229] input: HDA Intel PCH HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input14
+[    7.079853] input: HDA Intel PCH HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input15
+[    7.080849] input: HDA Intel PCH HDMI/DP,pcm=10 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input16
+[    7.118253] usb 1-8: Found UVC 1.00 device Integrated Camera (5986:2113)
+[    7.122718] usbcore: registered new interface driver btusb
+[    7.128024] Bluetooth: hci0: Bootloader revision 0.0 build 26 week 38 2015
+[    7.129022] Bluetooth: hci0: Device revision is 16
+[    7.129027] Bluetooth: hci0: Secure boot is enabled
+[    7.129030] Bluetooth: hci0: OTP lock is enabled
+[    7.129032] Bluetooth: hci0: API lock is enabled
+[    7.129034] Bluetooth: hci0: Debug lock is disabled
+[    7.129036] Bluetooth: hci0: Minimum firmware build 1 week 10 2014
+[    7.132718] Bluetooth: hci0: Found device firmware: intel/ibt-12-16.sfi
+[    7.144105] input: Integrated Camera: Integrated C as /devices/pci0000:00/0000:00:14.0/usb1/1-8/1-8:1.0/input/input17
+[    7.144211] usbcore: registered new interface driver uvcvideo
+[    7.462344] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    7.462352] Bluetooth: BNEP filters: protocol multicast
+[    7.462359] Bluetooth: BNEP socket layer initialized
+[    7.606987] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[    8.514301] loop22: detected capacity change from 0 to 8
+[    8.606782] Bluetooth: hci0: Waiting for firmware download to complete
+[    8.606985] Bluetooth: hci0: Firmware loaded in 1439707 usecs
+[    8.607021] Bluetooth: hci0: Waiting for device to boot
+[    8.619992] Bluetooth: hci0: Device booted in 12678 usecs
+[    8.619994] Bluetooth: hci0: Malformed MSFT vendor event: 0x02
+[    8.620210] Bluetooth: hci0: Found Intel DDC parameters: intel/ibt-12-16.ddc
+[    8.623059] Bluetooth: hci0: Applying Intel DDC parameters completed
+[    8.623999] Bluetooth: hci0: Firmware revision 0.1 build 19 week 44 2021
+[    8.680785] NET: Registered PF_ALG protocol family
+[    8.997993] snd_hda_intel 0000:00:1f.3: Too many BDL entries: buffer=2097152, period=65536
+[    8.998626] snd_hda_intel 0000:00:1f.3: Too many BDL entries: buffer=2097152, period=65536
+[    8.998791] snd_hda_intel 0000:00:1f.3: Too many BDL entries: buffer=1048576, period=32768
+[    8.999464] snd_hda_intel 0000:00:1f.3: Too many BDL entries: buffer=2097152, period=65536
+[    9.000083] snd_hda_intel 0000:00:1f.3: Too many BDL entries: buffer=2097152, period=65536
+[    9.000251] snd_hda_intel 0000:00:1f.3: Too many BDL entries: buffer=1048576, period=32768
+[    9.016814] Bluetooth: RFCOMM TTY layer initialized
+[    9.016822] Bluetooth: RFCOMM socket layer initialized
+[    9.016828] Bluetooth: RFCOMM ver 1.11
+[   10.242365] rfkill: input handler disabled
+[   10.728077] kauditd_printk_skb: 87 callbacks suppressed
+[   10.728082] audit: type=1326 audit(1681898179.867:99): auid=4294967295 uid=0 gid=0 ses=4294967295 subj=snap.cups.cupsd pid=2295 comm="cups-proxyd" exe="/snap/cups/872/sbin/cups-proxyd" sig=0 arch=c000003e syscall=314 compat=0 ip=0x7f1d1493873d code=0x50000
+[   11.383952] cups-proxyd[2295]: segfault at 18 ip 000055eae0c7ed6e sp 00007ffc64a81dc0 error 4 in cups-proxyd[55eae0c7b000+7000]
+[   11.383985] Code: 00 00 00 41 54 55 48 89 fd 53 0f 85 ed 00 00 00 48 8d 1d 5f 42 00 00 48 63 45 1c 48 8d 3d 69 3d 00 00 48 c1 e0 05 48 03 45 08 <48> 8b 50 18 8b 70 14 e8 06 d0 ff ff 44 8b 65 18 48 89 c7 45 85 e4
+[   11.480530] wlp61s0: authenticate with 90:9a:4a:1b:14:68
+[   11.491971] wlp61s0: send auth to 90:9a:4a:1b:14:68 (try 1/3)
+[   11.498414] wlp61s0: authenticated
+[   11.501129] wlp61s0: associate with 90:9a:4a:1b:14:68 (try 1/3)
+[   11.503499] wlp61s0: RX AssocResp from 90:9a:4a:1b:14:68 (capab=0x1411 status=0 aid=1)
+[   11.506464] wlp61s0: associated
+[   11.573629] IPv6: ADDRCONF(NETDEV_CHANGE): wlp61s0: link becomes ready
+[   14.104042] audit: type=1400 audit(1681898183.243:100): apparmor="STATUS" operation="profile_load" profile="unconfined" name="docker-default" pid=2837 comm="apparmor_parser"
+[   14.251148] Bridge firewalling registered
+[   14.401764] Initializing XFRM netlink socket
+[   18.091234] audit: type=1400 audit(1681898187.231:101): apparmor="DENIED" operation="capable" class="cap" profile="/snap/snapd/18933/usr/lib/snapd/snap-confine" pid=3271 comm="snap-confine" capability=12  capname="net_admin"
+[   18.091246] audit: type=1400 audit(1681898187.231:102): apparmor="DENIED" operation="capable" class="cap" profile="/snap/snapd/18933/usr/lib/snapd/snap-confine" pid=3271 comm="snap-confine" capability=38  capname="perfmon"
+[   18.288726] rfkill: input handler enabled
+[   18.706441] snd_hda_intel 0000:00:1f.3: Too many BDL entries: buffer=2097152, period=65536
+[   18.707374] snd_hda_intel 0000:00:1f.3: Too many BDL entries: buffer=2097152, period=65536
+[   18.707639] snd_hda_intel 0000:00:1f.3: Too many BDL entries: buffer=1048576, period=32768
+[   18.708771] snd_hda_intel 0000:00:1f.3: Too many BDL entries: buffer=2097152, period=65536
+[   18.709984] snd_hda_intel 0000:00:1f.3: Too many BDL entries: buffer=2097152, period=65536
+[   18.710344] snd_hda_intel 0000:00:1f.3: Too many BDL entries: buffer=1048576, period=32768
+[   19.573845] audit: type=1326 audit(1681898188.715:103): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.snapd-desktop-integration.snapd-desktop-integration pid=3519 comm="snapd-desktop-i" exe="/snap/snapd-desktop-integration/57/usr/bin/snapd-desktop-integration" sig=0 arch=c000003e syscall=314 compat=0 ip=0x7f3de5885a3d code=0x50000
+[   20.690761] rfkill: input handler disabled
+[   20.851681] audit: type=1400 audit(1681898189.991:104): apparmor="DENIED" operation="capable" class="cap" profile="/snap/snapd/18933/usr/lib/snapd/snap-confine" pid=3794 comm="snap-confine" capability=12  capname="net_admin"
+[   20.851692] audit: type=1400 audit(1681898189.991:105): apparmor="DENIED" operation="capable" class="cap" profile="/snap/snapd/18933/usr/lib/snapd/snap-confine" pid=3794 comm="snap-confine" capability=38  capname="perfmon"
+[   21.735086] audit: type=1400 audit(1681898190.875:106): apparmor="DENIED" operation="capable" class="cap" profile="/snap/snapd/18933/usr/lib/snapd/snap-confine" pid=3931 comm="snap-confine" capability=12  capname="net_admin"
+[   21.735094] audit: type=1400 audit(1681898190.875:107): apparmor="DENIED" operation="capable" class="cap" profile="/snap/snapd/18933/usr/lib/snapd/snap-confine" pid=3931 comm="snap-confine" capability=38  capname="perfmon"
+[   21.930039] audit: type=1326 audit(1681898191.071:108): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.snapd-desktop-integration.snapd-desktop-integration pid=4015 comm="snapd-desktop-i" exe="/snap/snapd-desktop-integration/57/usr/bin/snapd-desktop-integration" sig=0 arch=c000003e syscall=314 compat=0 ip=0x7f2818edda3d code=0x50000
+[   22.361292] audit: type=1326 audit(1681898191.503:109): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.snap-store.ubuntu-software pid=3794 comm="snap-store" exe="/snap/snap-store/599/usr/bin/snap-store" sig=0 arch=c000003e syscall=314 compat=0 ip=0x7f9c8875073d code=0x50000
+[   25.054152] audit: type=1107 audit(1681898194.195:110): pid=1283 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/PolicyKit1/Authority" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.3" pid=3794 label="snap.snap-store.ubuntu-software" peer_pid=1302 peer_label="unconfined"
+                exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+[   25.054801] audit: type=1107 audit(1681898194.195:111): pid=1283 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/PolicyKit1/Authority" interface="org.freedesktop.PolicyKit1.Authority" member="CheckAuthorization" mask="send" name=":1.3" pid=3794 label="snap.snap-store.ubuntu-software" peer_pid=1302 peer_label="unconfined"
+                exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+[   25.060063] audit: type=1107 audit(1681898194.199:112): pid=1283 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/PolicyKit1/Authority" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.3" pid=3794 label="snap.snap-store.ubuntu-software" peer_pid=1302 peer_label="unconfined"
+                exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+[   25.060803] audit: type=1107 audit(1681898194.199:113): pid=1283 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/PolicyKit1/Authority" interface="org.freedesktop.PolicyKit1.Authority" member="CheckAuthorization" mask="send" name=":1.3" pid=3794 label="snap.snap-store.ubuntu-software" peer_pid=1302 peer_label="unconfined"
+                exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+[   25.704980] audit: type=1400 audit(1681898194.843:114): apparmor="DENIED" operation="open" class="file" profile="snap.snap-store.ubuntu-software" name="/etc/PackageKit/Vendor.conf" pid=3794 comm="snap-store" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+[   26.204696] audit: type=1400 audit(1681898195.343:115): apparmor="DENIED" operation="open" class="file" profile="snap.snap-store.ubuntu-software" name="/etc/appstream.conf" pid=3794 comm="snap-store" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+[   37.397068] audit: type=1326 audit(1681898206.518:116): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.snap-store.ubuntu-software pid=3794 comm="pool-org.gnome." exe="/snap/snap-store/599/usr/bin/snap-store" sig=0 arch=c000003e syscall=93 compat=0 ip=0x7f9c8874739b code=0x50000
+[   62.749676] br-ea50bfde5d69: port 1(veth9c58508) entered blocking state
+[   62.749685] br-ea50bfde5d69: port 1(veth9c58508) entered disabled state
+[   62.750011] device veth9c58508 entered promiscuous mode
+[   62.750538] br-ea50bfde5d69: port 1(veth9c58508) entered blocking state
+[   62.750544] br-ea50bfde5d69: port 1(veth9c58508) entered forwarding state
+[   62.750663] br-ea50bfde5d69: port 1(veth9c58508) entered disabled state
+[   63.465011] eth0: renamed from veth8a47a17
+[   63.492992] IPv6: ADDRCONF(NETDEV_CHANGE): veth9c58508: link becomes ready
+[   63.493151] br-ea50bfde5d69: port 1(veth9c58508) entered blocking state
+[   63.493164] br-ea50bfde5d69: port 1(veth9c58508) entered forwarding state
+[   63.493381] IPv6: ADDRCONF(NETDEV_CHANGE): br-ea50bfde5d69: link becomes ready
+[   70.675639] br-ea50bfde5d69: port 2(veth5046460) entered blocking state
+[   70.675656] br-ea50bfde5d69: port 2(veth5046460) entered disabled state
+[   70.677017] device veth5046460 entered promiscuous mode
+[   71.308023] eth0: renamed from veth9b4ad45
+[   71.328194] IPv6: ADDRCONF(NETDEV_CHANGE): veth5046460: link becomes ready
+[   71.328346] br-ea50bfde5d69: port 2(veth5046460) entered blocking state
+[   71.328360] br-ea50bfde5d69: port 2(veth5046460) entered forwarding state
+[   88.653996] audit: type=1400 audit(1681898257.543:117): apparmor="DENIED" operation="capable" class="cap" profile="/snap/snapd/18933/usr/lib/snapd/snap-confine" pid=7788 comm="snap-confine" capability=38  capname="perfmon"
+[   88.862259] audit: type=1400 audit(1681898257.751:118): apparmor="DENIED" operation="open" class="file" profile="snap-update-ns.firefox" name="/var/lib/" pid=7815 comm="5" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[   88.863572] audit: type=1400 audit(1681898257.751:119): apparmor="DENIED" operation="open" class="file" profile="snap-update-ns.firefox" name="/var/lib/" pid=7815 comm="5" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[   89.911917] audit: type=1326 audit(1681898258.799:120): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="firefox" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=314 compat=0 ip=0x7f8da27d373d code=0x50000
+[  102.726439] br-ea50bfde5d69: port 2(veth5046460) entered disabled state
+[  102.726631] veth9b4ad45: renamed from eth0
+[  102.803646] br-ea50bfde5d69: port 2(veth5046460) entered disabled state
+[  102.806411] device veth5046460 left promiscuous mode
+[  102.806427] br-ea50bfde5d69: port 2(veth5046460) entered disabled state
+[  103.093826] br-ea50bfde5d69: port 2(veth2578858) entered blocking state
+[  103.093843] br-ea50bfde5d69: port 2(veth2578858) entered disabled state
+[  103.094374] device veth2578858 entered promiscuous mode
+[  103.095570] br-ea50bfde5d69: port 2(veth2578858) entered blocking state
+[  103.095584] br-ea50bfde5d69: port 2(veth2578858) entered forwarding state
+[  103.485113] eth0: renamed from veth71396a4
+[  103.500786] IPv6: ADDRCONF(NETDEV_CHANGE): veth2578858: link becomes ready
+[  121.456992] br-ea50bfde5d69: port 3(veth2830f2c) entered blocking state
+[  121.456999] br-ea50bfde5d69: port 3(veth2830f2c) entered disabled state
+[  121.458068] device veth2830f2c entered promiscuous mode
+[  121.824563] eth0: renamed from vethb34ab92
+[  121.844289] IPv6: ADDRCONF(NETDEV_CHANGE): veth2830f2c: link becomes ready
+[  121.844451] br-ea50bfde5d69: port 3(veth2830f2c) entered blocking state
+[  121.844463] br-ea50bfde5d69: port 3(veth2830f2c) entered forwarding state
+[  152.505277] br-ea50bfde5d69: port 4(veth1ffe67c) entered blocking state
+[  152.505287] br-ea50bfde5d69: port 4(veth1ffe67c) entered disabled state
+[  152.506738] device veth1ffe67c entered promiscuous mode
+[  152.906351] eth0: renamed from vethb784b9b
+[  152.930191] IPv6: ADDRCONF(NETDEV_CHANGE): veth1ffe67c: link becomes ready
+[  152.930318] br-ea50bfde5d69: port 4(veth1ffe67c) entered blocking state
+[  152.930325] br-ea50bfde5d69: port 4(veth1ffe67c) entered forwarding state
+[  167.588996] veth8a47a17: renamed from eth0
+[  167.617659] br-ea50bfde5d69: port 1(veth9c58508) entered disabled state
+[  167.645692] br-ea50bfde5d69: port 1(veth9c58508) entered disabled state
+[  167.646563] device veth9c58508 left promiscuous mode
+[  167.646572] br-ea50bfde5d69: port 1(veth9c58508) entered disabled state
+[  436.797731] br-ea50bfde5d69: port 2(veth2578858) entered disabled state
+[  436.797901] veth71396a4: renamed from eth0
+[  436.909691] br-ea50bfde5d69: port 2(veth2578858) entered disabled state
+[  436.912589] device veth2578858 left promiscuous mode
+[  436.912606] br-ea50bfde5d69: port 2(veth2578858) entered disabled state
+[  437.079644] vethb784b9b: renamed from eth0
+[  437.105671] br-ea50bfde5d69: port 4(veth1ffe67c) entered disabled state
+[  437.150370] br-ea50bfde5d69: port 4(veth1ffe67c) entered disabled state
+[  437.151701] device veth1ffe67c left promiscuous mode
+[  437.151736] br-ea50bfde5d69: port 4(veth1ffe67c) entered disabled state
+[  440.446794] vethb34ab92: renamed from eth0
+[  440.469885] br-ea50bfde5d69: port 3(veth2830f2c) entered disabled state
+[  440.524843] br-ea50bfde5d69: port 3(veth2830f2c) entered disabled state
+[  440.526677] device veth2830f2c left promiscuous mode
+[  440.526695] br-ea50bfde5d69: port 3(veth2830f2c) entered disabled state
+[  936.561811] audit: type=1326 audit(1681899105.462:121): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[  936.563872] audit: type=1326 audit(1681899105.466:122): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 1151.071365] br-ea50bfde5d69: port 1(veth88a7d63) entered blocking state
+[ 1151.071374] br-ea50bfde5d69: port 1(veth88a7d63) entered disabled state
+[ 1151.071572] device veth88a7d63 entered promiscuous mode
+[ 1151.172070] br-ea50bfde5d69: port 2(vetha95dc1a) entered blocking state
+[ 1151.172082] br-ea50bfde5d69: port 2(vetha95dc1a) entered disabled state
+[ 1151.174415] device vetha95dc1a entered promiscuous mode
+[ 1151.174970] br-ea50bfde5d69: port 2(vetha95dc1a) entered blocking state
+[ 1151.174980] br-ea50bfde5d69: port 2(vetha95dc1a) entered forwarding state
+[ 1151.175174] br-ea50bfde5d69: port 2(vetha95dc1a) entered disabled state
+[ 1151.618594] eth0: renamed from vethb32cf77
+[ 1151.649861] IPv6: ADDRCONF(NETDEV_CHANGE): veth88a7d63: link becomes ready
+[ 1151.650056] br-ea50bfde5d69: port 1(veth88a7d63) entered blocking state
+[ 1151.650072] br-ea50bfde5d69: port 1(veth88a7d63) entered forwarding state
+[ 1151.706038] eth0: renamed from vetha2f5633
+[ 1151.738171] IPv6: ADDRCONF(NETDEV_CHANGE): vetha95dc1a: link becomes ready
+[ 1151.738432] br-ea50bfde5d69: port 2(vetha95dc1a) entered blocking state
+[ 1151.738446] br-ea50bfde5d69: port 2(vetha95dc1a) entered forwarding state
+[ 1153.327613] br-ea50bfde5d69: port 3(veth00764a7) entered blocking state
+[ 1153.327632] br-ea50bfde5d69: port 3(veth00764a7) entered disabled state
+[ 1153.328486] device veth00764a7 entered promiscuous mode
+[ 1154.077246] eth0: renamed from veth662793a
+[ 1154.105851] IPv6: ADDRCONF(NETDEV_CHANGE): veth00764a7: link becomes ready
+[ 1154.106070] br-ea50bfde5d69: port 3(veth00764a7) entered blocking state
+[ 1154.106083] br-ea50bfde5d69: port 3(veth00764a7) entered forwarding state
+[ 1185.074838] br-ea50bfde5d69: port 4(vetha234afd) entered blocking state
+[ 1185.074856] br-ea50bfde5d69: port 4(vetha234afd) entered disabled state
+[ 1185.075413] device vetha234afd entered promiscuous mode
+[ 1185.178350] br-ea50bfde5d69: port 5(vethcb8ad79) entered blocking state
+[ 1185.178368] br-ea50bfde5d69: port 5(vethcb8ad79) entered disabled state
+[ 1185.179123] device vethcb8ad79 entered promiscuous mode
+[ 1185.180449] br-ea50bfde5d69: port 5(vethcb8ad79) entered blocking state
+[ 1185.180465] br-ea50bfde5d69: port 5(vethcb8ad79) entered forwarding state
+[ 1185.621478] eth0: renamed from veth2db8083
+[ 1185.661659] br-ea50bfde5d69: port 5(vethcb8ad79) entered disabled state
+[ 1185.661869] IPv6: ADDRCONF(NETDEV_CHANGE): vetha234afd: link becomes ready
+[ 1185.662066] br-ea50bfde5d69: port 4(vetha234afd) entered blocking state
+[ 1185.662077] br-ea50bfde5d69: port 4(vetha234afd) entered forwarding state
+[ 1185.709709] eth0: renamed from veth5b8f0de
+[ 1185.737915] IPv6: ADDRCONF(NETDEV_CHANGE): vethcb8ad79: link becomes ready
+[ 1185.738077] br-ea50bfde5d69: port 5(vethcb8ad79) entered blocking state
+[ 1185.738087] br-ea50bfde5d69: port 5(vethcb8ad79) entered forwarding state
+[ 1190.668323] br-ea50bfde5d69: port 2(vetha95dc1a) entered disabled state
+[ 1190.668478] vetha2f5633: renamed from eth0
+[ 1190.744753] br-ea50bfde5d69: port 2(vetha95dc1a) entered disabled state
+[ 1190.747658] device vetha95dc1a left promiscuous mode
+[ 1190.747680] br-ea50bfde5d69: port 2(vetha95dc1a) entered disabled state
+[ 1191.546202] br-ea50bfde5d69: port 4(vetha234afd) entered disabled state
+[ 1191.546359] veth2db8083: renamed from eth0
+[ 1191.628124] br-ea50bfde5d69: port 4(vetha234afd) entered disabled state
+[ 1191.653474] device vetha234afd left promiscuous mode
+[ 1191.653499] br-ea50bfde5d69: port 4(vetha234afd) entered disabled state
+[ 1191.712419] br-ea50bfde5d69: port 5(vethcb8ad79) entered disabled state
+[ 1191.714518] veth5b8f0de: renamed from eth0
+[ 1191.843472] br-ea50bfde5d69: port 5(vethcb8ad79) entered disabled state
+[ 1191.846622] device vethcb8ad79 left promiscuous mode
+[ 1191.846647] br-ea50bfde5d69: port 5(vethcb8ad79) entered disabled state
+[ 1191.902531] br-ea50bfde5d69: port 1(veth88a7d63) entered disabled state
+[ 1191.906091] vethb32cf77: renamed from eth0
+[ 1191.998736] br-ea50bfde5d69: port 1(veth88a7d63) entered disabled state
+[ 1192.003364] device veth88a7d63 left promiscuous mode
+[ 1192.003380] br-ea50bfde5d69: port 1(veth88a7d63) entered disabled state
+[ 1195.121481] br-ea50bfde5d69: port 3(veth00764a7) entered disabled state
+[ 1195.121645] veth662793a: renamed from eth0
+[ 1195.176934] br-ea50bfde5d69: port 3(veth00764a7) entered disabled state
+[ 1195.178257] device veth00764a7 left promiscuous mode
+[ 1195.178275] br-ea50bfde5d69: port 3(veth00764a7) entered disabled state
+[ 1200.867114] br-cb777f031234: port 1(veth70a0b05) entered blocking state
+[ 1200.867129] br-cb777f031234: port 1(veth70a0b05) entered disabled state
+[ 1200.871843] device veth70a0b05 entered promiscuous mode
+[ 1200.872917] br-cb777f031234: port 1(veth70a0b05) entered blocking state
+[ 1200.872931] br-cb777f031234: port 1(veth70a0b05) entered forwarding state
+[ 1200.874335] br-cb777f031234: port 1(veth70a0b05) entered disabled state
+[ 1201.064352] br-cb777f031234: port 2(veth9f54af3) entered blocking state
+[ 1201.064362] br-cb777f031234: port 2(veth9f54af3) entered disabled state
+[ 1201.065154] device veth9f54af3 entered promiscuous mode
+[ 1201.065912] br-cb777f031234: port 2(veth9f54af3) entered blocking state
+[ 1201.065920] br-cb777f031234: port 2(veth9f54af3) entered forwarding state
+[ 1201.065989] IPv6: ADDRCONF(NETDEV_CHANGE): br-cb777f031234: link becomes ready
+[ 1201.066578] br-cb777f031234: port 2(veth9f54af3) entered disabled state
+[ 1201.369640] eth0: renamed from vethb3bf252
+[ 1201.397576] IPv6: ADDRCONF(NETDEV_CHANGE): veth70a0b05: link becomes ready
+[ 1201.397793] br-cb777f031234: port 1(veth70a0b05) entered blocking state
+[ 1201.397809] br-cb777f031234: port 1(veth70a0b05) entered forwarding state
+[ 1201.457918] eth0: renamed from vetha7e0684
+[ 1201.490457] IPv6: ADDRCONF(NETDEV_CHANGE): veth9f54af3: link becomes ready
+[ 1201.490701] br-cb777f031234: port 2(veth9f54af3) entered blocking state
+[ 1201.490715] br-cb777f031234: port 2(veth9f54af3) entered forwarding state
+[ 1207.393066] br-cb777f031234: port 3(vethbf3f728) entered blocking state
+[ 1207.393085] br-cb777f031234: port 3(vethbf3f728) entered disabled state
+[ 1207.396350] device vethbf3f728 entered promiscuous mode
+[ 1207.913537] eth0: renamed from veth27de0db
+[ 1207.933596] IPv6: ADDRCONF(NETDEV_CHANGE): vethbf3f728: link becomes ready
+[ 1207.933778] br-cb777f031234: port 3(vethbf3f728) entered blocking state
+[ 1207.933791] br-cb777f031234: port 3(vethbf3f728) entered forwarding state
+[ 1238.681126] br-cb777f031234: port 4(veth79f32d0) entered blocking state
+[ 1238.681134] br-cb777f031234: port 4(veth79f32d0) entered disabled state
+[ 1238.681373] device veth79f32d0 entered promiscuous mode
+[ 1238.694171] br-cb777f031234: port 5(vethe5eb90e) entered blocking state
+[ 1238.694185] br-cb777f031234: port 5(vethe5eb90e) entered disabled state
+[ 1238.694367] device vethe5eb90e entered promiscuous mode
+[ 1238.694594] br-cb777f031234: port 5(vethe5eb90e) entered blocking state
+[ 1238.694599] br-cb777f031234: port 5(vethe5eb90e) entered forwarding state
+[ 1239.085561] eth0: renamed from veth7c97937
+[ 1239.149695] eth0: renamed from veth17b4709
+[ 1239.168797] IPv6: ADDRCONF(NETDEV_CHANGE): vethe5eb90e: link becomes ready
+[ 1239.169844] IPv6: ADDRCONF(NETDEV_CHANGE): veth79f32d0: link becomes ready
+[ 1239.170059] br-cb777f031234: port 4(veth79f32d0) entered blocking state
+[ 1239.170076] br-cb777f031234: port 4(veth79f32d0) entered forwarding state
+[ 1243.803094] vetha7e0684: renamed from eth0
+[ 1243.820468] br-cb777f031234: port 2(veth9f54af3) entered disabled state
+[ 1243.846330] br-cb777f031234: port 2(veth9f54af3) entered disabled state
+[ 1243.846906] device veth9f54af3 left promiscuous mode
+[ 1243.846915] br-cb777f031234: port 2(veth9f54af3) entered disabled state
+[ 1256.324790] br-cb777f031234: port 5(vethe5eb90e) entered disabled state
+[ 1256.324896] veth7c97937: renamed from eth0
+[ 1256.368363] br-cb777f031234: port 5(vethe5eb90e) entered disabled state
+[ 1256.369436] device vethe5eb90e left promiscuous mode
+[ 1256.369447] br-cb777f031234: port 5(vethe5eb90e) entered disabled state
+[ 1256.559694] br-cb777f031234: port 1(veth70a0b05) entered disabled state
+[ 1256.559802] vethb3bf252: renamed from eth0
+[ 1256.613432] br-cb777f031234: port 1(veth70a0b05) entered disabled state
+[ 1256.614076] device veth70a0b05 left promiscuous mode
+[ 1256.614084] br-cb777f031234: port 1(veth70a0b05) entered disabled state
+[ 1262.981970] br-cb777f031234: port 4(veth79f32d0) entered disabled state
+[ 1262.982252] veth17b4709: renamed from eth0
+[ 1263.069123] br-cb777f031234: port 4(veth79f32d0) entered disabled state
+[ 1263.071928] device veth79f32d0 left promiscuous mode
+[ 1263.071943] br-cb777f031234: port 4(veth79f32d0) entered disabled state
+[ 1266.259095] br-cb777f031234: port 3(vethbf3f728) entered disabled state
+[ 1266.259383] veth27de0db: renamed from eth0
+[ 1266.335998] br-cb777f031234: port 3(vethbf3f728) entered disabled state
+[ 1266.338155] device vethbf3f728 left promiscuous mode
+[ 1266.338181] br-cb777f031234: port 3(vethbf3f728) entered disabled state
+[ 1282.391431] br-186a87128ee5: port 1(vethb7f06ec) entered blocking state
+[ 1282.391440] br-186a87128ee5: port 1(vethb7f06ec) entered disabled state
+[ 1282.391632] device vethb7f06ec entered promiscuous mode
+[ 1282.391796] br-186a87128ee5: port 1(vethb7f06ec) entered blocking state
+[ 1282.391800] br-186a87128ee5: port 1(vethb7f06ec) entered forwarding state
+[ 1282.393186] br-186a87128ee5: port 1(vethb7f06ec) entered disabled state
+[ 1282.487225] br-186a87128ee5: port 2(vethe4a007d) entered blocking state
+[ 1282.487234] br-186a87128ee5: port 2(vethe4a007d) entered disabled state
+[ 1282.487531] device vethe4a007d entered promiscuous mode
+[ 1282.488139] br-186a87128ee5: port 2(vethe4a007d) entered blocking state
+[ 1282.488144] br-186a87128ee5: port 2(vethe4a007d) entered forwarding state
+[ 1282.488196] IPv6: ADDRCONF(NETDEV_CHANGE): br-186a87128ee5: link becomes ready
+[ 1282.488455] br-186a87128ee5: port 2(vethe4a007d) entered disabled state
+[ 1282.809675] eth0: renamed from vethcaacd04
+[ 1282.877578] IPv6: ADDRCONF(NETDEV_CHANGE): vethb7f06ec: link becomes ready
+[ 1282.877772] br-186a87128ee5: port 1(vethb7f06ec) entered blocking state
+[ 1282.877786] br-186a87128ee5: port 1(vethb7f06ec) entered forwarding state
+[ 1282.878305] eth0: renamed from veth24654c2
+[ 1282.893124] IPv6: ADDRCONF(NETDEV_CHANGE): vethe4a007d: link becomes ready
+[ 1282.893298] br-186a87128ee5: port 2(vethe4a007d) entered blocking state
+[ 1282.893310] br-186a87128ee5: port 2(vethe4a007d) entered forwarding state
+[ 1288.922034] br-186a87128ee5: port 3(veth6fe0209) entered blocking state
+[ 1288.922053] br-186a87128ee5: port 3(veth6fe0209) entered disabled state
+[ 1288.923378] device veth6fe0209 entered promiscuous mode
+[ 1289.553665] eth0: renamed from vethbbdd842
+[ 1289.597279] IPv6: ADDRCONF(NETDEV_CHANGE): veth6fe0209: link becomes ready
+[ 1289.597485] br-186a87128ee5: port 3(veth6fe0209) entered blocking state
+[ 1289.597497] br-186a87128ee5: port 3(veth6fe0209) entered forwarding state
+[ 1305.854506] br-186a87128ee5: port 2(vethe4a007d) entered disabled state
+[ 1305.854616] veth24654c2: renamed from eth0
+[ 1305.905233] br-186a87128ee5: port 2(vethe4a007d) entered disabled state
+[ 1305.906289] device vethe4a007d left promiscuous mode
+[ 1305.906298] br-186a87128ee5: port 2(vethe4a007d) entered disabled state
+[ 1306.272081] br-186a87128ee5: port 3(veth6fe0209) entered disabled state
+[ 1306.272339] vethbbdd842: renamed from eth0
+[ 1306.343855] br-186a87128ee5: port 3(veth6fe0209) entered disabled state
+[ 1306.345419] device veth6fe0209 left promiscuous mode
+[ 1306.345437] br-186a87128ee5: port 3(veth6fe0209) entered disabled state
+[ 1306.607008] br-186a87128ee5: port 1(vethb7f06ec) entered disabled state
+[ 1306.607379] vethcaacd04: renamed from eth0
+[ 1306.684873] br-186a87128ee5: port 1(vethb7f06ec) entered disabled state
+[ 1306.686537] device vethb7f06ec left promiscuous mode
+[ 1306.686553] br-186a87128ee5: port 1(vethb7f06ec) entered disabled state
+[ 1313.122486] br-9dee914cce8e: port 1(vethe8aeacb) entered blocking state
+[ 1313.122493] br-9dee914cce8e: port 1(vethe8aeacb) entered disabled state
+[ 1313.123853] device vethe8aeacb entered promiscuous mode
+[ 1313.124957] br-9dee914cce8e: port 1(vethe8aeacb) entered blocking state
+[ 1313.124965] br-9dee914cce8e: port 1(vethe8aeacb) entered forwarding state
+[ 1313.125400] br-9dee914cce8e: port 1(vethe8aeacb) entered disabled state
+[ 1313.210849] br-9dee914cce8e: port 2(vethacf427d) entered blocking state
+[ 1313.210859] br-9dee914cce8e: port 2(vethacf427d) entered disabled state
+[ 1313.211407] device vethacf427d entered promiscuous mode
+[ 1313.211954] br-9dee914cce8e: port 2(vethacf427d) entered blocking state
+[ 1313.211959] br-9dee914cce8e: port 2(vethacf427d) entered forwarding state
+[ 1313.212757] IPv6: ADDRCONF(NETDEV_CHANGE): br-9dee914cce8e: link becomes ready
+[ 1313.213166] br-9dee914cce8e: port 2(vethacf427d) entered disabled state
+[ 1313.596504] eth0: renamed from veth4f24d31
+[ 1313.632546] eth0: renamed from vethc210498
+[ 1313.652871] IPv6: ADDRCONF(NETDEV_CHANGE): vethe8aeacb: link becomes ready
+[ 1313.653109] br-9dee914cce8e: port 1(vethe8aeacb) entered blocking state
+[ 1313.653129] br-9dee914cce8e: port 1(vethe8aeacb) entered forwarding state
+[ 1313.654301] IPv6: ADDRCONF(NETDEV_CHANGE): vethacf427d: link becomes ready
+[ 1313.654556] br-9dee914cce8e: port 2(vethacf427d) entered blocking state
+[ 1313.654570] br-9dee914cce8e: port 2(vethacf427d) entered forwarding state
+[ 1319.640930] br-9dee914cce8e: port 3(vethffecafa) entered blocking state
+[ 1319.640945] br-9dee914cce8e: port 3(vethffecafa) entered disabled state
+[ 1319.641619] device vethffecafa entered promiscuous mode
+[ 1320.296692] eth0: renamed from veth8c53e81
+[ 1320.340619] IPv6: ADDRCONF(NETDEV_CHANGE): vethffecafa: link becomes ready
+[ 1320.340813] br-9dee914cce8e: port 3(vethffecafa) entered blocking state
+[ 1320.340824] br-9dee914cce8e: port 3(vethffecafa) entered forwarding state
+[ 1351.021190] br-9dee914cce8e: port 4(veth6e78a8b) entered blocking state
+[ 1351.021198] br-9dee914cce8e: port 4(veth6e78a8b) entered disabled state
+[ 1351.021424] device veth6e78a8b entered promiscuous mode
+[ 1351.109596] br-9dee914cce8e: port 5(vethab0f356) entered blocking state
+[ 1351.109605] br-9dee914cce8e: port 5(vethab0f356) entered disabled state
+[ 1351.109939] device vethab0f356 entered promiscuous mode
+[ 1351.110562] br-9dee914cce8e: port 5(vethab0f356) entered blocking state
+[ 1351.110568] br-9dee914cce8e: port 5(vethab0f356) entered forwarding state
+[ 1351.120574] br-9dee914cce8e: port 6(veth885a98f) entered blocking state
+[ 1351.120582] br-9dee914cce8e: port 6(veth885a98f) entered disabled state
+[ 1351.120821] device veth885a98f entered promiscuous mode
+[ 1351.121498] br-9dee914cce8e: port 6(veth885a98f) entered blocking state
+[ 1351.121505] br-9dee914cce8e: port 6(veth885a98f) entered forwarding state
+[ 1351.551935] eth0: renamed from vethdade3d0
+[ 1351.575786] br-9dee914cce8e: port 5(vethab0f356) entered disabled state
+[ 1351.575935] br-9dee914cce8e: port 6(veth885a98f) entered disabled state
+[ 1351.576018] IPv6: ADDRCONF(NETDEV_CHANGE): veth6e78a8b: link becomes ready
+[ 1351.576104] br-9dee914cce8e: port 4(veth6e78a8b) entered blocking state
+[ 1351.576108] br-9dee914cce8e: port 4(veth6e78a8b) entered forwarding state
+[ 1351.647603] eth0: renamed from veth31aac1f
+[ 1351.671410] eth0: renamed from vethd22ab7b
+[ 1351.695819] IPv6: ADDRCONF(NETDEV_CHANGE): vethab0f356: link becomes ready
+[ 1351.695914] br-9dee914cce8e: port 5(vethab0f356) entered blocking state
+[ 1351.695922] br-9dee914cce8e: port 5(vethab0f356) entered forwarding state
+[ 1351.696023] IPv6: ADDRCONF(NETDEV_CHANGE): veth885a98f: link becomes ready
+[ 1351.696100] br-9dee914cce8e: port 6(veth885a98f) entered blocking state
+[ 1351.696106] br-9dee914cce8e: port 6(veth885a98f) entered forwarding state
+[ 1356.982118] br-9dee914cce8e: port 2(vethacf427d) entered disabled state
+[ 1356.982250] vethc210498: renamed from eth0
+[ 1357.065471] br-9dee914cce8e: port 2(vethacf427d) entered disabled state
+[ 1357.066160] device vethacf427d left promiscuous mode
+[ 1357.066170] br-9dee914cce8e: port 2(vethacf427d) entered disabled state
+[ 1455.237761] vethdade3d0: renamed from eth0
+[ 1455.258536] br-9dee914cce8e: port 4(veth6e78a8b) entered disabled state
+[ 1455.318767] br-9dee914cce8e: port 5(vethab0f356) entered disabled state
+[ 1455.319584] veth31aac1f: renamed from eth0
+[ 1455.426658] veth4f24d31: renamed from eth0
+[ 1455.500987] br-9dee914cce8e: port 1(vethe8aeacb) entered disabled state
+[ 1455.510042] br-9dee914cce8e: port 4(veth6e78a8b) entered disabled state
+[ 1455.512778] device veth6e78a8b left promiscuous mode
+[ 1455.512795] br-9dee914cce8e: port 4(veth6e78a8b) entered disabled state
+[ 1455.564135] vethd22ab7b: renamed from eth0
+[ 1455.590305] br-9dee914cce8e: port 6(veth885a98f) entered disabled state
+[ 1455.635994] br-9dee914cce8e: port 1(vethe8aeacb) entered disabled state
+[ 1455.637047] device vethe8aeacb left promiscuous mode
+[ 1455.637054] br-9dee914cce8e: port 1(vethe8aeacb) entered disabled state
+[ 1455.692083] br-9dee914cce8e: port 5(vethab0f356) entered disabled state
+[ 1455.692902] device vethab0f356 left promiscuous mode
+[ 1455.692913] br-9dee914cce8e: port 5(vethab0f356) entered disabled state
+[ 1455.764463] br-9dee914cce8e: port 6(veth885a98f) entered disabled state
+[ 1455.775813] device veth885a98f left promiscuous mode
+[ 1455.775826] br-9dee914cce8e: port 6(veth885a98f) entered disabled state
+[ 1458.486831] veth8c53e81: renamed from eth0
+[ 1458.518587] br-9dee914cce8e: port 3(vethffecafa) entered disabled state
+[ 1458.570637] br-9dee914cce8e: port 3(vethffecafa) entered disabled state
+[ 1458.573058] device vethffecafa left promiscuous mode
+[ 1458.573081] br-9dee914cce8e: port 3(vethffecafa) entered disabled state
+[ 1481.690781] audit: type=1326 audit(1681899650.599:123): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 1481.691562] audit: type=1326 audit(1681899650.599:124): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 1524.298234] audit: type=1326 audit(1681899693.207:125): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 1524.298440] audit: type=1326 audit(1681899693.207:126): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 1568.221320] br-baf9fcb11c83: port 1(veth09bc6f4) entered blocking state
+[ 1568.221329] br-baf9fcb11c83: port 1(veth09bc6f4) entered disabled state
+[ 1568.221449] device veth09bc6f4 entered promiscuous mode
+[ 1568.221628] br-baf9fcb11c83: port 1(veth09bc6f4) entered blocking state
+[ 1568.221634] br-baf9fcb11c83: port 1(veth09bc6f4) entered forwarding state
+[ 1568.228498] br-baf9fcb11c83: port 1(veth09bc6f4) entered disabled state
+[ 1568.233536] br-baf9fcb11c83: port 2(vethdf9d962) entered blocking state
+[ 1568.233544] br-baf9fcb11c83: port 2(vethdf9d962) entered disabled state
+[ 1568.251318] device vethdf9d962 entered promiscuous mode
+[ 1568.272934] br-baf9fcb11c83: port 2(vethdf9d962) entered blocking state
+[ 1568.272948] br-baf9fcb11c83: port 2(vethdf9d962) entered forwarding state
+[ 1568.273026] IPv6: ADDRCONF(NETDEV_CHANGE): br-baf9fcb11c83: link becomes ready
+[ 1568.276509] br-baf9fcb11c83: port 2(vethdf9d962) entered disabled state
+[ 1568.729647] eth0: renamed from veth0e5c917
+[ 1568.749311] eth0: renamed from veth258b892
+[ 1568.765113] IPv6: ADDRCONF(NETDEV_CHANGE): veth09bc6f4: link becomes ready
+[ 1568.765310] br-baf9fcb11c83: port 1(veth09bc6f4) entered blocking state
+[ 1568.765321] br-baf9fcb11c83: port 1(veth09bc6f4) entered forwarding state
+[ 1568.766483] IPv6: ADDRCONF(NETDEV_CHANGE): vethdf9d962: link becomes ready
+[ 1568.766638] br-baf9fcb11c83: port 2(vethdf9d962) entered blocking state
+[ 1568.766648] br-baf9fcb11c83: port 2(vethdf9d962) entered forwarding state
+[ 1575.831899] br-baf9fcb11c83: port 3(veth6f2f305) entered blocking state
+[ 1575.831919] br-baf9fcb11c83: port 3(veth6f2f305) entered disabled state
+[ 1575.837262] device veth6f2f305 entered promiscuous mode
+[ 1576.409805] eth0: renamed from veth1d8449a
+[ 1576.437537] IPv6: ADDRCONF(NETDEV_CHANGE): veth6f2f305: link becomes ready
+[ 1576.437717] br-baf9fcb11c83: port 3(veth6f2f305) entered blocking state
+[ 1576.437730] br-baf9fcb11c83: port 3(veth6f2f305) entered forwarding state
+[ 1607.236183] br-baf9fcb11c83: port 4(veth8619bfb) entered blocking state
+[ 1607.236191] br-baf9fcb11c83: port 4(veth8619bfb) entered disabled state
+[ 1607.236405] device veth8619bfb entered promiscuous mode
+[ 1607.397775] br-baf9fcb11c83: port 5(veth74d73b8) entered blocking state
+[ 1607.397786] br-baf9fcb11c83: port 5(veth74d73b8) entered disabled state
+[ 1607.400489] device veth74d73b8 entered promiscuous mode
+[ 1607.401556] br-baf9fcb11c83: port 5(veth74d73b8) entered blocking state
+[ 1607.401570] br-baf9fcb11c83: port 5(veth74d73b8) entered forwarding state
+[ 1607.832402] eth0: renamed from veth465cc5f
+[ 1607.860385] br-baf9fcb11c83: port 5(veth74d73b8) entered disabled state
+[ 1607.860505] IPv6: ADDRCONF(NETDEV_CHANGE): veth8619bfb: link becomes ready
+[ 1607.860639] br-baf9fcb11c83: port 4(veth8619bfb) entered blocking state
+[ 1607.860643] br-baf9fcb11c83: port 4(veth8619bfb) entered forwarding state
+[ 1607.908660] eth0: renamed from veth11388d7
+[ 1607.948847] IPv6: ADDRCONF(NETDEV_CHANGE): veth74d73b8: link becomes ready
+[ 1607.949148] br-baf9fcb11c83: port 5(veth74d73b8) entered blocking state
+[ 1607.949163] br-baf9fcb11c83: port 5(veth74d73b8) entered forwarding state
+[ 1613.511452] br-baf9fcb11c83: port 2(vethdf9d962) entered disabled state
+[ 1613.511727] veth258b892: renamed from eth0
+[ 1613.601098] br-baf9fcb11c83: port 2(vethdf9d962) entered disabled state
+[ 1613.602860] device vethdf9d962 left promiscuous mode
+[ 1613.602871] br-baf9fcb11c83: port 2(vethdf9d962) entered disabled state
+[ 1705.736610] veth11388d7: renamed from eth0
+[ 1705.758879] br-baf9fcb11c83: port 5(veth74d73b8) entered disabled state
+[ 1705.812394] veth0e5c917: renamed from eth0
+[ 1705.842965] br-baf9fcb11c83: port 1(veth09bc6f4) entered disabled state
+[ 1705.881698] br-baf9fcb11c83: port 5(veth74d73b8) entered disabled state
+[ 1705.886151] device veth74d73b8 left promiscuous mode
+[ 1705.886175] br-baf9fcb11c83: port 5(veth74d73b8) entered disabled state
+[ 1705.983015] br-baf9fcb11c83: port 1(veth09bc6f4) entered disabled state
+[ 1705.984479] device veth09bc6f4 left promiscuous mode
+[ 1705.984509] br-baf9fcb11c83: port 1(veth09bc6f4) entered disabled state
+[ 1706.430009] br-baf9fcb11c83: port 4(veth8619bfb) entered disabled state
+[ 1706.430173] veth465cc5f: renamed from eth0
+[ 1706.495974] br-baf9fcb11c83: port 4(veth8619bfb) entered disabled state
+[ 1706.497251] device veth8619bfb left promiscuous mode
+[ 1706.497264] br-baf9fcb11c83: port 4(veth8619bfb) entered disabled state
+[ 1709.524595] veth1d8449a: renamed from eth0
+[ 1709.546867] br-baf9fcb11c83: port 3(veth6f2f305) entered disabled state
+[ 1709.601649] br-baf9fcb11c83: port 3(veth6f2f305) entered disabled state
+[ 1709.603309] device veth6f2f305 left promiscuous mode
+[ 1709.603328] br-baf9fcb11c83: port 3(veth6f2f305) entered disabled state
+[ 1960.310915] br-baf9fcb11c83: port 1(vethd3c0d1d) entered blocking state
+[ 1960.310929] br-baf9fcb11c83: port 1(vethd3c0d1d) entered disabled state
+[ 1960.311780] device vethd3c0d1d entered promiscuous mode
+[ 1960.501947] br-baf9fcb11c83: port 2(vethc12d1b3) entered blocking state
+[ 1960.501962] br-baf9fcb11c83: port 2(vethc12d1b3) entered disabled state
+[ 1960.503160] device vethc12d1b3 entered promiscuous mode
+[ 1960.503825] br-baf9fcb11c83: port 2(vethc12d1b3) entered blocking state
+[ 1960.503838] br-baf9fcb11c83: port 2(vethc12d1b3) entered forwarding state
+[ 1960.504121] br-baf9fcb11c83: port 2(vethc12d1b3) entered disabled state
+[ 1960.811012] eth0: renamed from vethcaa6daa
+[ 1960.859987] IPv6: ADDRCONF(NETDEV_CHANGE): vethd3c0d1d: link becomes ready
+[ 1960.860213] br-baf9fcb11c83: port 1(vethd3c0d1d) entered blocking state
+[ 1960.860230] br-baf9fcb11c83: port 1(vethd3c0d1d) entered forwarding state
+[ 1960.931498] eth0: renamed from veth6597865
+[ 1960.967274] IPv6: ADDRCONF(NETDEV_CHANGE): vethc12d1b3: link becomes ready
+[ 1960.967447] br-baf9fcb11c83: port 2(vethc12d1b3) entered blocking state
+[ 1960.967461] br-baf9fcb11c83: port 2(vethc12d1b3) entered forwarding state
+[ 1962.290533] br-baf9fcb11c83: port 3(vethe37a897) entered blocking state
+[ 1962.290550] br-baf9fcb11c83: port 3(vethe37a897) entered disabled state
+[ 1962.290826] device vethe37a897 entered promiscuous mode
+[ 1963.023306] eth0: renamed from veth78a46fd
+[ 1963.051426] IPv6: ADDRCONF(NETDEV_CHANGE): vethe37a897: link becomes ready
+[ 1963.051571] br-baf9fcb11c83: port 3(vethe37a897) entered blocking state
+[ 1963.051581] br-baf9fcb11c83: port 3(vethe37a897) entered forwarding state
+[ 1993.790518] br-baf9fcb11c83: port 4(vethad9f90d) entered blocking state
+[ 1993.790526] br-baf9fcb11c83: port 4(vethad9f90d) entered disabled state
+[ 1993.790959] device vethad9f90d entered promiscuous mode
+[ 1993.987706] br-baf9fcb11c83: port 5(veth09dc591) entered blocking state
+[ 1993.987715] br-baf9fcb11c83: port 5(veth09dc591) entered disabled state
+[ 1993.988151] device veth09dc591 entered promiscuous mode
+[ 1993.991724] br-baf9fcb11c83: port 5(veth09dc591) entered blocking state
+[ 1993.991733] br-baf9fcb11c83: port 5(veth09dc591) entered forwarding state
+[ 1994.299150] eth0: renamed from veth3f44cf8
+[ 1994.338684] br-baf9fcb11c83: port 5(veth09dc591) entered disabled state
+[ 1994.338782] IPv6: ADDRCONF(NETDEV_CHANGE): vethad9f90d: link becomes ready
+[ 1994.338903] br-baf9fcb11c83: port 4(vethad9f90d) entered blocking state
+[ 1994.338908] br-baf9fcb11c83: port 4(vethad9f90d) entered forwarding state
+[ 1994.398458] eth0: renamed from vethbd9d0ee
+[ 1994.422442] IPv6: ADDRCONF(NETDEV_CHANGE): veth09dc591: link becomes ready
+[ 1994.422551] br-baf9fcb11c83: port 5(veth09dc591) entered blocking state
+[ 1994.422558] br-baf9fcb11c83: port 5(veth09dc591) entered forwarding state
+[ 1994.587146] br-baf9fcb11c83: port 1(vethd3c0d1d) entered disabled state
+[ 1994.587695] vethcaa6daa: renamed from eth0
+[ 1994.647552] br-baf9fcb11c83: port 1(vethd3c0d1d) entered disabled state
+[ 1994.648972] device vethd3c0d1d left promiscuous mode
+[ 1994.648983] br-baf9fcb11c83: port 1(vethd3c0d1d) entered disabled state
+[ 2110.255962] br-baf9fcb11c83: port 5(veth09dc591) entered disabled state
+[ 2110.256251] vethbd9d0ee: renamed from eth0
+[ 2110.324521] br-baf9fcb11c83: port 5(veth09dc591) entered disabled state
+[ 2110.326800] device veth09dc591 left promiscuous mode
+[ 2110.326811] br-baf9fcb11c83: port 5(veth09dc591) entered disabled state
+[ 2110.405117] br-baf9fcb11c83: port 2(vethc12d1b3) entered disabled state
+[ 2110.405278] veth6597865: renamed from eth0
+[ 2110.512733] br-baf9fcb11c83: port 2(vethc12d1b3) entered disabled state
+[ 2110.533141] device vethc12d1b3 left promiscuous mode
+[ 2110.533155] br-baf9fcb11c83: port 2(vethc12d1b3) entered disabled state
+[ 2110.575842] br-baf9fcb11c83: port 4(vethad9f90d) entered disabled state
+[ 2110.576422] veth3f44cf8: renamed from eth0
+[ 2110.677371] br-baf9fcb11c83: port 4(vethad9f90d) entered disabled state
+[ 2110.681007] device vethad9f90d left promiscuous mode
+[ 2110.681028] br-baf9fcb11c83: port 4(vethad9f90d) entered disabled state
+[ 2113.446343] veth78a46fd: renamed from eth0
+[ 2113.473430] br-baf9fcb11c83: port 3(vethe37a897) entered disabled state
+[ 2113.525335] br-baf9fcb11c83: port 3(vethe37a897) entered disabled state
+[ 2113.530049] device vethe37a897 left promiscuous mode
+[ 2113.530077] br-baf9fcb11c83: port 3(vethe37a897) entered disabled state
+[ 2120.346370] br-baf9fcb11c83: port 1(vethf2a07d3) entered blocking state
+[ 2120.346378] br-baf9fcb11c83: port 1(vethf2a07d3) entered disabled state
+[ 2120.347289] device vethf2a07d3 entered promiscuous mode
+[ 2120.361377] br-baf9fcb11c83: port 2(veth614b591) entered blocking state
+[ 2120.361385] br-baf9fcb11c83: port 2(veth614b591) entered disabled state
+[ 2120.365233] device veth614b591 entered promiscuous mode
+[ 2120.365778] br-baf9fcb11c83: port 2(veth614b591) entered blocking state
+[ 2120.365785] br-baf9fcb11c83: port 2(veth614b591) entered forwarding state
+[ 2120.369831] br-baf9fcb11c83: port 2(veth614b591) entered disabled state
+[ 2120.722004] eth0: renamed from vethb53e270
+[ 2120.773926] IPv6: ADDRCONF(NETDEV_CHANGE): vethf2a07d3: link becomes ready
+[ 2120.774126] br-baf9fcb11c83: port 1(vethf2a07d3) entered blocking state
+[ 2120.774141] br-baf9fcb11c83: port 1(vethf2a07d3) entered forwarding state
+[ 2120.842034] eth0: renamed from veth5e91d7f
+[ 2120.869460] IPv6: ADDRCONF(NETDEV_CHANGE): veth614b591: link becomes ready
+[ 2120.869669] br-baf9fcb11c83: port 2(veth614b591) entered blocking state
+[ 2120.869684] br-baf9fcb11c83: port 2(veth614b591) entered forwarding state
+[ 2122.216943] br-baf9fcb11c83: port 3(veth1295565) entered blocking state
+[ 2122.216960] br-baf9fcb11c83: port 3(veth1295565) entered disabled state
+[ 2122.217898] device veth1295565 entered promiscuous mode
+[ 2122.965744] eth0: renamed from veth61d605d
+[ 2122.997778] IPv6: ADDRCONF(NETDEV_CHANGE): veth1295565: link becomes ready
+[ 2122.997952] br-baf9fcb11c83: port 3(veth1295565) entered blocking state
+[ 2122.997965] br-baf9fcb11c83: port 3(veth1295565) entered forwarding state
+[ 2153.659967] br-baf9fcb11c83: port 4(vethce6f04c) entered blocking state
+[ 2153.659978] br-baf9fcb11c83: port 4(vethce6f04c) entered disabled state
+[ 2153.660134] device vethce6f04c entered promiscuous mode
+[ 2153.755213] br-baf9fcb11c83: port 5(veth4683015) entered blocking state
+[ 2153.755220] br-baf9fcb11c83: port 5(veth4683015) entered disabled state
+[ 2153.755821] device veth4683015 entered promiscuous mode
+[ 2153.755995] br-baf9fcb11c83: port 5(veth4683015) entered blocking state
+[ 2153.756000] br-baf9fcb11c83: port 5(veth4683015) entered forwarding state
+[ 2154.137107] eth0: renamed from veth4787a83
+[ 2154.164988] br-baf9fcb11c83: port 5(veth4683015) entered disabled state
+[ 2154.165087] IPv6: ADDRCONF(NETDEV_CHANGE): vethce6f04c: link becomes ready
+[ 2154.165174] br-baf9fcb11c83: port 4(vethce6f04c) entered blocking state
+[ 2154.165179] br-baf9fcb11c83: port 4(vethce6f04c) entered forwarding state
+[ 2154.213072] eth0: renamed from veth2fac4e2
+[ 2154.233242] IPv6: ADDRCONF(NETDEV_CHANGE): veth4683015: link becomes ready
+[ 2154.233375] br-baf9fcb11c83: port 5(veth4683015) entered blocking state
+[ 2154.233381] br-baf9fcb11c83: port 5(veth4683015) entered forwarding state
+[ 2154.656883] br-baf9fcb11c83: port 1(vethf2a07d3) entered disabled state
+[ 2154.659109] vethb53e270: renamed from eth0
+[ 2154.737989] br-baf9fcb11c83: port 1(vethf2a07d3) entered disabled state
+[ 2154.738784] device vethf2a07d3 left promiscuous mode
+[ 2154.738793] br-baf9fcb11c83: port 1(vethf2a07d3) entered disabled state
+[ 2237.083867] audit: type=1326 audit(1681900406.000:127): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 2237.084680] audit: type=1326 audit(1681900406.004:128): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 2262.712241] audit: type=1326 audit(1681900431.632:129): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 2262.777729] audit: type=1326 audit(1681900431.696:130): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 2272.921917] audit: type=1326 audit(1681900441.841:131): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 2272.922115] audit: type=1326 audit(1681900441.841:132): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 2292.254170] br-baf9fcb11c83: port 4(vethce6f04c) entered disabled state
+[ 2292.254340] veth4787a83: renamed from eth0
+[ 2292.344149] br-baf9fcb11c83: port 4(vethce6f04c) entered disabled state
+[ 2292.371932] device vethce6f04c left promiscuous mode
+[ 2292.371943] br-baf9fcb11c83: port 4(vethce6f04c) entered disabled state
+[ 2292.425824] veth5e91d7f: renamed from eth0
+[ 2292.525834] br-baf9fcb11c83: port 2(veth614b591) entered disabled state
+[ 2292.530908] veth2fac4e2: renamed from eth0
+[ 2292.596479] br-baf9fcb11c83: port 5(veth4683015) entered disabled state
+[ 2292.609937] br-baf9fcb11c83: port 2(veth614b591) entered disabled state
+[ 2292.615685] device veth614b591 left promiscuous mode
+[ 2292.615710] br-baf9fcb11c83: port 2(veth614b591) entered disabled state
+[ 2292.706073] br-baf9fcb11c83: port 5(veth4683015) entered disabled state
+[ 2292.708704] device veth4683015 left promiscuous mode
+[ 2292.708727] br-baf9fcb11c83: port 5(veth4683015) entered disabled state
+[ 2295.848811] veth61d605d: renamed from eth0
+[ 2295.888158] br-baf9fcb11c83: port 3(veth1295565) entered disabled state
+[ 2295.939400] br-baf9fcb11c83: port 3(veth1295565) entered disabled state
+[ 2295.941141] device veth1295565 left promiscuous mode
+[ 2295.941158] br-baf9fcb11c83: port 3(veth1295565) entered disabled state
+[ 2326.035777] br-b2d2fccbb85a: port 1(vethb063e5c) entered blocking state
+[ 2326.035801] br-b2d2fccbb85a: port 1(vethb063e5c) entered disabled state
+[ 2326.036527] device vethb063e5c entered promiscuous mode
+[ 2326.037972] br-b2d2fccbb85a: port 1(vethb063e5c) entered blocking state
+[ 2326.037988] br-b2d2fccbb85a: port 1(vethb063e5c) entered forwarding state
+[ 2326.038184] br-b2d2fccbb85a: port 1(vethb063e5c) entered disabled state
+[ 2326.085544] br-b2d2fccbb85a: port 2(vethe0063b3) entered blocking state
+[ 2326.085559] br-b2d2fccbb85a: port 2(vethe0063b3) entered disabled state
+[ 2326.089820] device vethe0063b3 entered promiscuous mode
+[ 2326.092021] br-b2d2fccbb85a: port 2(vethe0063b3) entered blocking state
+[ 2326.092037] br-b2d2fccbb85a: port 2(vethe0063b3) entered forwarding state
+[ 2326.092186] IPv6: ADDRCONF(NETDEV_CHANGE): br-b2d2fccbb85a: link becomes ready
+[ 2326.098464] br-b2d2fccbb85a: port 2(vethe0063b3) entered disabled state
+[ 2326.473561] eth0: renamed from veth3ccd1fb
+[ 2326.496415] IPv6: ADDRCONF(NETDEV_CHANGE): vethb063e5c: link becomes ready
+[ 2326.496654] br-b2d2fccbb85a: port 1(vethb063e5c) entered blocking state
+[ 2326.496671] br-b2d2fccbb85a: port 1(vethb063e5c) entered forwarding state
+[ 2326.560679] eth0: renamed from veth82fc8a7
+[ 2326.580369] IPv6: ADDRCONF(NETDEV_CHANGE): vethe0063b3: link becomes ready
+[ 2326.580540] br-b2d2fccbb85a: port 2(vethe0063b3) entered blocking state
+[ 2326.580553] br-b2d2fccbb85a: port 2(vethe0063b3) entered forwarding state
+[ 2333.447961] br-b2d2fccbb85a: port 3(vethfd56422) entered blocking state
+[ 2333.447977] br-b2d2fccbb85a: port 3(vethfd56422) entered disabled state
+[ 2333.449247] device vethfd56422 entered promiscuous mode
+[ 2334.164486] eth0: renamed from vethab6f462
+[ 2334.204242] IPv6: ADDRCONF(NETDEV_CHANGE): vethfd56422: link becomes ready
+[ 2334.204451] br-b2d2fccbb85a: port 3(vethfd56422) entered blocking state
+[ 2334.204461] br-b2d2fccbb85a: port 3(vethfd56422) entered forwarding state
+[ 2365.211840] br-b2d2fccbb85a: port 4(vetha77947b) entered blocking state
+[ 2365.211849] br-b2d2fccbb85a: port 4(vetha77947b) entered disabled state
+[ 2365.212962] device vetha77947b entered promiscuous mode
+[ 2365.264810] br-b2d2fccbb85a: port 5(vethadc7f66) entered blocking state
+[ 2365.264820] br-b2d2fccbb85a: port 5(vethadc7f66) entered disabled state
+[ 2365.265256] device vethadc7f66 entered promiscuous mode
+[ 2365.266548] br-b2d2fccbb85a: port 5(vethadc7f66) entered blocking state
+[ 2365.266557] br-b2d2fccbb85a: port 5(vethadc7f66) entered forwarding state
+[ 2365.720270] eth0: renamed from veth1e7bd54
+[ 2365.800110] eth0: renamed from veth6bdaa1e
+[ 2365.823525] IPv6: ADDRCONF(NETDEV_CHANGE): vethadc7f66: link becomes ready
+[ 2365.824659] IPv6: ADDRCONF(NETDEV_CHANGE): vetha77947b: link becomes ready
+[ 2365.824898] br-b2d2fccbb85a: port 4(vetha77947b) entered blocking state
+[ 2365.824917] br-b2d2fccbb85a: port 4(vetha77947b) entered forwarding state
+[ 2370.970213] veth3ccd1fb: renamed from eth0
+[ 2371.011260] br-b2d2fccbb85a: port 1(vethb063e5c) entered disabled state
+[ 2371.048058] br-b2d2fccbb85a: port 1(vethb063e5c) entered disabled state
+[ 2371.049070] device vethb063e5c left promiscuous mode
+[ 2371.049084] br-b2d2fccbb85a: port 1(vethb063e5c) entered disabled state
+[ 2521.212413] veth1e7bd54: renamed from eth0
+[ 2521.246190] br-b2d2fccbb85a: port 5(vethadc7f66) entered disabled state
+[ 2521.281057] br-b2d2fccbb85a: port 5(vethadc7f66) entered disabled state
+[ 2521.318000] device vethadc7f66 left promiscuous mode
+[ 2521.318011] br-b2d2fccbb85a: port 5(vethadc7f66) entered disabled state
+[ 2521.370736] br-b2d2fccbb85a: port 2(vethe0063b3) entered disabled state
+[ 2521.376786] veth82fc8a7: renamed from eth0
+[ 2521.521971] br-b2d2fccbb85a: port 2(vethe0063b3) entered disabled state
+[ 2521.525285] device vethe0063b3 left promiscuous mode
+[ 2521.525306] br-b2d2fccbb85a: port 2(vethe0063b3) entered disabled state
+[ 2521.571071] veth6bdaa1e: renamed from eth0
+[ 2521.646275] br-b2d2fccbb85a: port 4(vetha77947b) entered disabled state
+[ 2521.653776] br-b2d2fccbb85a: port 4(vetha77947b) entered disabled state
+[ 2521.656529] device vetha77947b left promiscuous mode
+[ 2521.656542] br-b2d2fccbb85a: port 4(vetha77947b) entered disabled state
+[ 2524.550438] br-b2d2fccbb85a: port 3(vethfd56422) entered disabled state
+[ 2524.550585] vethab6f462: renamed from eth0
+[ 2524.594427] br-b2d2fccbb85a: port 3(vethfd56422) entered disabled state
+[ 2524.595945] device vethfd56422 left promiscuous mode
+[ 2524.595955] br-b2d2fccbb85a: port 3(vethfd56422) entered disabled state
+[ 2533.847788] br-e4458111b5f9: port 1(vethb9db766) entered blocking state
+[ 2533.847797] br-e4458111b5f9: port 1(vethb9db766) entered disabled state
+[ 2533.847974] device vethb9db766 entered promiscuous mode
+[ 2533.848152] br-e4458111b5f9: port 1(vethb9db766) entered blocking state
+[ 2533.848157] br-e4458111b5f9: port 1(vethb9db766) entered forwarding state
+[ 2533.848592] br-e4458111b5f9: port 1(vethb9db766) entered disabled state
+[ 2533.905822] br-e4458111b5f9: port 2(veth02ac138) entered blocking state
+[ 2533.905832] br-e4458111b5f9: port 2(veth02ac138) entered disabled state
+[ 2533.905969] device veth02ac138 entered promiscuous mode
+[ 2533.906211] br-e4458111b5f9: port 2(veth02ac138) entered blocking state
+[ 2533.906217] br-e4458111b5f9: port 2(veth02ac138) entered forwarding state
+[ 2533.906280] IPv6: ADDRCONF(NETDEV_CHANGE): br-e4458111b5f9: link becomes ready
+[ 2533.906485] br-e4458111b5f9: port 2(veth02ac138) entered disabled state
+[ 2534.731230] eth0: renamed from veth987d066
+[ 2534.835182] eth0: renamed from veth54bd9ae
+[ 2534.870596] IPv6: ADDRCONF(NETDEV_CHANGE): vethb9db766: link becomes ready
+[ 2534.870799] br-e4458111b5f9: port 1(vethb9db766) entered blocking state
+[ 2534.870815] br-e4458111b5f9: port 1(vethb9db766) entered forwarding state
+[ 2534.871843] IPv6: ADDRCONF(NETDEV_CHANGE): veth02ac138: link becomes ready
+[ 2534.872087] br-e4458111b5f9: port 2(veth02ac138) entered blocking state
+[ 2534.872102] br-e4458111b5f9: port 2(veth02ac138) entered forwarding state
+[ 2540.818542] br-e4458111b5f9: port 3(vethe7087b9) entered blocking state
+[ 2540.818558] br-e4458111b5f9: port 3(vethe7087b9) entered disabled state
+[ 2540.818858] device vethe7087b9 entered promiscuous mode
+[ 2541.486750] eth0: renamed from veth44335a5
+[ 2541.514671] IPv6: ADDRCONF(NETDEV_CHANGE): vethe7087b9: link becomes ready
+[ 2541.514870] br-e4458111b5f9: port 3(vethe7087b9) entered blocking state
+[ 2541.514883] br-e4458111b5f9: port 3(vethe7087b9) entered forwarding state
+[ 2572.504738] br-e4458111b5f9: port 4(vethf434553) entered blocking state
+[ 2572.504752] br-e4458111b5f9: port 4(vethf434553) entered disabled state
+[ 2572.505093] device vethf434553 entered promiscuous mode
+[ 2572.575710] br-e4458111b5f9: port 5(veth8ee5074) entered blocking state
+[ 2572.575721] br-e4458111b5f9: port 5(veth8ee5074) entered disabled state
+[ 2572.579807] device veth8ee5074 entered promiscuous mode
+[ 2572.580190] br-e4458111b5f9: port 5(veth8ee5074) entered blocking state
+[ 2572.580197] br-e4458111b5f9: port 5(veth8ee5074) entered forwarding state
+[ 2573.053864] eth0: renamed from veth288be4b
+[ 2573.094197] IPv6: ADDRCONF(NETDEV_CHANGE): veth8ee5074: link becomes ready
+[ 2573.150291] eth0: renamed from veth5cad8a2
+[ 2573.170126] IPv6: ADDRCONF(NETDEV_CHANGE): vethf434553: link becomes ready
+[ 2573.170317] br-e4458111b5f9: port 4(vethf434553) entered blocking state
+[ 2573.170334] br-e4458111b5f9: port 4(vethf434553) entered forwarding state
+[ 2578.333057] veth54bd9ae: renamed from eth0
+[ 2578.361311] br-e4458111b5f9: port 2(veth02ac138) entered disabled state
+[ 2578.422710] br-e4458111b5f9: port 2(veth02ac138) entered disabled state
+[ 2578.424177] device veth02ac138 left promiscuous mode
+[ 2578.424189] br-e4458111b5f9: port 2(veth02ac138) entered disabled state
+[ 2646.595011] veth288be4b: renamed from eth0
+[ 2646.616711] br-e4458111b5f9: port 5(veth8ee5074) entered disabled state
+[ 2646.657218] br-e4458111b5f9: port 5(veth8ee5074) entered disabled state
+[ 2646.689096] device veth8ee5074 left promiscuous mode
+[ 2646.689110] br-e4458111b5f9: port 5(veth8ee5074) entered disabled state
+[ 2646.769234] br-e4458111b5f9: port 1(vethb9db766) entered disabled state
+[ 2646.769859] veth987d066: renamed from eth0
+[ 2646.881580] br-e4458111b5f9: port 1(vethb9db766) entered disabled state
+[ 2646.905424] device vethb9db766 left promiscuous mode
+[ 2646.905450] br-e4458111b5f9: port 1(vethb9db766) entered disabled state
+[ 2646.943707] veth5cad8a2: renamed from eth0
+[ 2646.973030] br-e4458111b5f9: port 4(vethf434553) entered disabled state
+[ 2647.031921] br-e4458111b5f9: port 4(vethf434553) entered disabled state
+[ 2647.039259] device vethf434553 left promiscuous mode
+[ 2647.039283] br-e4458111b5f9: port 4(vethf434553) entered disabled state
+[ 2651.059356] br-e4458111b5f9: port 3(vethe7087b9) entered disabled state
+[ 2651.059610] veth44335a5: renamed from eth0
+[ 2651.133505] br-e4458111b5f9: port 3(vethe7087b9) entered disabled state
+[ 2651.135985] device vethe7087b9 left promiscuous mode
+[ 2651.136007] br-e4458111b5f9: port 3(vethe7087b9) entered disabled state
+[ 2653.034870] br-e4458111b5f9: port 1(veth3838a29) entered blocking state
+[ 2653.034882] br-e4458111b5f9: port 1(veth3838a29) entered disabled state
+[ 2653.035084] device veth3838a29 entered promiscuous mode
+[ 2653.035287] br-e4458111b5f9: port 1(veth3838a29) entered blocking state
+[ 2653.035293] br-e4458111b5f9: port 1(veth3838a29) entered forwarding state
+[ 2653.036012] br-e4458111b5f9: port 1(veth3838a29) entered disabled state
+[ 2653.089206] br-e4458111b5f9: port 2(vethfaf68a1) entered blocking state
+[ 2653.089213] br-e4458111b5f9: port 2(vethfaf68a1) entered disabled state
+[ 2653.091158] device vethfaf68a1 entered promiscuous mode
+[ 2653.091340] br-e4458111b5f9: port 2(vethfaf68a1) entered blocking state
+[ 2653.091346] br-e4458111b5f9: port 2(vethfaf68a1) entered forwarding state
+[ 2653.091487] br-e4458111b5f9: port 2(vethfaf68a1) entered disabled state
+[ 2653.785338] eth0: renamed from vethc8f8de5
+[ 2653.828756] eth0: renamed from vethef56a81
+[ 2653.862567] IPv6: ADDRCONF(NETDEV_CHANGE): vethfaf68a1: link becomes ready
+[ 2653.862779] br-e4458111b5f9: port 2(vethfaf68a1) entered blocking state
+[ 2653.862795] br-e4458111b5f9: port 2(vethfaf68a1) entered forwarding state
+[ 2653.863641] IPv6: ADDRCONF(NETDEV_CHANGE): veth3838a29: link becomes ready
+[ 2653.863818] br-e4458111b5f9: port 1(veth3838a29) entered blocking state
+[ 2653.863834] br-e4458111b5f9: port 1(veth3838a29) entered forwarding state
+[ 2655.290140] br-e4458111b5f9: port 3(vethb6473f6) entered blocking state
+[ 2655.290159] br-e4458111b5f9: port 3(vethb6473f6) entered disabled state
+[ 2655.293242] device vethb6473f6 entered promiscuous mode
+[ 2655.869196] eth0: renamed from veth93eafc7
+[ 2655.897344] IPv6: ADDRCONF(NETDEV_CHANGE): vethb6473f6: link becomes ready
+[ 2655.897534] br-e4458111b5f9: port 3(vethb6473f6) entered blocking state
+[ 2655.897547] br-e4458111b5f9: port 3(vethb6473f6) entered forwarding state
+[ 2686.692471] br-e4458111b5f9: port 4(vethdd44eff) entered blocking state
+[ 2686.692485] br-e4458111b5f9: port 4(vethdd44eff) entered disabled state
+[ 2686.699696] device vethdd44eff entered promiscuous mode
+[ 2686.887221] br-e4458111b5f9: port 5(veth12f2bf3) entered blocking state
+[ 2686.887231] br-e4458111b5f9: port 5(veth12f2bf3) entered disabled state
+[ 2686.887488] device veth12f2bf3 entered promiscuous mode
+[ 2686.887840] br-e4458111b5f9: port 5(veth12f2bf3) entered blocking state
+[ 2686.887846] br-e4458111b5f9: port 5(veth12f2bf3) entered forwarding state
+[ 2687.332462] eth0: renamed from vethd81384e
+[ 2687.360430] br-e4458111b5f9: port 5(veth12f2bf3) entered disabled state
+[ 2687.360536] IPv6: ADDRCONF(NETDEV_CHANGE): vethdd44eff: link becomes ready
+[ 2687.360638] br-e4458111b5f9: port 4(vethdd44eff) entered blocking state
+[ 2687.360643] br-e4458111b5f9: port 4(vethdd44eff) entered forwarding state
+[ 2687.420368] eth0: renamed from vethef3ba11
+[ 2687.444409] br-e4458111b5f9: port 2(vethfaf68a1) entered disabled state
+[ 2687.445196] vethef56a81: renamed from eth0
+[ 2687.516560] IPv6: ADDRCONF(NETDEV_CHANGE): veth12f2bf3: link becomes ready
+[ 2687.516691] br-e4458111b5f9: port 5(veth12f2bf3) entered blocking state
+[ 2687.516698] br-e4458111b5f9: port 5(veth12f2bf3) entered forwarding state
+[ 2687.526661] br-e4458111b5f9: port 2(vethfaf68a1) entered disabled state
+[ 2687.529465] device vethfaf68a1 left promiscuous mode
+[ 2687.529490] br-e4458111b5f9: port 2(vethfaf68a1) entered disabled state
+[ 2719.351567] br-e4458111b5f9: port 5(veth12f2bf3) entered disabled state
+[ 2719.351979] vethef3ba11: renamed from eth0
+[ 2719.418354] br-e4458111b5f9: port 5(veth12f2bf3) entered disabled state
+[ 2719.455817] device veth12f2bf3 left promiscuous mode
+[ 2719.455828] br-e4458111b5f9: port 5(veth12f2bf3) entered disabled state
+[ 2719.484694] vethc8f8de5: renamed from eth0
+[ 2719.536099] br-e4458111b5f9: port 1(veth3838a29) entered disabled state
+[ 2719.596849] br-e4458111b5f9: port 1(veth3838a29) entered disabled state
+[ 2719.598563] device veth3838a29 left promiscuous mode
+[ 2719.598582] br-e4458111b5f9: port 1(veth3838a29) entered disabled state
+[ 2720.682553] br-e4458111b5f9: port 4(vethdd44eff) entered disabled state
+[ 2720.682835] vethd81384e: renamed from eth0
+[ 2720.740189] br-e4458111b5f9: port 4(vethdd44eff) entered disabled state
+[ 2720.742897] device vethdd44eff left promiscuous mode
+[ 2720.742920] br-e4458111b5f9: port 4(vethdd44eff) entered disabled state
+[ 2723.432706] veth93eafc7: renamed from eth0
+[ 2723.456181] br-e4458111b5f9: port 3(vethb6473f6) entered disabled state
+[ 2723.510879] br-e4458111b5f9: port 3(vethb6473f6) entered disabled state
+[ 2723.512253] device vethb6473f6 left promiscuous mode
+[ 2723.512271] br-e4458111b5f9: port 3(vethb6473f6) entered disabled state
+[ 2725.651840] br-e4458111b5f9: port 1(vethbf82360) entered blocking state
+[ 2725.651849] br-e4458111b5f9: port 1(vethbf82360) entered disabled state
+[ 2725.652081] device vethbf82360 entered promiscuous mode
+[ 2725.763852] br-e4458111b5f9: port 2(veth49faf0a) entered blocking state
+[ 2725.763862] br-e4458111b5f9: port 2(veth49faf0a) entered disabled state
+[ 2725.765349] device veth49faf0a entered promiscuous mode
+[ 2725.766301] br-e4458111b5f9: port 2(veth49faf0a) entered blocking state
+[ 2725.766311] br-e4458111b5f9: port 2(veth49faf0a) entered forwarding state
+[ 2725.766451] br-e4458111b5f9: port 2(veth49faf0a) entered disabled state
+[ 2726.196710] eth0: renamed from veth1b0032c
+[ 2726.224259] eth0: renamed from veth857da36
+[ 2726.256881] IPv6: ADDRCONF(NETDEV_CHANGE): veth49faf0a: link becomes ready
+[ 2726.257118] br-e4458111b5f9: port 2(veth49faf0a) entered blocking state
+[ 2726.257134] br-e4458111b5f9: port 2(veth49faf0a) entered forwarding state
+[ 2726.257481] IPv6: ADDRCONF(NETDEV_CHANGE): vethbf82360: link becomes ready
+[ 2726.257709] br-e4458111b5f9: port 1(vethbf82360) entered blocking state
+[ 2726.257724] br-e4458111b5f9: port 1(vethbf82360) entered forwarding state
+[ 2727.732129] br-e4458111b5f9: port 3(vethfdc9a56) entered blocking state
+[ 2727.732152] br-e4458111b5f9: port 3(vethfdc9a56) entered disabled state
+[ 2727.733001] device vethfdc9a56 entered promiscuous mode
+[ 2728.456636] eth0: renamed from veth232d97d
+[ 2728.480158] IPv6: ADDRCONF(NETDEV_CHANGE): vethfdc9a56: link becomes ready
+[ 2728.480294] br-e4458111b5f9: port 3(vethfdc9a56) entered blocking state
+[ 2728.480305] br-e4458111b5f9: port 3(vethfdc9a56) entered forwarding state
+[ 2759.117151] br-e4458111b5f9: port 4(vethf907fac) entered blocking state
+[ 2759.117159] br-e4458111b5f9: port 4(vethf907fac) entered disabled state
+[ 2759.117348] device vethf907fac entered promiscuous mode
+[ 2759.194248] br-e4458111b5f9: port 5(veth36d7326) entered blocking state
+[ 2759.194268] br-e4458111b5f9: port 5(veth36d7326) entered disabled state
+[ 2759.194702] device veth36d7326 entered promiscuous mode
+[ 2759.196401] br-e4458111b5f9: port 5(veth36d7326) entered blocking state
+[ 2759.196414] br-e4458111b5f9: port 5(veth36d7326) entered forwarding state
+[ 2759.675579] eth0: renamed from veth66b1764
+[ 2759.727617] eth0: renamed from veth70b3328
+[ 2759.759140] IPv6: ADDRCONF(NETDEV_CHANGE): veth36d7326: link becomes ready
+[ 2759.759584] IPv6: ADDRCONF(NETDEV_CHANGE): vethf907fac: link becomes ready
+[ 2759.759671] br-e4458111b5f9: port 4(vethf907fac) entered blocking state
+[ 2759.759679] br-e4458111b5f9: port 4(vethf907fac) entered forwarding state
+[ 2759.812259] br-e4458111b5f9: port 2(veth49faf0a) entered disabled state
+[ 2759.812452] veth857da36: renamed from eth0
+[ 2759.871623] br-e4458111b5f9: port 2(veth49faf0a) entered disabled state
+[ 2759.873402] device veth49faf0a left promiscuous mode
+[ 2759.873416] br-e4458111b5f9: port 2(veth49faf0a) entered disabled state
+[ 2789.186603] veth66b1764: renamed from eth0
+[ 2789.211376] br-e4458111b5f9: port 5(veth36d7326) entered disabled state
+[ 2789.280469] br-e4458111b5f9: port 5(veth36d7326) entered disabled state
+[ 2789.306894] device veth36d7326 left promiscuous mode
+[ 2789.306903] br-e4458111b5f9: port 5(veth36d7326) entered disabled state
+[ 2789.332462] br-e4458111b5f9: port 1(vethbf82360) entered disabled state
+[ 2789.332738] veth1b0032c: renamed from eth0
+[ 2789.400725] br-e4458111b5f9: port 1(vethbf82360) entered disabled state
+[ 2789.402207] device vethbf82360 left promiscuous mode
+[ 2789.402219] br-e4458111b5f9: port 1(vethbf82360) entered disabled state
+[ 2789.735204] br-e4458111b5f9: port 4(vethf907fac) entered disabled state
+[ 2789.735326] veth70b3328: renamed from eth0
+[ 2789.795427] br-e4458111b5f9: port 4(vethf907fac) entered disabled state
+[ 2789.796183] device vethf907fac left promiscuous mode
+[ 2789.796191] br-e4458111b5f9: port 4(vethf907fac) entered disabled state
+[ 2792.456764] br-e4458111b5f9: port 3(vethfdc9a56) entered disabled state
+[ 2792.457305] veth232d97d: renamed from eth0
+[ 2792.527960] br-e4458111b5f9: port 3(vethfdc9a56) entered disabled state
+[ 2792.529844] device vethfdc9a56 left promiscuous mode
+[ 2792.529867] br-e4458111b5f9: port 3(vethfdc9a56) entered disabled state
+[ 2795.082936] br-e4458111b5f9: port 1(veth3088b86) entered blocking state
+[ 2795.082954] br-e4458111b5f9: port 1(veth3088b86) entered disabled state
+[ 2795.083510] device veth3088b86 entered promiscuous mode
+[ 2795.189067] br-e4458111b5f9: port 2(vethabb268c) entered blocking state
+[ 2795.189075] br-e4458111b5f9: port 2(vethabb268c) entered disabled state
+[ 2795.189344] device vethabb268c entered promiscuous mode
+[ 2795.190530] br-e4458111b5f9: port 2(vethabb268c) entered blocking state
+[ 2795.190538] br-e4458111b5f9: port 2(vethabb268c) entered forwarding state
+[ 2795.190613] br-e4458111b5f9: port 2(vethabb268c) entered disabled state
+[ 2795.555468] eth0: renamed from veth81c3cab
+[ 2795.583630] eth0: renamed from veth85288e2
+[ 2795.615718] IPv6: ADDRCONF(NETDEV_CHANGE): vethabb268c: link becomes ready
+[ 2795.615922] br-e4458111b5f9: port 2(vethabb268c) entered blocking state
+[ 2795.615939] br-e4458111b5f9: port 2(vethabb268c) entered forwarding state
+[ 2795.616872] IPv6: ADDRCONF(NETDEV_CHANGE): veth3088b86: link becomes ready
+[ 2795.617068] br-e4458111b5f9: port 1(veth3088b86) entered blocking state
+[ 2795.617083] br-e4458111b5f9: port 1(veth3088b86) entered forwarding state
+[ 2797.042167] br-e4458111b5f9: port 3(veth29951f1) entered blocking state
+[ 2797.042183] br-e4458111b5f9: port 3(veth29951f1) entered disabled state
+[ 2797.043683] device veth29951f1 entered promiscuous mode
+[ 2797.783592] eth0: renamed from veth1ae7554
+[ 2797.815704] IPv6: ADDRCONF(NETDEV_CHANGE): veth29951f1: link becomes ready
+[ 2797.815884] br-e4458111b5f9: port 3(veth29951f1) entered blocking state
+[ 2797.815898] br-e4458111b5f9: port 3(veth29951f1) entered forwarding state
+[ 2828.571892] br-e4458111b5f9: port 4(veth760e79e) entered blocking state
+[ 2828.571900] br-e4458111b5f9: port 4(veth760e79e) entered disabled state
+[ 2828.572467] device veth760e79e entered promiscuous mode
+[ 2828.593902] br-e4458111b5f9: port 5(vethd4fa44d) entered blocking state
+[ 2828.593910] br-e4458111b5f9: port 5(vethd4fa44d) entered disabled state
+[ 2828.594791] device vethd4fa44d entered promiscuous mode
+[ 2828.595616] br-e4458111b5f9: port 5(vethd4fa44d) entered blocking state
+[ 2828.595623] br-e4458111b5f9: port 5(vethd4fa44d) entered forwarding state
+[ 2828.786136] br-e4458111b5f9: port 6(veth4246612) entered blocking state
+[ 2828.786146] br-e4458111b5f9: port 6(veth4246612) entered disabled state
+[ 2828.786499] device veth4246612 entered promiscuous mode
+[ 2828.789967] br-e4458111b5f9: port 6(veth4246612) entered blocking state
+[ 2828.789977] br-e4458111b5f9: port 6(veth4246612) entered forwarding state
+[ 2829.118796] eth0: renamed from vethc38757f
+[ 2829.150687] br-e4458111b5f9: port 5(vethd4fa44d) entered disabled state
+[ 2829.150872] br-e4458111b5f9: port 6(veth4246612) entered disabled state
+[ 2829.150965] IPv6: ADDRCONF(NETDEV_CHANGE): veth760e79e: link becomes ready
+[ 2829.151051] br-e4458111b5f9: port 4(veth760e79e) entered blocking state
+[ 2829.151056] br-e4458111b5f9: port 4(veth760e79e) entered forwarding state
+[ 2829.198810] eth0: renamed from vethcc37268
+[ 2829.266776] IPv6: ADDRCONF(NETDEV_CHANGE): vethd4fa44d: link becomes ready
+[ 2829.266914] br-e4458111b5f9: port 5(vethd4fa44d) entered blocking state
+[ 2829.266923] br-e4458111b5f9: port 5(vethd4fa44d) entered forwarding state
+[ 2829.267028] eth0: renamed from veth0be7724
+[ 2829.290800] IPv6: ADDRCONF(NETDEV_CHANGE): veth4246612: link becomes ready
+[ 2829.290924] br-e4458111b5f9: port 6(veth4246612) entered blocking state
+[ 2829.290929] br-e4458111b5f9: port 6(veth4246612) entered forwarding state
+[ 2829.345800] br-e4458111b5f9: port 2(vethabb268c) entered disabled state
+[ 2829.346507] veth81c3cab: renamed from eth0
+[ 2829.439420] br-e4458111b5f9: port 2(vethabb268c) entered disabled state
+[ 2829.453757] device vethabb268c left promiscuous mode
+[ 2829.453772] br-e4458111b5f9: port 2(vethabb268c) entered disabled state
+[ 2891.514201] vethc38757f: renamed from eth0
+[ 2891.545847] br-e4458111b5f9: port 4(veth760e79e) entered disabled state
+[ 2891.587905] br-e4458111b5f9: port 4(veth760e79e) entered disabled state
+[ 2891.618070] device veth760e79e left promiscuous mode
+[ 2891.618093] br-e4458111b5f9: port 4(veth760e79e) entered disabled state
+[ 2891.700994] veth85288e2: renamed from eth0
+[ 2891.722028] br-e4458111b5f9: port 1(veth3088b86) entered disabled state
+[ 2891.809554] br-e4458111b5f9: port 1(veth3088b86) entered disabled state
+[ 2891.813435] device veth3088b86 left promiscuous mode
+[ 2891.813454] br-e4458111b5f9: port 1(veth3088b86) entered disabled state
+[ 2891.842201] br-e4458111b5f9: port 5(vethd4fa44d) entered disabled state
+[ 2891.843667] vethcc37268: renamed from eth0
+[ 2891.957501] br-e4458111b5f9: port 5(vethd4fa44d) entered disabled state
+[ 2891.959521] device vethd4fa44d left promiscuous mode
+[ 2891.959541] br-e4458111b5f9: port 5(vethd4fa44d) entered disabled state
+[ 2891.991693] br-e4458111b5f9: port 6(veth4246612) entered disabled state
+[ 2891.991847] veth0be7724: renamed from eth0
+[ 2892.135716] br-e4458111b5f9: port 6(veth4246612) entered disabled state
+[ 2892.144873] device veth4246612 left promiscuous mode
+[ 2892.144893] br-e4458111b5f9: port 6(veth4246612) entered disabled state
+[ 2895.142188] br-e4458111b5f9: port 3(veth29951f1) entered disabled state
+[ 2895.142444] veth1ae7554: renamed from eth0
+[ 2895.213240] br-e4458111b5f9: port 3(veth29951f1) entered disabled state
+[ 2895.216558] device veth29951f1 left promiscuous mode
+[ 2895.216587] br-e4458111b5f9: port 3(veth29951f1) entered disabled state
+[ 3325.471171] br-453a64b6ac45: port 1(vethae3f60a) entered blocking state
+[ 3325.471181] br-453a64b6ac45: port 1(vethae3f60a) entered disabled state
+[ 3325.471759] device vethae3f60a entered promiscuous mode
+[ 3325.472506] br-453a64b6ac45: port 1(vethae3f60a) entered blocking state
+[ 3325.472514] br-453a64b6ac45: port 1(vethae3f60a) entered forwarding state
+[ 3325.472638] br-453a64b6ac45: port 1(vethae3f60a) entered disabled state
+[ 3325.584739] br-453a64b6ac45: port 2(veth2f19e72) entered blocking state
+[ 3325.584746] br-453a64b6ac45: port 2(veth2f19e72) entered disabled state
+[ 3325.585528] device veth2f19e72 entered promiscuous mode
+[ 3325.588366] br-453a64b6ac45: port 2(veth2f19e72) entered blocking state
+[ 3325.588377] br-453a64b6ac45: port 2(veth2f19e72) entered forwarding state
+[ 3325.588440] IPv6: ADDRCONF(NETDEV_CHANGE): br-453a64b6ac45: link becomes ready
+[ 3325.590098] br-453a64b6ac45: port 2(veth2f19e72) entered disabled state
+[ 3326.012601] eth0: renamed from veth2e417d1
+[ 3326.044511] eth0: renamed from veth3e04510
+[ 3326.068293] IPv6: ADDRCONF(NETDEV_CHANGE): vethae3f60a: link becomes ready
+[ 3326.068528] br-453a64b6ac45: port 1(vethae3f60a) entered blocking state
+[ 3326.068543] br-453a64b6ac45: port 1(vethae3f60a) entered forwarding state
+[ 3326.070543] IPv6: ADDRCONF(NETDEV_CHANGE): veth2f19e72: link becomes ready
+[ 3326.070750] br-453a64b6ac45: port 2(veth2f19e72) entered blocking state
+[ 3326.070773] br-453a64b6ac45: port 2(veth2f19e72) entered forwarding state
+[ 3332.023986] br-453a64b6ac45: port 3(veth89bf263) entered blocking state
+[ 3332.023995] br-453a64b6ac45: port 3(veth89bf263) entered disabled state
+[ 3332.024161] device veth89bf263 entered promiscuous mode
+[ 3332.460921] eth0: renamed from veth6c93271
+[ 3332.504550] IPv6: ADDRCONF(NETDEV_CHANGE): veth89bf263: link becomes ready
+[ 3332.504798] br-453a64b6ac45: port 3(veth89bf263) entered blocking state
+[ 3332.504812] br-453a64b6ac45: port 3(veth89bf263) entered forwarding state
+[ 3364.827016] br-453a64b6ac45: port 4(veth42c1726) entered blocking state
+[ 3364.827032] br-453a64b6ac45: port 4(veth42c1726) entered disabled state
+[ 3364.827740] device veth42c1726 entered promiscuous mode
+[ 3364.991408] br-453a64b6ac45: port 5(vethd6d5453) entered blocking state
+[ 3364.991421] br-453a64b6ac45: port 5(vethd6d5453) entered disabled state
+[ 3364.991653] device vethd6d5453 entered promiscuous mode
+[ 3364.992477] br-453a64b6ac45: port 5(vethd6d5453) entered blocking state
+[ 3364.992490] br-453a64b6ac45: port 5(vethd6d5453) entered forwarding state
+[ 3365.218467] br-453a64b6ac45: port 6(vetha5eefb7) entered blocking state
+[ 3365.218486] br-453a64b6ac45: port 6(vetha5eefb7) entered disabled state
+[ 3365.219857] device vetha5eefb7 entered promiscuous mode
+[ 3365.221125] br-453a64b6ac45: port 6(vetha5eefb7) entered blocking state
+[ 3365.221159] br-453a64b6ac45: port 6(vetha5eefb7) entered forwarding state
+[ 3365.851904] eth0: renamed from veth80cf99b
+[ 3365.887856] br-453a64b6ac45: port 5(vethd6d5453) entered disabled state
+[ 3365.888478] br-453a64b6ac45: port 6(vetha5eefb7) entered disabled state
+[ 3365.889356] eth0: renamed from vethc9ce1b1
+[ 3365.903387] IPv6: ADDRCONF(NETDEV_CHANGE): vethd6d5453: link becomes ready
+[ 3365.903574] br-453a64b6ac45: port 5(vethd6d5453) entered blocking state
+[ 3365.903586] br-453a64b6ac45: port 5(vethd6d5453) entered forwarding state
+[ 3365.904445] IPv6: ADDRCONF(NETDEV_CHANGE): veth42c1726: link becomes ready
+[ 3365.904646] br-453a64b6ac45: port 4(veth42c1726) entered blocking state
+[ 3365.904661] br-453a64b6ac45: port 4(veth42c1726) entered forwarding state
+[ 3365.952309] eth0: renamed from vethd396ccc
+[ 3365.987939] IPv6: ADDRCONF(NETDEV_CHANGE): vetha5eefb7: link becomes ready
+[ 3365.988131] br-453a64b6ac45: port 6(vetha5eefb7) entered blocking state
+[ 3365.988145] br-453a64b6ac45: port 6(vetha5eefb7) entered forwarding state
+[ 3370.095835] br-453a64b6ac45: port 2(veth2f19e72) entered disabled state
+[ 3370.095954] veth3e04510: renamed from eth0
+[ 3370.166512] br-453a64b6ac45: port 2(veth2f19e72) entered disabled state
+[ 3370.171103] device veth2f19e72 left promiscuous mode
+[ 3370.171112] br-453a64b6ac45: port 2(veth2f19e72) entered disabled state
+[ 3438.850451] audit: type=1326 audit(1681901607.782:133): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 3438.851970] audit: type=1326 audit(1681901607.782:134): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 3467.257796] audit: type=1326 audit(1681901636.191:135): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 3467.258313] audit: type=1326 audit(1681901636.191:136): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 3467.443689] audit: type=1326 audit(1681901636.375:137): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 3499.977244] audit: type=1326 audit(1681901668.911:138): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 3503.487250] audit: type=1326 audit(1681901672.419:139): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 3546.559416] audit: type=1326 audit(1681901715.492:140): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 3546.560033] audit: type=1326 audit(1681901715.492:141): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 3546.756292] audit: type=1326 audit(1681901715.692:142): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 3546.969275] audit: type=1326 audit(1681901715.904:143): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 3546.981827] audit: type=1326 audit(1681901715.916:144): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 3565.023052] audit: type=1326 audit(1681901733.956:145): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 3565.075816] audit: type=1326 audit(1681901734.008:146): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 3617.992876] br-453a64b6ac45: port 4(veth42c1726) entered disabled state
+[ 3617.992990] vethc9ce1b1: renamed from eth0
+[ 3618.050797] br-453a64b6ac45: port 4(veth42c1726) entered disabled state
+[ 3618.084471] device veth42c1726 left promiscuous mode
+[ 3618.084491] br-453a64b6ac45: port 4(veth42c1726) entered disabled state
+[ 3618.165108] br-453a64b6ac45: port 1(vethae3f60a) entered disabled state
+[ 3618.168899] veth2e417d1: renamed from eth0
+[ 3618.280006] veth80cf99b: renamed from eth0
+[ 3618.315533] br-453a64b6ac45: port 6(vetha5eefb7) entered disabled state
+[ 3618.315711] br-453a64b6ac45: port 5(vethd6d5453) entered disabled state
+[ 3618.315825] vethd396ccc: renamed from eth0
+[ 3618.428125] br-453a64b6ac45: port 1(vethae3f60a) entered disabled state
+[ 3618.431392] device vethae3f60a left promiscuous mode
+[ 3618.431411] br-453a64b6ac45: port 1(vethae3f60a) entered disabled state
+[ 3618.498914] br-453a64b6ac45: port 6(vetha5eefb7) entered disabled state
+[ 3618.532712] device vetha5eefb7 left promiscuous mode
+[ 3618.532741] br-453a64b6ac45: port 6(vetha5eefb7) entered disabled state
+[ 3618.604801] br-453a64b6ac45: port 5(vethd6d5453) entered disabled state
+[ 3618.605824] device vethd6d5453 left promiscuous mode
+[ 3618.605831] br-453a64b6ac45: port 5(vethd6d5453) entered disabled state
+[ 3621.578513] br-453a64b6ac45: port 3(veth89bf263) entered disabled state
+[ 3621.578767] veth6c93271: renamed from eth0
+[ 3621.648116] br-453a64b6ac45: port 3(veth89bf263) entered disabled state
+[ 3621.650070] device veth89bf263 left promiscuous mode
+[ 3621.650102] br-453a64b6ac45: port 3(veth89bf263) entered disabled state
+[ 4412.848125] br-453a64b6ac45: port 1(vethb941b3c) entered blocking state
+[ 4412.848139] br-453a64b6ac45: port 1(vethb941b3c) entered disabled state
+[ 4412.848324] device vethb941b3c entered promiscuous mode
+[ 4412.848479] br-453a64b6ac45: port 1(vethb941b3c) entered blocking state
+[ 4412.848482] br-453a64b6ac45: port 1(vethb941b3c) entered forwarding state
+[ 4412.855916] br-453a64b6ac45: port 1(vethb941b3c) entered disabled state
+[ 4412.862263] br-453a64b6ac45: port 2(veth40c93a8) entered blocking state
+[ 4412.862272] br-453a64b6ac45: port 2(veth40c93a8) entered disabled state
+[ 4412.862713] device veth40c93a8 entered promiscuous mode
+[ 4413.280704] eth0: renamed from vethda2269a
+[ 4413.312672] eth0: renamed from veth1192ceb
+[ 4413.337004] IPv6: ADDRCONF(NETDEV_CHANGE): vethb941b3c: link becomes ready
+[ 4413.337116] br-453a64b6ac45: port 1(vethb941b3c) entered blocking state
+[ 4413.337123] br-453a64b6ac45: port 1(vethb941b3c) entered forwarding state
+[ 4413.337293] IPv6: ADDRCONF(NETDEV_CHANGE): veth40c93a8: link becomes ready
+[ 4413.337366] br-453a64b6ac45: port 2(veth40c93a8) entered blocking state
+[ 4413.337371] br-453a64b6ac45: port 2(veth40c93a8) entered forwarding state
+[ 4414.584302] br-453a64b6ac45: port 3(veth1bbe107) entered blocking state
+[ 4414.584311] br-453a64b6ac45: port 3(veth1bbe107) entered disabled state
+[ 4414.584515] device veth1bbe107 entered promiscuous mode
+[ 4414.896674] eth0: renamed from veth626cf02
+[ 4414.924637] IPv6: ADDRCONF(NETDEV_CHANGE): veth1bbe107: link becomes ready
+[ 4414.924738] br-453a64b6ac45: port 3(veth1bbe107) entered blocking state
+[ 4414.924742] br-453a64b6ac45: port 3(veth1bbe107) entered forwarding state
+[ 4444.934853] br-453a64b6ac45: port 1(vethb941b3c) entered disabled state
+[ 4444.934956] vethda2269a: renamed from eth0
+[ 4444.995850] br-453a64b6ac45: port 1(vethb941b3c) entered disabled state
+[ 4444.999898] device vethb941b3c left promiscuous mode
+[ 4444.999933] br-453a64b6ac45: port 1(vethb941b3c) entered disabled state
+[ 4445.412621] br-453a64b6ac45: port 1(veth927acaf) entered blocking state
+[ 4445.412633] br-453a64b6ac45: port 1(veth927acaf) entered disabled state
+[ 4445.412850] device veth927acaf entered promiscuous mode
+[ 4445.413047] br-453a64b6ac45: port 1(veth927acaf) entered blocking state
+[ 4445.413053] br-453a64b6ac45: port 1(veth927acaf) entered forwarding state
+[ 4445.482603] br-453a64b6ac45: port 4(vethfca6fb7) entered blocking state
+[ 4445.482609] br-453a64b6ac45: port 4(vethfca6fb7) entered disabled state
+[ 4445.482945] device vethfca6fb7 entered promiscuous mode
+[ 4445.483593] br-453a64b6ac45: port 4(vethfca6fb7) entered blocking state
+[ 4445.483599] br-453a64b6ac45: port 4(vethfca6fb7) entered forwarding state
+[ 4445.495882] br-453a64b6ac45: port 5(veth9d94ccb) entered blocking state
+[ 4445.495893] br-453a64b6ac45: port 5(veth9d94ccb) entered disabled state
+[ 4445.496681] device veth9d94ccb entered promiscuous mode
+[ 4445.497130] br-453a64b6ac45: port 5(veth9d94ccb) entered blocking state
+[ 4445.497137] br-453a64b6ac45: port 5(veth9d94ccb) entered forwarding state
+[ 4445.944687] eth0: renamed from vetha370d63
+[ 4445.976465] br-453a64b6ac45: port 1(veth927acaf) entered disabled state
+[ 4445.976649] br-453a64b6ac45: port 4(vethfca6fb7) entered disabled state
+[ 4445.976730] br-453a64b6ac45: port 5(veth9d94ccb) entered disabled state
+[ 4445.977803] IPv6: ADDRCONF(NETDEV_CHANGE): veth927acaf: link becomes ready
+[ 4445.977895] br-453a64b6ac45: port 1(veth927acaf) entered blocking state
+[ 4445.977900] br-453a64b6ac45: port 1(veth927acaf) entered forwarding state
+[ 4446.068665] eth0: renamed from vethf8cd041
+[ 4446.104575] eth0: renamed from veth6d3e088
+[ 4446.120533] IPv6: ADDRCONF(NETDEV_CHANGE): veth9d94ccb: link becomes ready
+[ 4446.120637] br-453a64b6ac45: port 5(veth9d94ccb) entered blocking state
+[ 4446.120643] br-453a64b6ac45: port 5(veth9d94ccb) entered forwarding state
+[ 4446.121314] IPv6: ADDRCONF(NETDEV_CHANGE): vethfca6fb7: link becomes ready
+[ 4446.121410] br-453a64b6ac45: port 4(vethfca6fb7) entered blocking state
+[ 4446.121417] br-453a64b6ac45: port 4(vethfca6fb7) entered forwarding state
+[ 4497.794216] audit: type=1326 audit(1681902666.736:147): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 4497.794601] audit: type=1326 audit(1681902666.736:148): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 4515.836023] audit: type=1326 audit(1681902684.780:149): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 4515.876146] audit: type=1326 audit(1681902684.820:150): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 4557.552707] audit: type=1326 audit(1681902726.497:151): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 4560.361485] audit: type=1326 audit(1681902729.305:152): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 4560.695064] audit: type=1326 audit(1681902729.637:153): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 4562.632459] audit: type=1326 audit(1681902731.577:154): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 4562.909432] audit: type=1326 audit(1681902731.853:155): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 4567.513495] audit: type=1326 audit(1681902736.457:156): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 4577.673615] audit: type=1326 audit(1681902746.617:157): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 4577.682958] audit: type=1326 audit(1681902746.625:158): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 4578.438705] audit: type=1326 audit(1681902747.381:159): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 4630.041639] audit: type=1326 audit(1681902798.985:160): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 4630.041870] audit: type=1326 audit(1681902798.985:161): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 4630.586589] audit: type=1326 audit(1681902799.529:162): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 4631.203992] audit: type=1326 audit(1681902800.149:163): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 4667.667173] audit: type=1326 audit(1681902836.613:164): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 4667.667400] audit: type=1326 audit(1681902836.613:165): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 4668.157115] audit: type=1326 audit(1681902837.101:166): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=7788 comm="CanvasRenderer" exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=312 compat=0 ip=0x7f8da27d373d code=0x50000
+[ 4991.120779] br-453a64b6ac45: port 4(vethfca6fb7) entered disabled state
+[ 4991.120882] veth6d3e088: renamed from eth0
+[ 4991.197198] br-453a64b6ac45: port 4(vethfca6fb7) entered disabled state
+[ 4991.229027] device vethfca6fb7 left promiscuous mode
+[ 4991.229045] br-453a64b6ac45: port 4(vethfca6fb7) entered disabled state
+[ 4991.290875] br-453a64b6ac45: port 2(veth40c93a8) entered disabled state
+[ 4991.292998] veth1192ceb: renamed from eth0
+[ 4991.420300] vetha370d63: renamed from eth0
+[ 4991.501261] br-453a64b6ac45: port 1(veth927acaf) entered disabled state
+[ 4991.504639] br-453a64b6ac45: port 2(veth40c93a8) entered disabled state
+[ 4991.506926] device veth40c93a8 left promiscuous mode
+[ 4991.506946] br-453a64b6ac45: port 2(veth40c93a8) entered disabled state
+[ 4991.536238] br-453a64b6ac45: port 5(veth9d94ccb) entered disabled state
+[ 4991.539027] vethf8cd041: renamed from eth0
+[ 4991.620441] br-453a64b6ac45: port 1(veth927acaf) entered disabled state
+[ 4991.623678] device veth927acaf left promiscuous mode
+[ 4991.623705] br-453a64b6ac45: port 1(veth927acaf) entered disabled state
+[ 4991.699569] br-453a64b6ac45: port 5(veth9d94ccb) entered disabled state
+[ 4991.704903] device veth9d94ccb left promiscuous mode
+[ 4991.704912] br-453a64b6ac45: port 5(veth9d94ccb) entered disabled state
+[ 4994.369962] br-453a64b6ac45: port 3(veth1bbe107) entered disabled state
+[ 4994.370026] veth626cf02: renamed from eth0
+[ 4994.435587] br-453a64b6ac45: port 3(veth1bbe107) entered disabled state
+[ 4994.436391] device veth1bbe107 left promiscuous mode
+[ 4994.436395] br-453a64b6ac45: port 3(veth1bbe107) entered disabled state
+[ 5016.073310] br-78e3d990b0e3: port 1(veth05257bc) entered blocking state
+[ 5016.073315] br-78e3d990b0e3: port 1(veth05257bc) entered disabled state
+[ 5016.073457] device veth05257bc entered promiscuous mode
+[ 5016.073665] br-78e3d990b0e3: port 1(veth05257bc) entered blocking state
+[ 5016.073669] br-78e3d990b0e3: port 1(veth05257bc) entered forwarding state
+[ 5016.074042] br-78e3d990b0e3: port 1(veth05257bc) entered disabled state
+[ 5016.136386] br-78e3d990b0e3: port 2(veth76a17b9) entered blocking state
+[ 5016.136393] br-78e3d990b0e3: port 2(veth76a17b9) entered disabled state
+[ 5016.136571] device veth76a17b9 entered promiscuous mode
+[ 5016.136685] br-78e3d990b0e3: port 2(veth76a17b9) entered blocking state
+[ 5016.136688] br-78e3d990b0e3: port 2(veth76a17b9) entered forwarding state
+[ 5016.136716] IPv6: ADDRCONF(NETDEV_CHANGE): br-78e3d990b0e3: link becomes ready
+[ 5016.136901] br-78e3d990b0e3: port 2(veth76a17b9) entered disabled state
+[ 5016.417365] eth0: renamed from veth9723634
+[ 5016.536998] IPv6: ADDRCONF(NETDEV_CHANGE): veth05257bc: link becomes ready
+[ 5016.537172] br-78e3d990b0e3: port 1(veth05257bc) entered blocking state
+[ 5016.537191] br-78e3d990b0e3: port 1(veth05257bc) entered forwarding state
+[ 5016.537575] eth0: renamed from vethcd66d55
+[ 5016.557207] IPv6: ADDRCONF(NETDEV_CHANGE): veth76a17b9: link becomes ready
+[ 5016.557371] br-78e3d990b0e3: port 2(veth76a17b9) entered blocking state
+[ 5016.557382] br-78e3d990b0e3: port 2(veth76a17b9) entered forwarding state
+[ 5021.179782] br-78e3d990b0e3: port 3(vethf051c12) entered blocking state
+[ 5021.179789] br-78e3d990b0e3: port 3(vethf051c12) entered disabled state
+[ 5021.179899] device vethf051c12 entered promiscuous mode
+[ 5021.179994] br-78e3d990b0e3: port 3(vethf051c12) entered blocking state
+[ 5021.179998] br-78e3d990b0e3: port 3(vethf051c12) entered forwarding state
+[ 5021.183614] br-78e3d990b0e3: port 3(vethf051c12) entered disabled state
+[ 5021.460515] eth0: renamed from vethf408675
+[ 5021.480268] IPv6: ADDRCONF(NETDEV_CHANGE): vethf051c12: link becomes ready
+[ 5021.480340] br-78e3d990b0e3: port 3(vethf051c12) entered blocking state
+[ 5021.480344] br-78e3d990b0e3: port 3(vethf051c12) entered forwarding state
+[ 5041.851878] br-78e3d990b0e3: port 4(veth8e9d558) entered blocking state
+[ 5041.851884] br-78e3d990b0e3: port 4(veth8e9d558) entered disabled state
+[ 5041.852173] device veth8e9d558 entered promiscuous mode
+[ 5041.928474] br-78e3d990b0e3: port 5(veth42f0ee4) entered blocking state
+[ 5041.928480] br-78e3d990b0e3: port 5(veth42f0ee4) entered disabled state
+[ 5041.928713] device veth42f0ee4 entered promiscuous mode
+[ 5041.929973] br-78e3d990b0e3: port 5(veth42f0ee4) entered blocking state
+[ 5041.929979] br-78e3d990b0e3: port 5(veth42f0ee4) entered forwarding state
+[ 5041.942335] br-78e3d990b0e3: port 6(vethfe61a29) entered blocking state
+[ 5041.942342] br-78e3d990b0e3: port 6(vethfe61a29) entered disabled state
+[ 5041.943295] device vethfe61a29 entered promiscuous mode
+[ 5041.944059] br-78e3d990b0e3: port 6(vethfe61a29) entered blocking state
+[ 5041.944065] br-78e3d990b0e3: port 6(vethfe61a29) entered forwarding state
+[ 5042.340671] eth0: renamed from veth806c1dc
+[ 5042.380517] eth0: renamed from vethe69fdf2
+[ 5042.428692] br-78e3d990b0e3: port 5(veth42f0ee4) entered disabled state
+[ 5042.428902] IPv6: ADDRCONF(NETDEV_CHANGE): vethfe61a29: link becomes ready
+[ 5042.429749] eth0: renamed from vethd73a783
+[ 5042.448472] IPv6: ADDRCONF(NETDEV_CHANGE): veth42f0ee4: link becomes ready
+[ 5042.448672] br-78e3d990b0e3: port 5(veth42f0ee4) entered blocking state
+[ 5042.448688] br-78e3d990b0e3: port 5(veth42f0ee4) entered forwarding state
+[ 5042.449701] IPv6: ADDRCONF(NETDEV_CHANGE): veth8e9d558: link becomes ready
+[ 5042.449863] br-78e3d990b0e3: port 4(veth8e9d558) entered blocking state
+[ 5042.449875] br-78e3d990b0e3: port 4(veth8e9d558) entered forwarding state
+[ 5056.303059] br-78e3d990b0e3: port 2(veth76a17b9) entered disabled state
+[ 5056.303340] vethcd66d55: renamed from eth0
+[ 5056.348972] br-78e3d990b0e3: port 2(veth76a17b9) entered disabled state
+[ 5056.350221] device veth76a17b9 left promiscuous mode
+[ 5056.350228] br-78e3d990b0e3: port 2(veth76a17b9) entered disabled state
+[ 5264.783179] audit: type=1400 audit(1681903433.731:167): apparmor="DENIED" operation="capable" class="cap" profile="/snap/snapd/18933/usr/lib/snapd/snap-confine" pid=93989 comm="snap-confine" capability=12  capname="net_admin"
+[ 5264.783190] audit: type=1400 audit(1681903433.731:168): apparmor="DENIED" operation="capable" class="cap" profile="/snap/snapd/18933/usr/lib/snapd/snap-confine" pid=93989 comm="snap-confine" capability=38  capname="perfmon"
+[ 5399.670352] audit: type=1326 audit(1681903568.620:169): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.firefox.firefox pid=14372 comm=49736F6C617465642057656220436F exe="/snap/firefox/2559/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=314 compat=0 ip=0x7f20a3a7773d code=0x50000
