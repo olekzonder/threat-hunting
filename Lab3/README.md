@@ -262,7 +262,7 @@ logs – каталог с лог-файлами.
         certificate: "/usr/share/elasticsearch/config/certs/filebeat/filebeat.crt"
         key: "/usr/share/elasticsearch/config/certs/filebeat/filebeat.key"
 
-### Шаг 4 – Добавление средства средства сбора сетевого трафика Packetbeat
+### Шаг 4 – Добавление средства сбора сетевого трафика Packetbeat
 
 #### 1.Впишем после сервиса для запуска Filebeat сервис для запуска Packetbeat:
 
@@ -292,7 +292,7 @@ logs – каталог с лог-файлами.
 Также, аналогично Filebeat, требуется отредактировать сервис для
 добавления сертификатов.
 
-#### 2.Настроим фильтрацию пакетов:
+#### 2.Создадим файл конфигурации packetbeat.yml:
 
     packetbeat.interfaces.device: any
 
