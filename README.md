@@ -11,3 +11,5 @@
 4. Развертывание Threat intelligence Platform OpenCTI
 
 5. Создание ментальной карты
+
+6. Использование метода OSINT
